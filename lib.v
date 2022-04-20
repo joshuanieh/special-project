@@ -688,3 +688,119 @@ end
 assign number = sum;
 
 endmodule
+
+module LUT_ONEHOT#(
+    parameter OPTIONS;
+    parameter BITS;
+)(
+    input [OPTIONS-1:0] oneHot,
+    input [BITS-1:0] options [0:OPTIONS-1],
+	output [BITS-1:0] o_data,
+	output [50:0] number
+);
+
+wire [50:0] numbers [0:OPTIONS-1][0:BITS-1];
+
+wire [BITS-1:0] and_result [0:OPTIONS-1];
+genvar i, j;
+generate
+    for(i = 0; i<OPTIONS; i=i+1) begin
+        for(j = 0; j<BITS; j=j+1) begin
+            AN2(and_result[i][j], oneHot[i], options[i][j], numbers[i][j]);
+        end
+    end
+endgenerate
+
+wire [50:0] numbers2[0:BITS-1];
+
+generate
+    for(i=0; i<BITS; i=i+1) begin
+        OR#(OPTIONS) or1(o_data[i], and_result[:][i], numbers2[i]);        
+    end
+endgenerate
+
+reg [50:0] sum;
+integer k,l;
+always @(*) begin
+	sum = 0;
+	for (k=0; k<OPTIONS; k=k+1) begin
+        for (l=0; l<BITS; l=l+1) begin 
+		    sum = sum + numbers[k][l];
+        end
+	end
+    for (l=0; l<BITS; l=l+1) begin 
+        sum = sum + numbers2[l];
+    end
+end
+
+assign number = sum;
+
+endmodule
+
+module OR#(
+	parameter BW = 2
+)(
+	output [BW-1:0] o_z,
+	input i_a [0:BW-1],
+	output [50:0] number
+);
+
+wire [50:0] numbers [0:BW-1];
+integer l = BW%2 ? (BW+1)/2 : BW/2;
+
+wire or_result[0:l-1];
+wire [2*l-1:0] l2 = BW%2 ? {i_a, 1'b0} : i_a;
+
+genvar i;
+generate
+	for (i=0; i<l; i=i+1) begin
+		OR2 or1(or_result[i], l2[2*i], l2[2*i+1], numbers[i]);
+	end
+endgenerate
+
+OR#(l) or2(or_result, )
+
+reg [50:0] sum;
+integer j;
+always @(*) begin
+	sum = 0;
+	for (j=0; j<BW; j=j+1) begin 
+		sum = sum + numbers[j];
+	end
+end
+
+assign number = sum;
+
+endmodule
+
+module MX#(
+	parameter BW = 2
+)(
+	output [BW-1:0] o_z,
+	input [BW-1:0] i_a,
+	input [BW-1:0] i_b,
+	input i_ctrl,
+	output [50:0] number
+);
+
+wire [50:0] numbers [0:BW-1];
+
+genvar i;
+generate
+	for (i=0; i<BW; i=i+1) begin
+		MUX21H mux(o_z[i], i_a[i], i_b[i], i_ctrl, numbers[i]);
+	end
+endgenerate
+
+reg [50:0] sum;
+integer j;
+always @(*) begin
+	sum = 0;
+	for (j=0; j<BW; j=j+1) begin 
+		sum = sum + numbers[j];
+	end
+end
+
+assign number = sum;
+
+endmodule

@@ -27,8 +27,6 @@
 *								 Change i_pp* to 11 bits          
 * 6.0.0   Hsieh    2020/11/02    Change to 4-bit FloatSD4 weight
 **************************************************************************************************/
-`include "./MAC_top/MAC_subsystem/align_CG2_NOclkGating.v"
-
 module mac_stg2(input           i_clk,
                 input           i_rst_n,
                 input           i_valid,
@@ -68,7 +66,8 @@ module mac_stg2(input           i_clk,
 
                 output 		    o_valid,
                 input  [ 5-1:0] i_Q_frac,
-                output [ 5-1:0] o_Q_frac);
+                output [ 5-1:0] o_Q_frac,
+                output [50:0] o_transistor_num);
 
 
 reg valid_r, valid_w;
@@ -250,5 +249,6 @@ always@(posedge i_clk or negedge i_rst_n) begin
         Q_frac_reg <= i_Q_frac;
     end
 end
+assign o_transistor_num = 0;
 
 endmodule

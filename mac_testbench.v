@@ -1,8 +1,6 @@
 `timescale 1ns/1ps
 `define CYCLE      0.800
 
-`include "mac.v"
-
 module mac_testbench();
 
 //-- Generate System Signal
@@ -182,6 +180,7 @@ always @(*) begin
 
 end
 
+wire [50:0] o_transistor_num;
 
 mac        DUT(.clk(clk),
                .i_rst_n(rstn),
@@ -214,14 +213,16 @@ mac        DUT(.clk(clk),
 
                // output ports
                .o_valid(o_valid),
-               .o_conv(o_conv)
+               .o_conv(o_conv),
+               .o_transistor_num(o_transistor_num)
               );
 
 integer l_p = 0;
 integer out_batch;
 always @(posedge clk) begin
     if (o_valid == 0 && mem_address > N+100) begin
-        $display("%d", latency);
+        $display("latency: %d", latency);
+        $display("transistor numbers: %d", o_transistor_num);
         //-- Since the result has written back to the DRAM, we can write the result to the text file to check the content is correct or not.
         $display("---------------------------");
         $display("Writing result");

@@ -28,9 +28,6 @@
 *                                Remove Q-frac in this stage
 * 2.0.0   Hsieh    2020/11/02    Change to 4-bit FloatSD4 weight
 **************************************************************************************************/
-`include "./MAC_top/MAC_subsystem/PPgenerator.v"
-`include "./MAC_top/MAC_subsystem/max_exp_determ.v"
-
 module mac_stg1(input          i_clk,
                 input          i_rst_n,
                 input          i_valid,
@@ -79,7 +76,8 @@ module mac_stg1(input          i_clk,
 
                 output [6-1:0] o_max_exp, // <MK Sun, change from 9 bits to 6 bits.>
                 output 		   o_valid,
-                output [5-1:0] o_Q_frac);
+                output [5-1:0] o_Q_frac,
+                output [50:0]  o_transistor_num);
 
 reg valid_r, valid_w;
 
@@ -256,4 +254,5 @@ always@(posedge i_clk or negedge i_rst_n) begin
     end
 end
 
+assign o_transistor_num = 0;
 endmodule

@@ -17,7 +17,6 @@
 *                                Modify the port width of i_norm_sum from 23 to 10
 * 2.0.0   Hsieh    2020/11/02    Change to 4-bit FloatSD4 weight
 **************************************************************************************************/
-`include "./MAC_top/MAC_subsystem/exp_Hande_norm.v"
 
 module mac_stg5(input           i_clk,
                 input           i_rst_n,
@@ -31,7 +30,8 @@ module mac_stg5(input           i_clk,
                 input  [ 5-1:0] i_Q_frac,
 
                 output          o_valid,
-                output [16-1:0] o_conv);
+                output [16-1:0] o_conv,
+                output [50:0] o_transistor_num);
 
 reg          valid_r, valid_w;
 reg [11-1:0] norm_sum_r, norm_sum_w;
@@ -91,5 +91,6 @@ always@(posedge i_clk  or negedge i_rst_n) begin
         Q_frac_reg  <= i_Q_frac   ;
     end
 end
+assign o_transistor_num = 0;
 
 endmodule

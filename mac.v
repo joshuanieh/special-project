@@ -29,11 +29,6 @@
 * 5.1.2   Sun      2019/05/28    Change it into new decoder and add comments.                 
 * 6.0.0   Hsieh    2020/11/02    Change to 4-bit FloatSD4 weight
 **************************************************************************************************/
-`include "mac_stg1.v"
-`include "mac_stg2.v"
-`include "mac_stg3.v"
-`include "mac_stg4.v"
-`include "mac_stg5.v"
 
 module mac       (input               clk,
                   input               i_rst_n,
@@ -63,7 +58,8 @@ module mac       (input               clk,
                   input      [ 4-1:0] i_ker9,
 
                   output reg 		  o_valid,
-                  output     [16-1:0] o_conv);
+                  output     [16-1:0] o_conv,
+                  output     [50:0]   o_transistor_num);
 
 // partial products
 wire [4-1:0] stg1_pp1;
@@ -128,13 +124,17 @@ wire          o_valid_in;
 reg  [16-1:0] conv_r;
 wire [16-1:0] conv_w;
 
-
+wire [50:0]   number[7-1:0];
 //-- <MK Sun Adding some new flag to indicate>
 // wire o_update_mode_stg1, o_update_mode_stg2, o_update_mode_stg3, o_update_mode_stg4;
 
-assign o_valid_in = (i_inhibit) ? 1'b0 : stg5_o_valid;
+// MUX21H g(Z,A,B,CTRL,number)
+
+// assign o_valid_in = (i_inhibit) ? 1'b0 : stg5_o_valid;
+MX#(1) g_1(o_valid_in, 1'b0, stg5_o_valid, i_inhibit, number[0]);
 assign o_conv = conv_r;
-assign conv_w = (i_inhibit && ~o_valid_in) ? 16'd0 : stg5_o_conv;
+// assign conv_w = (i_inhibit && ~o_valid_in) ? 16'd0 : stg5_o_conv;
+MX#(16) g_2(conv_w, 16'd0, stg5_o_conv, (i_inhibit && ~o_valid_in), number[1]);
 
 mac_stg1 stg1(.i_clk(clk),
               .i_rst_n(i_rst_n),
@@ -182,7 +182,8 @@ mac_stg1 stg1(.i_clk(clk),
               .o_exp9(stg1_exp9),
               .o_max_exp(stg1_max_exp),
               .o_valid(stg1_valid),
-              .o_Q_frac(o_Q_frac_stg1));
+              .o_Q_frac(o_Q_frac_stg1),
+              .o_transistor_num(number[2]));
 
 mac_stg2 stg2(.i_clk(clk),
               .i_rst_n(i_rst_n),
@@ -224,7 +225,8 @@ mac_stg2 stg2(.i_clk(clk),
 
               .o_valid(stg2_valid),
               .i_Q_frac(o_Q_frac_stg1),
-              .o_Q_frac(o_Q_frac_stg2) );
+              .o_Q_frac(o_Q_frac_stg2),
+              .o_transistor_num(number[3]));
 
 mac_stg3 stg3(.i_clk(clk),
               .i_rst_n(i_rst_n),
@@ -246,7 +248,8 @@ mac_stg3 stg3(.i_clk(clk),
               .o_valid(stg3_valid),
               .o_max_exp(stg3_max_exp),
               .i_Q_frac(o_Q_frac_stg2),
-              .o_Q_frac(o_Q_frac_stg3));
+              .o_Q_frac(o_Q_frac_stg3),
+              .o_transistor_num(number[4]));
 
 mac_stg4 stg4(.i_clk     (clk),
               .i_rst_n   (i_rst_n),
@@ -263,7 +266,8 @@ mac_stg4 stg4(.i_clk     (clk),
               .o_sgn       (stg4_sgn),
 
               .i_Q_frac(o_Q_frac_stg3),
-              .o_Q_frac(o_Q_frac_stg4));
+              .o_Q_frac(o_Q_frac_stg4),
+              .o_transistor_num(number[5]));
 
 mac_stg5 stg5(.i_clk       (clk),
               .i_rst_n     (i_rst_n),
@@ -277,7 +281,18 @@ mac_stg5 stg5(.i_clk       (clk),
               .i_Q_frac    (o_Q_frac_stg4),
 
               .o_valid(stg5_o_valid),
-              .o_conv(stg5_o_conv));
+              .o_conv(stg5_o_conv),
+              .o_transistor_num(number[6]));
+
+reg [50:0] sum;
+integer j;
+always @(*) begin
+    sum = 0;
+    for (j=0; j<7; j=j+1) begin 
+        sum = sum + number[j];
+    end
+end
+assign o_transistor_num = sum;
 
 always @(posedge clk) begin
     conv_r <= conv_w;

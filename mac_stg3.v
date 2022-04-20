@@ -47,7 +47,8 @@ module mac_stg3(input           i_clk,
                 output 		    o_valid,
                 output [ 6-1:0] o_max_exp,
                 input  [ 5-1:0] i_Q_frac,
-                output [ 5-1:0] o_Q_frac);
+                output [ 5-1:0] o_Q_frac,
+                output [50:0] o_transistor_num);
 
 // flags
 reg valid_r, valid_w;
@@ -153,4 +154,5 @@ always@(posedge i_clk  or negedge i_rst_n) begin
         Q_frac_reg <= i_Q_frac;
     end
 end
+assign o_transistor_num = 0;
 endmodule

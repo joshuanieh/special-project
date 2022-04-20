@@ -1,5 +1,5 @@
-`timescale 1ns/10ps
-`define CYCLE      8.0
+`timescale 1ns/1ps
+`define CYCLE      0.800
 
 `include "mac.v"
 
@@ -22,6 +22,16 @@ end
 
 always begin
     #(`CYCLE/2) clk = ~clk;
+end
+
+integer latency;
+always @(posedge clk or negedge rstn) begin 
+    if (~rstn) begin 
+        latency = -1;
+    end
+    else begin
+        latency = latency + 1;
+    end
 end
 
 //-- Image / Weight / Golden Memory (65536)
@@ -211,6 +221,7 @@ integer l_p = 0;
 integer out_batch;
 always @(posedge clk) begin
     if (o_valid == 0 && mem_address > N+100) begin
+        $display("%d", latency);
         //-- Since the result has written back to the DRAM, we can write the result to the text file to check the content is correct or not.
         $display("---------------------------");
         $display("Writing result");

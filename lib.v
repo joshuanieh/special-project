@@ -222,41 +222,6 @@ module EO3(Z,A,B,C,number);
        endspecify
 endmodule
 
-module FA1(CO,S,A,B,CI,number);
-       output S,CO;
-       input A,B,CI;
-
-       wire x = (A&B)||(B&CI)||(A&CI);
-       // netlist
-       xor g1(S,A,B,CI);
-       buf g2(CO,x);
- parameter size = 10'd50; 
-  output [size:0] number;
-  wire  [size:0] number;
-  assign number=11'd26;	 
-       // specify block
-       specify
-
-           // delay parameters
-
-           specparam Tp_A_S = 0.61;
-           specparam Tp_B_S = 0.54;
-           specparam Tp_C_S = 0.43;
-
-           specparam Tp_A_O = 0.55;
-           specparam Tp_B_O = 0.55;
-           specparam Tp_C_O = 0.54;
-
-           // path delay
-           ( A *> S ) = ( Tp_A_S );
-           ( B *> S ) = ( Tp_B_S );
-           ( CI *> S ) = ( Tp_C_S );
-           ( A *> CO ) = ( Tp_A_O );
-           ( B *> CO ) = ( Tp_B_O );
-           ( CI *> CO ) = ( Tp_C_O );
-       endspecify
-endmodule
-
 module FD1(Q,D,CLK,RESET,number);
            output Q;
        input D,CLK,RESET;
@@ -305,37 +270,6 @@ module FD2(Q,D,CLK,RESET,number);
        always @(posedge RESET)
         #0.176 realRESET=1;
       always @(posedge CLK) Q =#0.441 (realD&realRESET);
-endmodule
-
-module HA1(O,S,A,B,number);
-         output S,O;
-       input A,B;
- parameter size = 10'd50; 
-  output [size:0] number;
-  wire  [size:0] number;
-  assign number=11'd14;	 
-       // netlist
-       xor g1(S,A,B);
-       and g2(O,A,B);
-
-
-       // specify block
-       specify
-
-           // delay parameters
-
-           specparam Tp_A_S = 0.39;
-           specparam Tp_B_S = 0.37;
-
-           specparam Tp_A_O = 0.18;
-           specparam Tp_B_O = 0.18;
-
-           // path delay
-           ( A *> S ) = ( Tp_A_S );
-           ( B *> S ) = ( Tp_B_S );
-           ( A *> O ) = ( Tp_A_O );
-           ( B *> O ) = ( Tp_B_O );
-       endspecify
 endmodule
 
 module IV(Z,A,number);
@@ -620,5 +554,105 @@ module OR4(Z,A,B,C,D,number);
        endspecify
 endmodule
 
+module HA1(S,O,A,B,number);
+         output S,O;
+       input A,B;
+ parameter size = 10'd50; 
+  output [size:0] number;
+  wire  [size:0] number;
+  assign number=11'd14;  
+       // netlist
+       xor g1(S,A,B);
+       and g2(O,A,B);
 
 
+       // specify block
+       specify
+
+           // delay parameters
+
+           specparam Tp_A_S = 0.39;
+           specparam Tp_B_S = 0.37;
+
+           specparam Tp_A_O = 0.18;
+           specparam Tp_B_O = 0.18;
+
+           // path delay
+           ( A *> S ) = ( Tp_A_S );
+           ( B *> S ) = ( Tp_B_S );
+           ( A *> O ) = ( Tp_A_O );
+           ( B *> O ) = ( Tp_B_O );
+       endspecify
+endmodule
+
+module FA1(S,CO,A,B,CI,number);
+       output S,CO;
+       input A,B,CI;
+
+       wire x = (A&B)||(B&CI)||(A&CI);
+       // netlist
+       xor g1(S,A,B,CI);
+       buf g2(CO,x);
+ parameter size = 10'd50; 
+  output [size:0] number;
+  wire  [size:0] number;
+  assign number=11'd26;  
+       // specify block
+       specify
+
+           // delay parameters
+
+           specparam Tp_A_S = 0.61;
+           specparam Tp_B_S = 0.54;
+           specparam Tp_C_S = 0.43;
+
+           specparam Tp_A_O = 0.55;
+           specparam Tp_B_O = 0.55;
+           specparam Tp_C_O = 0.54;
+
+           // path delay
+           ( A *> S ) = ( Tp_A_S );
+           ( B *> S ) = ( Tp_B_S );
+           ( CI *> S ) = ( Tp_C_S );
+           ( A *> CO ) = ( Tp_A_O );
+           ( B *> CO ) = ( Tp_B_O );
+           ( CI *> CO ) = ( Tp_C_O );
+       endspecify
+endmodule
+
+module FA#(
+    parameter BW = 2
+)(
+    input [BW-1:0] i_a,
+    input [BW-1:0] i_b,
+    output [BW-1:0] o_s,
+    output o_c,
+    output [50:0] number
+);
+
+    wire [BW-1:0] c;
+    wire [50:0] numbers [0:BW-1];
+
+    HA1 g_0(o_s[0], c[0], i_a[0], i_b[0], numbers[0]);
+
+    genvar i;
+    generate
+        for (i=1; i<BW; i=i+1) begin
+            FS1 g_i(o_s[i], c[i], i_a[i], i_b[i], c[i-1], numbers[i]);
+        end
+    endgenerate
+
+    assign o_c = c[BW-1];
+
+    reg [50:0] num;
+    integer j;
+    always @(*) begin
+        num = 0;
+        for (j=0; j<BW; j=j+1) begin 
+            num = num + numbers[j];
+        end
+    end
+
+    assign number = num;
+
+endmodule

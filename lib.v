@@ -638,7 +638,7 @@ module FA#(
     genvar i;
     generate
         for (i=1; i<BW; i=i+1) begin
-            FS1 g_i(o_s[i], c[i], i_a[i], i_b[i], c[i-1], numbers[i]);
+            FA1 g_i(o_s[i], c[i], i_a[i], i_b[i], c[i-1], numbers[i]);
         end
     endgenerate
 
@@ -654,5 +654,37 @@ module FA#(
     end
 
     assign number = num;
+
+endmodule
+
+module MX#(
+    parameter BW = 2
+)(
+    output [BW-1:0] o_z,
+    input [BW-1:0] i_a,
+    input [BW-1:0] i_b,
+    input i_ctrl,
+    output [50:0] number
+);
+
+wire [50:0] numbers [0:BW-1];
+
+genvar i;
+generate
+    for (i=0; i<BW; i=i+1) begin
+        MUX21H mux(o_z[i], i_a[i], i_b[i], i_ctrl, numbers[i]);
+    end
+endgenerate
+
+reg [50:0] sum;
+integer j;
+always @(*) begin
+    sum = 0;
+    for (j=0; j<BW; j=j+1) begin 
+        sum = sum + numbers[j];
+    end
+end
+
+assign number = sum;
 
 endmodule

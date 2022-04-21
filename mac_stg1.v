@@ -105,6 +105,8 @@ reg [4-1:0] ker9_r, ker9_w;
 
 reg [9-1:0] skip_r;
 
+wire [50:0] numbers [0:10];
+
 assign o_valid = valid_r;
 assign o_Q_frac = Q_frac_reg;
 
@@ -112,39 +114,48 @@ assign o_Q_frac = Q_frac_reg;
 PPgenerator pp_gen1(.image(im1_r),
                     .weight(ker1_r),
                     .denorm_pp(o_denorm_pp1),
-                    .exp(o_exp1) );
+                    .exp(o_exp1),
+                    .number(numbers[0]) );
 PPgenerator pp_gen2(.image(im2_r),
                     .weight(ker2_r),
                     .denorm_pp(o_denorm_pp2),
-                    .exp(o_exp2) );
+                    .exp(o_exp2),
+                    .number(numbers[1]) );
 PPgenerator pp_gen3(.image(im3_r),
                     .weight(ker3_r),
                     .denorm_pp(o_denorm_pp3),
-                    .exp(o_exp3) );
+                    .exp(o_exp3),
+                    .number(numbers[2]) );
 PPgenerator pp_gen4(.image(im4_r),
                     .weight(ker4_r),
                     .denorm_pp(o_denorm_pp4),
-                    .exp(o_exp4) );
+                    .exp(o_exp4),
+                    .number(numbers[3]) );
 PPgenerator pp_gen5(.image(im5_r),
                     .weight(ker5_r),
                     .denorm_pp(o_denorm_pp5),
-                    .exp(o_exp5) );
+                    .exp(o_exp5),
+                    .number(numbers[4]) );
 PPgenerator pp_gen6(.image(im6_r),
                     .weight(ker6_r),
                     .denorm_pp(o_denorm_pp6),
-                    .exp(o_exp6) );
+                    .exp(o_exp6),
+                    .number(numbers[5]) );
 PPgenerator pp_gen7(.image(im7_r),
                     .weight(ker7_r),
                     .denorm_pp(o_denorm_pp7),
-                    .exp(o_exp7) );
+                    .exp(o_exp7),
+                    .number(numbers[6]) );
 PPgenerator pp_gen8(.image(im8_r),
                     .weight(ker8_r),
                     .denorm_pp(o_denorm_pp8),
-                    .exp(o_exp8) );
+                    .exp(o_exp8),
+                    .number(numbers[7]) );
 PPgenerator pp_gen9(.image(im9_r),
                     .weight(ker9_r),
                     .denorm_pp(o_denorm_pp9),
-                    .exp(o_exp9) );
+                    .exp(o_exp9),
+                    .number(numbers[8]) );
 
 max_exp_determ max_exp1(.skip(skip_r),
                         .exp1(o_exp1),
@@ -156,7 +167,8 @@ max_exp_determ max_exp1(.skip(skip_r),
                         .exp7(o_exp7),
                         .exp8(o_exp8),
                         .exp9(o_exp9),
-                        .max_exp(o_max_exp) );
+                        .max_exp(o_max_exp),
+                        .number(numbers[9]) );
 
 always@(*) begin
     if (i_inhibit) begin
@@ -250,9 +262,23 @@ always@(posedge i_clk or negedge i_rst_n) begin
         ker9_r  <= ker9_w ;
         skip_r  <= skip   ;
 
-        Q_frac_reg <= (i_inhibit) ? Q_frac_reg : Q_frac;
+        Q_frac_reg <= Q_frac_wire;
     end
 end
 
-assign o_transistor_num = 0;
+assign [4:0] Q_frac_wire;
+assign [4:0] Q_frac_wire2 = Q_frac_reg;
+MX#(5) mux1(Q_frac_wire, i_inhibit, Q_frac_wire2, Q_frac, numbers[10]);
+
+reg [50:0] sum;
+integer j;
+always @(*) begin
+	sum = 0;
+	for (j=0; j<11; j=j+1) begin 
+		sum = sum + numbers[11];
+	end
+end
+
+assign o_transistor_num = sum;
+
 endmodule

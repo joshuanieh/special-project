@@ -266,16 +266,16 @@ always@(posedge i_clk or negedge i_rst_n) begin
     end
 end
 
-assign [4:0] Q_frac_wire;
-assign [4:0] Q_frac_wire2 = Q_frac_reg;
-MX#(5) mux1(Q_frac_wire, i_inhibit, Q_frac_wire2, Q_frac, numbers[10]);
+wire [4:0] Q_frac_wire;
+wire [4:0] Q_frac_wire2 = Q_frac_reg;
+MX#(5) mux1(Q_frac_wire, Q_frac, Q_frac_wire2, i_inhibit, numbers[10]);
 
 reg [50:0] sum;
 integer j;
 always @(*) begin
 	sum = 0;
 	for (j=0; j<11; j=j+1) begin 
-		sum = sum + numbers[11];
+		sum = sum + numbers[j];
 	end
 end
 

@@ -1,7 +1,7 @@
 
 module max_exp_determ(skip,
                       exp1, exp2, exp3, exp4, exp5, exp6, exp7, exp8, exp9,
-                      max_exp);
+                      max_exp, number);
 
 parameter FP16_exp_width = 5;
 
@@ -17,6 +17,7 @@ parameter FP16_exp_width = 5;
 input  [9-1:0] skip;
 input  [FP16_exp_width:0] exp1, exp2, exp3, exp4, exp5, exp6, exp7, exp8, exp9;  // neuron output
 output [FP16_exp_width:0] max_exp;  // W
+output [50:0] number;
 
 wire [FP16_exp_width:0] exp1_tmp;
 wire [FP16_exp_width:0] exp2_tmp;
@@ -58,5 +59,6 @@ assign wire3_1 = (wire2_1>wire2_2) ? wire2_1 : wire2_2;
 
 assign max_exp = (wire3_1>exp9_tmp) ?wire3_1 : exp9_tmp;
 
+assign number = 0;
 
 endmodule

@@ -904,31 +904,43 @@ module COM(equivalent, greaterEqual, A, B, number);
     output       equivalent, greaterEqual;
     output [50:0] number;
 
-    wire   [50:0] numbers[:0];
+    wire   [50:0] numbers[0:17];
 
     //equivalent = 1 iff A is equivalent to B
     wire   [3:0] n;
     EO g1(n[3], A[3], B[3], numbers[0]);
-    EO g2(n[2], A[2], B[2]);
-    EO g3(n[1], A[1], B[1]);
-    EO g4(n[0], A[0], B[0]);
-    NR4 g5(equivalent, n[3], n[2], n[1], n[0]);
+    EO g2(n[2], A[2], B[2], numbers[1]);
+    EO g3(n[1], A[1], B[1], numbers[2]);
+    EO g4(n[0], A[0], B[0], numbers[3]);
+    NR4 g5(equivalent, n[3], n[2], n[1], n[0], numbers[4]);
 
     //greaterEqual = 1 iff A is greater than or equal to B
     wire   [3:0] invB;
     wire   [3:0] m;
     wire   [3:0] invN;
-    IV g6(invB[3], B[3]);
-    IV g18(invB[2], B[2]);
-    IV g7(invB[1], B[1]);
-    IV g8(invB[0], B[0]);
-    IV g17(invN[3], n[3]);
-    IV g9(invN[2], n[2]);
-    IV g10(invN[1], n[1]);
-    IV g11(invN[0], n[0]);
-    ND2 g12(m[0], A[3], invB[3]);
-    ND3 g13(m[1], invN[3], A[2], invB[2]);
-    ND4 g14(m[2], invN[3], invN[2], A[1], invB[1]);
-    ND4 g15(m[3], invN[3], invN[2], invN[1], A[0]);
-    ND4 g16(greaterEqual, m[3], m[2], m[1], m[0]);
+    IV g6(invB[3], B[3], numbers[5]);
+    IV g18(invB[2], B[2], numbers[6]);
+    IV g7(invB[1], B[1], numbers[7]);
+    IV g8(invB[0], B[0], numbers[8]);
+    IV g17(invN[3], n[3], numbers[9]);
+    IV g9(invN[2], n[2], numbers[10]);
+    IV g10(invN[1], n[1], numbers[11]);
+    IV g11(invN[0], n[0], numbers[12]);
+    ND2 g12(m[0], A[3], invB[3], numbers[13]);
+    ND3 g13(m[1], invN[3], A[2], invB[2], numbers[14]);
+    ND4 g14(m[2], invN[3], invN[2], A[1], invB[1], numbers[15]);
+    ND4 g15(m[3], invN[3], invN[2], invN[1], A[0], numbers[16]);
+    ND4 g16(greaterEqual, m[3], m[2], m[1], m[0], numbers[17]);
+
+    reg [50:0] sum;
+    integer j;
+    always @(*) begin
+        sum = 0;
+        for (j=0; j<18; j=j+1) begin 
+            sum = sum + numbers[j];
+        end
+    end
+
+    assign number = sum;
+
 endmodule

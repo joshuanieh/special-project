@@ -777,3 +777,123 @@ end
 assign number = (BW%2) ? sum + numbers2 : sum + numbers[l-1] + numbers2;
 
 endmodule
+
+
+//HS1
+module HS1 (
+    output        o_z,
+    output        o_b,
+    input         i_x,
+    input         i_y,
+    output [50:0] number
+);
+
+wire [50:0] num_0, num_1, num_2;
+assign number = num_0 + num_1 + num_2;
+
+wire n_1;
+EO  g_1(o_z, i_x, i_y, num_0);
+IV  g_2(n_1, i_y, num_1);
+NR2 g_3(o_b, n_1, i_x, num_2);
+endmodule
+
+//borrow-ripple original
+//FS1
+// module FS1 (
+//  output        o_z,
+//  output        o_b,
+//  input         i_x,
+//  input         i_y,
+//  input         i_b,
+//  output [50:0] number
+// );
+
+// wire [50:0] num_0, num_1, num_2, num_3, num_4, num_5;
+// assign number = num_0 + num_1 + num_2 + num_3 + num_4 + num_5;
+
+// wire n_1, n_2, n_3, n_4;
+// EO3 g_1(o_z, i_x, i_y, i_b, num_0);
+// IV  g_2(n_1, i_x, num_1);
+// ND2 g_3(n_2, n_1, i_y, num_2);
+// ND2 g_4(n_3, n_1, i_b, num_3);
+// ND2 g_5(n_4, i_b, i_y, num_4);
+// ND3 g_6(o_b, n_2, n_3, n_4, num_5);
+// endmodule
+
+//borrow-ripple modified
+module FS1 (
+    output        o_z,
+    output        o_b,
+    input         i_x,
+    input         i_y,
+    input         i_b,
+    output [50:0] number
+);
+
+wire [50:0] num_0, num_1, num_2, num_3, num_4, num_5, num_6;
+assign number = num_0 + num_1 + num_2 + num_3 + num_4 + num_5 + num_6;
+
+wire n_0, n_1, n_2, n_3, n_4;
+EO  g_0(n_0, i_x, i_y, num_0);
+EO  g_1(o_z, n_0, i_b, num_1);
+IV  g_2(n_1, i_x, num_2);
+ND2 g_3(n_2, n_1, i_y, num_3);
+IV  g_4(n_3, n_0, num_4);
+ND2 g_5(n_4, i_b, n_3, num_5);
+ND2 g_6(o_b, n_2, n_4, num_6);
+endmodule
+
+//FS2
+// module FS2 (
+//     output [1:0]  o_z,
+//     output        o_b,
+//     input  [1:0]  i_x,
+//     input  [1:0]  i_y,
+//     output [50:0] number
+// );
+
+// wire [50:0] num_0, num_1;
+// assign number = num_0 + num_1;
+
+// wire n_1;
+
+// HS1 g_1(o_z[0], n_1, i_x[0], i_y[0], num_0);
+// FS1 g_2(o_z[1], o_b, i_x[1], i_y[1], n_1, num_1);
+// endmodule
+
+module FS#(
+    parameter BW = 2
+)(
+    input [BW-1:0] i_a,
+    input [BW-1:0] i_b,
+    output [BW-1:0] o_d,
+    output o_b,
+    output [50:0] number
+);
+
+    wire [BW-1:0] b;
+    wire [50:0] numbers [0:BW-1];
+
+    HS1 g_0(o_d[0], b[0], i_a[0], i_b[0], numbers[0]);
+
+    genvar i;
+    generate
+        for (i=1; i<BW; i=i+1) begin
+            FS1 g_i(o_d[i], b[i], i_a[i], i_b[i], b[i-1], numbers[i]);
+        end
+    endgenerate
+
+    assign o_b = b[BW-1];
+
+    reg [50:0] num;
+    integer j;
+    always @(*) begin
+        num = 0;
+        for (j=0; j<BW; j=j+1) begin 
+            num = num + numbers[j];
+        end
+    end
+
+    assign number = num;
+
+endmodule

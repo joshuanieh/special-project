@@ -10,6 +10,8 @@ reg sim_begin;
 parameter N = 128;
 
 initial begin
+    $dumpfile("wave.vcd");
+    $dumpvars;
     clk  = 0;
     rstn = 0;
     sim_begin = 0;

@@ -620,7 +620,7 @@ module FA1(S,CO,A,B,CI,number);
        endspecify
 endmodule
 
-module FA#(
+module ADD#(
     parameter BW = 2
 )(
     input [BW-1:0] i_a,
@@ -861,7 +861,7 @@ endmodule
 // FS1 g_2(o_z[1], o_b, i_x[1], i_y[1], n_1, num_1);
 // endmodule
 
-module FS#(
+module SUB#(
     parameter BW = 2
 )(
     input [BW-1:0] i_a,
@@ -900,7 +900,7 @@ endmodule
 
 //Comparator
 module COM(equivalent, greaterEqual, A, B, number);
-    input  [BW-1:0] A, B;
+    input  [3:0] A, B;
     output       equivalent, greaterEqual;
     output [50:0] number;
 

@@ -47,7 +47,7 @@ wire exp;
 // assign exp = (zero_flag) ? 6'd0 : image_exp + weight_exp;
 wire [4:0] fa_sum;
 wire fa_carry;
-FA#(5) fa1(image_exp, {2'b0, weight_exp}, fa_sum, fa_carry, numbers[3]);
+ADD#(5) fa1(image_exp, {2'b0, weight_exp}, fa_sum, fa_carry, numbers[3]);
 MX#(6) mux2(exp, {fa_carry, fa_sum}, 6'd0, zero_flag, numbers[4]);
 
 reg [50:0] sum;

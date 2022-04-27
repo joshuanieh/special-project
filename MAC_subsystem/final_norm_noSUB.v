@@ -3,10 +3,11 @@ module final_norm_noSUB(
            output [11-1:0] final_norm_sum_with_leading1,
            output [ 5-1:0] signed_exp_diff,
            output exp_carry,
-           output sign
+           output sign,
+           output [50:0] number
        );
 
-
+wire [50:0] numbers[100:0];
 // unsign_sum
 //                    exp_diff = 11    ----->                               |  2 | 1 | 0 |
 //                                                                          | ld .       |
@@ -14,28 +15,90 @@ module final_norm_noSUB(
 // | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 |  2 | 1 | 0 |
 // |  0 |                        .                                        G |  R   S     |
 assign sign = sum[18];
-wire [19-1:0] unsign_sum = (sign) ? ~sum + 1'b1 : sum;
+// wire [19-1:0] unsign_sum = (sign) ? ~sum + 1'b1 : sum;
+wire [19-1:0] unsign_sum, inverted_sum, negative_sum_magnitude;
+wire whatsoever;
+INV#(19) inv_100(
+    .i_a(sum),
+    .o_z(inverted_sum),
+    .number(numbers[20])
+);
+
+ADD#(19) add_100(
+    .i_a(inverted_sum),
+    .i_b(19'b1),
+    .o_s(negative_sum_magnitude),
+    .o_c(whatsoever),
+    .number(numbers[21])
+);
+MX#(19) g_1(unsign_sum, sum, negative_sum_magnitude, sign, numbers[0]);
 
 
 /* --------------------- Normalized Sum with Leading One -------------------- */
 wire [15-1:0] leading_vector;
+wire first_four_bits_or;
+OR4 g_2(first_four_bits_or, unsign_sum[17], unsign_sum[16], unsign_sum[15], unsign_sum[14], numbers[1]);
+wire first_seven_bits_or;
+OR4 g_3(first_seven_bits_or, unsign_sum[13], unsign_sum[12], unsign_sum[11], first_four_bits_or, numbers[2]);
+wire third_ten_bits_or;
+OR4 g_4(first_ten_bits_or, unsign_sum[10], unsign_sum[9], unsign_sum[8], first_seven_bits_or, numbers[3]);
+wire third_thirteen_bits_or;
+OR4 g_18(first_thirteen_bits_or, unsign_sum[7], unsign_sum[6], unsign_sum[5], first_ten_bits_or, numbers[17]);
+
+wire [16:3] inverted_unsigned_sum;
+INV#(14) g_5(unsign_sum[16:3], inverted_unsigned_sum, numbers[4]);
+
 assign leading_vector[14] = unsign_sum[17];
-assign leading_vector[13] = ( (|unsign_sum[17]    == 0) && (unsign_sum[16] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[12] = ( (|unsign_sum[17:16] == 0) && (unsign_sum[15] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[11] = ( (|unsign_sum[17:15] == 0) && (unsign_sum[14] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[10] = ( (|unsign_sum[17:14] == 0) && (unsign_sum[13] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[ 9] = ( (|unsign_sum[17:13] == 0) && (unsign_sum[12] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[ 8] = ( (|unsign_sum[17:12] == 0) && (unsign_sum[11] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[ 7] = ( (|unsign_sum[17:11] == 0) && (unsign_sum[10] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[ 6] = ( (|unsign_sum[17:10] == 0) && (unsign_sum[ 9] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[ 5] = ( (|unsign_sum[17: 9] == 0) && (unsign_sum[ 8] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[ 4] = ( (|unsign_sum[17: 8] == 0) && (unsign_sum[ 7] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[ 3] = ( (|unsign_sum[17: 7] == 0) && (unsign_sum[ 6] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[ 2] = ( (|unsign_sum[17: 6] == 0) && (unsign_sum[ 5] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[ 1] = ( (|unsign_sum[17: 5] == 0) && (unsign_sum[ 4] == 1'b1) ) ? 1'b1 : 0;
-assign leading_vector[ 0] = ( (|unsign_sum[17: 4] == 0) && (unsign_sum[ 3] == 1'b1) ) ? 1'b1 : 0;
 
+// assign leading_vector[13] = ( (|unsign_sum[17]    == 0) && (unsign_sum[16] == 1'b1) ) ? 1'b1 : 0;
+NR2 g_6(leading_vector[13], unsign_sum[17], inverted_unsigned_sum[16], numbers[5]);
 
+// assign leading_vector[12] = ( (|unsign_sum[17:16] == 0) && (unsign_sum[15] == 1'b1) ) ? 1'b1 : 0;
+NR3 g_7(leading_vector[12], unsign_sum[17], unsign_sum[16], inverted_unsigned_sum[15], numbers[6]);
+
+// assign leading_vector[11] = ( (|unsign_sum[17:15] == 0) && (unsign_sum[14] == 1'b1) ) ? 1'b1 : 0;
+NR4 g_8(leading_vector[11], unsign_sum[17], unsign_sum[16], unsign_sum[15], inverted_unsigned_sum[14], numbers[7]);
+
+// assign leading_vector[10] = ( (|unsign_sum[17:14] == 0) && (unsign_sum[13] == 1'b1) ) ? 1'b1 : 0;
+NR2 g_9(leading_vector[10], first_four_bits_or, inverted_unsigned_sum[13], numbers[8]);
+
+// assign leading_vector[ 9] = ( (|unsign_sum[17:13] == 0) && (unsign_sum[12] == 1'b1) ) ? 1'b1 : 0;
+NR3 g_10(leading_vector[9], first_four_bits_or, unsign_sum[13], inverted_unsigned_sum[12], numbers[9]);
+
+// assign leading_vector[ 8] = ( (|unsign_sum[17:12] == 0) && (unsign_sum[11] == 1'b1) ) ? 1'b1 : 0;
+NR4 g_11(leading_vector[8], first_four_bits_or, unsign_sum[13], unsign_sum[12], inverted_unsigned_sum[11], numbers[10]);
+
+// assign leading_vector[ 7] = ( (|unsign_sum[17:11] == 0) && (unsign_sum[10] == 1'b1) ) ? 1'b1 : 0;
+NR2 g_12(leading_vector[7], first_seven_bits_or, inverted_unsigned_sum[10], numbers[11]);
+
+// assign leading_vector[ 6] = ( (|unsign_sum[17:10] == 0) && (unsign_sum[ 9] == 1'b1) ) ? 1'b1 : 0;
+NR3 g_13(leading_vector[6], first_seven_bits_or, unsign_sum[10], inverted_unsigned_sum[9], numbers[12]);
+
+// assign leading_vector[ 5] = ( (|unsign_sum[17: 9] == 0) && (unsign_sum[ 8] == 1'b1) ) ? 1'b1 : 0;
+NR4 g_14(leading_vector[5], first_seven_bits_or, unsign_sum[10], unsign_sum[9], inverted_unsigned_sum[8], numbers[13]);
+
+// assign leading_vector[ 4] = ( (|unsign_sum[17: 8] == 0) && (unsign_sum[ 7] == 1'b1) ) ? 1'b1 : 0;
+NR2 g_15(leading_vector[4], first_ten_bits_or, inverted_unsigned_sum[7], numbers[14]);
+
+// assign leading_vector[ 3] = ( (|unsign_sum[17: 7] == 0) && (unsign_sum[ 6] == 1'b1) ) ? 1'b1 : 0;
+NR3 g_16(leading_vector[3], first_ten_bits_or, unsign_sum[7], inverted_unsigned_sum[6], numbers[15]);
+
+// assign leading_vector[ 2] = ( (|unsign_sum[17: 6] == 0) && (unsign_sum[ 5] == 1'b1) ) ? 1'b1 : 0;
+NR4 g_17(leading_vector[2], first_ten_bits_or, unsign_sum[7], unsign_sum[6], inverted_unsigned_sum[5], numbers[16]);
+
+// assign leading_vector[ 1] = ( (|unsign_sum[17: 5] == 0) && (unsign_sum[ 4] == 1'b1) ) ? 1'b1 : 0;
+NR2 g_19(leading_vector[1], first_thirteen_bits_or, inverted_unsigned_sum[4], numbers[18]);
+
+// assign leading_vector[ 0] = ( (|unsign_sum[17: 4] == 0) && (unsign_sum[ 3] == 1'b1) ) ? 1'b1 : 0;
+NR3 g_20(leading_vector[0], first_thirteen_bits_or, unsign_sum[4], inverted_unsigned_sum[3], numbers[19]);
+// integer ij = 0;
+// always @(*) begin
+//     $display("%b", unsign_sum[16:3]);
+//     $display("%b", inverted_unsigned_sum);
+//     $display("%b", leading_vector);
+//     // $display("%d", ij);
+//     // ij = ij + 1;
+// end
 // norm_sum_with_leading1
 // | 10 |  9 |  8 |  7 |  6 |  5 |  4 |  3 |  2 |  1 |  0 |
 // |    .                                            | GB |

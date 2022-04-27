@@ -51,7 +51,8 @@ final_norm_noSUB F1(.sum(psum_r),
                     .final_norm_sum_with_leading1(o_norm_sum),
                     .signed_exp_diff(o_exp_diff),
                     .exp_carry(o_exp_carry),
-                    .sign(o_sgn));
+                    .sign(o_sgn),
+                    .number(o_transistor_num));
 
 always@(*) begin
     if (i_inhibit) begin
@@ -80,6 +81,4 @@ always@(posedge i_clk  or negedge i_rst_n) begin
         Q_frac_reg <= i_Q_frac;
     end
 end
-
-assign o_transistor_num = 0;
 endmodule

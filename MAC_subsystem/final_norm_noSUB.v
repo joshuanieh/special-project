@@ -202,6 +202,16 @@ assign exp_carry = norm_sum_with_leading1_rne[11];
 assign final_norm_sum_with_leading1 = (norm_sum_with_leading1_rne[11]) ? norm_sum_with_leading1_rne[11:1] : norm_sum_with_leading1_rne[10:0];
 
 
+reg [50:0] num;
+integer j;
+always @(*) begin
+    num = 0;
+    for (j=0; j<22; j=j+1) begin 
+        num = num + numbers[j];
+    end
+end
+
+assign number = num;
 endmodule
 
 

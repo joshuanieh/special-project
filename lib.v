@@ -803,21 +803,21 @@ endmodule
 module OR#(
 	parameter BW = 2
 )(
-	output [BW-1:0] o_z,
-	input i_a [0:BW-1],
+	output o_z,
+	input [BW-1:0] i_a,
 	output [50:0] number
 );
 
 wire [50:0] numbers [0:BW-1];
 parameter l = BW%2 ? (BW+1)/2 : BW/2;
 
-wire or_result[0:l-1];
-wire [2*l-1:0] l2 = BW%2 ? {i_a, 1'b0} : i_a;
+wire [l-1:0] or_result;
+wire [2*l-1:0] l2 = BW%2 ? {i_a[BW-1:0], 1'b0} : i_a[BW-1:0];
 wire [50:0] numbers2;
 genvar i;
 generate
     if(BW == 1) begin
-        assign o_z = i_a;
+        assign o_z = i_a[0];
         assign numbers2 = 0;
     end
     else begin

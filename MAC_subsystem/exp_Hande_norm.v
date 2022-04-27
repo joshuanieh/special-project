@@ -12,12 +12,18 @@ module exp_Handle_norm(
 wire [50:0] numbers [0:11];
 
 // wire zero_flag = (norm_sum_with_leading1 == 0) ? 1'b1 : 0;
-wire zero_flag;
+wire zero_flag, inverted_zero_flag;
 wire [2:0] tmp_or;
-OR4 or1(tmp_or[0], norm_sum_with_leading1[0], norm_sum_with_leading1[1], norm_sum_with_leading1[2], norm_sum_with_leading1[3], numbers[0]);
-OR4 or2(tmp_or[1], norm_sum_with_leading1[4], norm_sum_with_leading1[5], norm_sum_with_leading1[6], norm_sum_with_leading1[7], numbers[1]);
-OR3 or3(tmp_or[2], norm_sum_with_leading1[8], norm_sum_with_leading1[9], norm_sum_with_leading1[10], numbers[2]);
-NR3 nr1(zero_flag, tmp_or[0], tmp_or[1], tmp_or[2], numbers[3]);
+OR#(11) or1000(
+    .o_z(inverted_zero_flag),
+    .i_a(norm_sum_with_leading1),
+    .number(numbers[0])
+);
+IV inv1000(zero_flag, inverted_zero_flag, numbers[1]);
+// OR4 or1(tmp_or[0], norm_sum_with_leading1[0], norm_sum_with_leading1[1], norm_sum_with_leading1[2], norm_sum_with_leading1[3], numbers[0]);
+// OR4 or2(tmp_or[1], norm_sum_with_leading1[4], norm_sum_with_leading1[5], norm_sum_with_leading1[6], norm_sum_with_leading1[7], numbers[1]);
+// OR3 or3(tmp_or[2], norm_sum_with_leading1[8], norm_sum_with_leading1[9], norm_sum_with_leading1[10], numbers[2]);
+// NR3 nr1(zero_flag, tmp_or[0], tmp_or[1], tmp_or[2], numbers[3]);
 
 // final_exp = max_exp + signed_exp_diff + exp_carry - 24 + 15
 // wire signed [8-1:0] final_exp = $signed({1'd0, max_exp}) + $signed(signed_exp_diff) + 

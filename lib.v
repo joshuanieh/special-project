@@ -652,6 +652,7 @@ module FA1(S,CO,A,B,CI,number);
        endspecify
 endmodule
 
+//multi bits and
 module ADD#(
     parameter BW = 2
 )(
@@ -675,6 +676,35 @@ module ADD#(
     endgenerate
 
     assign o_c = c[BW-1];
+
+    reg [50:0] num;
+    integer j;
+    always @(*) begin
+        num = 0;
+        for (j=0; j<BW; j=j+1) begin 
+            num = num + numbers[j];
+        end
+    end
+
+    assign number = num;
+
+endmodule
+
+//multi bits inv
+module INV#(
+    parameter BW = 2
+)(
+    input [BW-1:0] i_a,
+    output [BW-1:0] o_z,
+    output [50:0] number
+);
+    wire [50:0] numbers[BW-1:0];
+    genvar i;
+    generate
+        for (i=1; i<BW; i=i+1) begin
+            IV g_i(o_z[i], i_a[i], numbers[i]);
+        end
+    endgenerate
 
     reg [50:0] num;
     integer j;
@@ -768,6 +798,8 @@ endmodule
 
 // endmodule
 
+
+//multi inputs or
 module OR#(
 	parameter BW = 2
 )(

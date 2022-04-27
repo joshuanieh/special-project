@@ -1046,7 +1046,7 @@ module COM6(equivalent, greater, A, B, number);
  
     wire A65_g_B65;
     // assign A65_g_B65 = (A[5] && ~B[5]) || ((A[5] == B[5]) && (A[4] && ~B[4]));
-    wire A51_B50, A5_eq_B5, A41_B40;
+    wire A51_B50, A5_eq_B5, A4_eq_B4, A41_B40;
     wire inv_B5, inv_B4;
     wire tmp;
     IV invB5(inv_B5, B[5], numbers[0]);
@@ -1085,13 +1085,21 @@ module EQ6(equivalent, A, B, number);
     output       equivalent;
     output [50:0] number;
 
-    wire   [50:0] numbers[0:17];
+    wire   [50:0] numbers[0:3];
+
+    wire A5_eq_B5, A4_eq_B4;
+    EN A5_xnor_B5(A5_eq_B5, A[5], B[5], numbers[0]);
+    EN A4_xnor_B4(A4_eq_B4, A[4], B[4], numbers[1]);
+
+    wire eq_last4, g_last4;
+    COM cmp(eq_last4, g_last4, A[3:0], B[3:0], numbers[2]);
+    AN3 o_eq(equivalent, A5_eq_B5, A4_eq_B4, eq_last4, numbers[3]);
 
     reg [50:0] sum;
     integer j;
     always @(*) begin
         sum = 0;
-        for (j=0; j<18; j=j+1) begin 
+        for (j=0; j<4; j=j+1) begin 
             sum = sum + numbers[j];
         end
     end

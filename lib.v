@@ -1044,28 +1044,29 @@ module COM6(equivalent, greater, A, B, number);
 
     wire   [50:0] numbers[0:11];
  
-    wire A65_g_B65;
-    // assign A65_g_B65 = (A[5] && ~B[5]) || ((A[5] == B[5]) && (A[4] && ~B[4]));
-    wire A51_B50, A5_eq_B5, A4_eq_B4, A41_B40;
+    wire A54_g_B54;
+
+    // assign A54_g_B54 = (A[5] && ~B[5]) || ((A[5] == B[5]) && (A[4] && ~B[4]));
+    wire A51_B50, A5_eq_B5, A41_B40, A4_eq_B4;
     wire inv_B5, inv_B4;
     wire tmp;
     IV invB5(inv_B5, B[5], numbers[0]);
     AN2 A5_and_invB5(A51_B50, A[5], inv_B5, numbers[1]);
     EN A5_xnor_B5(A5_eq_B5, A[5], B[5], numbers[2]);
-    EN A4_xnor_B4(A4_eq_B4, A[5], B[5], numbers[3]);
     IV invB4(inv_B4, B[4], numbers[4]);
     AN2 A4_and_invB4(A41_B40, A[4], inv_B4, numbers[5]);
     AN2 an1(tmp, A5_eq_B5, A41_B40, numbers[6]);
-    OR2 or1(A65_g_B65, A51_B50, tmp, numbers[7]);
+    OR2 or1(A54_g_B54, A51_B50, tmp, numbers[7]);
 
+    
+    EN A4_xnor_B4(A4_eq_B4, A[4], B[4], numbers[3]);
     wire eq_last4, g_last4;
     COM cmp(eq_last4, g_last4, A[3:0], B[3:0], numbers[8]);
-    wire eq, g;
-    AN3 o_eq(eq, A5_eq_B5, A4_eq_B4, eq_last4, numbers[9]);
-    // assign g = A65_g_B65 || (A5_eq_B5 && A4_eq_B4 && g_last4);
+    AN3 o_eq(equivalent, A5_eq_B5, A4_eq_B4, eq_last4, numbers[9]);
+    // assign greater = A54_g_B54 || (A5_eq_B5 && A4_eq_B4 && g_last4);
     wire tmp2;
     AN3 an2(tmp2, A5_eq_B5, A4_eq_B4, g_last4, numbers[10]);
-    OR2 or2(g, A65_g_B65, tmp2, numbers[11]);
+    OR2 or2(greater, A54_g_B54, tmp2, numbers[11]);
 
     reg [50:0] sum;
     integer j;

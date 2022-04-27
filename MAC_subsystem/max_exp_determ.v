@@ -65,9 +65,9 @@ MX#(6) mx8(exp9_tmp, exp9, 6'd0, skip[0], numbers[8]);
 
 wire eq_21, eq_43, eq_65, eq_87, gr_21, gr_43, gr_65, gr_87;
 COM6 com21(eq_21, gr_21, exp1_tmp, exp2_tmp, numbers[9]);
-COM6 com43(eq_43, gr_43, exp1_tmp, exp2_tmp, numbers[10]);
-COM6 com65(eq_65, gr_65, exp1_tmp, exp2_tmp, numbers[11]);
-COM6 com87(eq_87, gr_87, exp1_tmp, exp2_tmp, numbers[12]);
+COM6 com43(eq_43, gr_43, exp3_tmp, exp4_tmp, numbers[10]);
+COM6 com65(eq_65, gr_65, exp5_tmp, exp6_tmp, numbers[11]);
+COM6 com87(eq_87, gr_87, exp7_tmp, exp8_tmp, numbers[12]);
 
 MX#(6) mux21(.o_z(wire1_1), .i_a(exp2_tmp), .i_b(exp1_tmp), .i_ctrl(gr_21), .number(numbers[13]));
 MX#(6) mux43(.o_z(wire1_2), .i_a(exp4_tmp), .i_b(exp3_tmp), .i_ctrl(gr_43), .number(numbers[14]));

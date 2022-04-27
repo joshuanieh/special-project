@@ -29,7 +29,7 @@ wire zero_img_flag;
 wire [1:0] img_flag_tmp;
 OR3 or_img_flag_1(img_flag_tmp[0], image[2], image[1], image[0], numbers[0]);
 OR4 or_img_flag_2(img_flag_tmp[1], image[6], image[5], image[4], image[3], numbers[1]);
-OR2 or_img_flag_3(zero_img_flag, img_flag_tmp[0], img_flag_tmp[1], numbers[2]);
+NR2 or_img_flag_3(zero_img_flag, img_flag_tmp[0], img_flag_tmp[1], numbers[2]);
 // wire zero_wgt_flag = weight_exp == 3'b111;
 wire zero_wgt_flag;
 AN3 and_wgt_flag(zero_wgt_flag, weight_exp[2], weight_exp[1], weight_exp[0], numbers[3]);
@@ -48,7 +48,7 @@ EO eo1(denorm_sign, image_sign, weight_sign, numbers[5]);
 wire [4-1:0] denorm_pp_with_leading_one = {denorm_sign, 1'b1, image_mant};
 
 wire denorm_pp;
-// assign denorm_pp = (zero_flag) ? 4'd0 : denorm_pp_with_leading_one;
+// assign denorm._pp = (zero_flag) ? 4'd0 : denorm_pp_with_leading_one;
 MX#(4) mux1(denorm_pp, denorm_pp_with_leading_one, 4'd0, zero_flag, numbers[6]);
 wire exp;
 // assign exp = (zero_flag) ? 6'd0 : image_exp + weight_exp;

@@ -263,6 +263,7 @@ always@(posedge i_clk or negedge i_rst_n) begin
         skip_r  <= skip   ;
 
         Q_frac_reg <= Q_frac_wire;
+        // Q_frac_reg <= (i_inhibit) ? Q_frac_reg : Q_frac;
     end
 end
 

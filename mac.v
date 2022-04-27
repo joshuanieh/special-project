@@ -124,17 +124,21 @@ wire          o_valid_in;
 reg  [16-1:0] conv_r;
 wire [16-1:0] conv_w;
 
-wire [50:0]   number[7-1:0];
+wire [50:0]   number[9-1:0];
 //-- <MK Sun Adding some new flag to indicate>
 // wire o_update_mode_stg1, o_update_mode_stg2, o_update_mode_stg3, o_update_mode_stg4;
 
 // MUX21H g(Z,A,B,CTRL,number)
 
 // assign o_valid_in = (i_inhibit) ? 1'b0 : stg5_o_valid;
-MX#(1) g_1(o_valid_in, 1'b0, stg5_o_valid, i_inhibit, number[0]);
+MX#(1) g_1(o_valid_in, stg5_o_valid, 1'b0, i_inhibit, number[0]);
 assign o_conv = conv_r;
+wire and_result;
+wire inv_result;
+IV inv1(inv_result, o_valid_in, number[7]);
+AN2 and1(and_result, i_inhibit, inv_result, number[8]);
 // assign conv_w = (i_inhibit && ~o_valid_in) ? 16'd0 : stg5_o_conv;
-MX#(16) g_2(conv_w, 16'd0, stg5_o_conv, (i_inhibit && ~o_valid_in), number[1]);
+MX#(16) g_2(conv_w, stg5_o_conv, 16'd0, and_result, number[1]);
 
 mac_stg1 stg1(.i_clk(clk),
               .i_rst_n(i_rst_n),
@@ -288,7 +292,7 @@ reg [50:0] sum;
 integer j;
 always @(*) begin
     sum = 0;
-    for (j=0; j<7; j=j+1) begin 
+    for (j=0; j<9; j=j+1) begin 
         sum = sum + number[j];
     end
 end

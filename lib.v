@@ -736,47 +736,47 @@ endmodule
 
 // endmodule
 
-module OR#(
-	parameter BW = 2
-)(
-	output [BW-1:0] o_z,
-	input i_a [0:BW-1],
-	output [50:0] number
-);
+// module OR#(
+// 	parameter BW = 2
+// )(
+// 	output [BW-1:0] o_z,
+// 	input i_a [0:BW-1],
+// 	output [50:0] number
+// );
 
-wire [50:0] numbers [0:BW-1];
-parameter l = BW%2 ? (BW+1)/2 : BW/2;
+// wire [50:0] numbers [0:BW-1];
+// parameter l = BW%2 ? (BW+1)/2 : BW/2;
 
-wire or_result[0:l-1];
-wire [2*l-1:0] l2 = BW%2 ? {i_a, 1'b0} : i_a;
-wire [50:0] numbers2;
-genvar i;
-generate
-    if(BW == 1) begin
-        assign o_z = i_a;
-        assign numbers2 = 0;
-    end
-    else begin
-    	for (i=0; i<l; i=i+1) begin
-    		OR2 or1(or_result[i], l2[2*i], l2[2*i+1], numbers[i]);
-    	end
-        OR#(l) or2(o_z, or_result, numbers2);
-    end
+// wire or_result[0:l-1];
+// wire [2*l-1:0] l2 = BW%2 ? {i_a, 1'b0} : i_a;
+// wire [50:0] numbers2;
+// genvar i;
+// generate
+//     if(BW == 1) begin
+//         assign o_z = i_a;
+//         assign numbers2 = 0;
+//     end
+//     else begin
+//     	for (i=0; i<l; i=i+1) begin
+//     		OR2 or1(or_result[i], l2[2*i], l2[2*i+1], numbers[i]);
+//     	end
+//         OR#(l) or2(o_z, or_result, numbers2);
+//     end
 
-endgenerate
+// endgenerate
 
-reg [50:0] sum;
-integer j;
-always @(*) begin
-	sum = 0;
-	for (j=0; j<l-1; j=j+1) begin 
-		sum = sum + numbers[j];
-	end
-end
+// reg [50:0] sum;
+// integer j;
+// always @(*) begin
+// 	sum = 0;
+// 	for (j=0; j<l-1; j=j+1) begin 
+// 		sum = sum + numbers[j];
+// 	end
+// end
 
-assign number = (BW%2) ? sum + numbers2 : sum + numbers[l-1] + numbers2;
+// assign number = (BW%2) ? sum + numbers2 : sum + numbers[l-1] + numbers2;
 
-endmodule
+// endmodule
 
 
 //HS1
@@ -900,7 +900,11 @@ endmodule
 
 //Comparator
 module COM(equivalent, greaterEqual, A, B, number);
+<<<<<<< HEAD
     input  [3:0] A, B;
+=======
+    input  [4-1:0] A, B;
+>>>>>>> f0e3052dca82d14d015995b7f5d7f4685ecef630
     output       equivalent, greaterEqual;
     output [50:0] number;
 

@@ -701,7 +701,7 @@ module INV#(
     wire [50:0] numbers[BW-1:0];
     genvar i;
     generate
-        for (i=1; i<BW; i=i+1) begin
+        for (i=0; i<BW; i=i+1) begin
             IV g_i(o_z[i], i_a[i], numbers[i]);
         end
     endgenerate

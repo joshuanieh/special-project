@@ -6,7 +6,7 @@ module align_CG2_NOclkGating(
            output [50:0]   number
        );
 
-wire [50:0] numbers[27:0];
+wire [50:0] numbers[28:0];
 
 // Exponential Difference
 // partial products will be aligned to the max_exp
@@ -113,7 +113,7 @@ wire [14-1:0] mux89101112up;
 wire eq12, g12, ge12;
 COM6 com_12(eq12, g12, exp_diff, 6'd12, numbers[17]);
 OR2 or8(ge12, g12, eq12, numbers[24]);
-MX#(14) mux_89101112up(mux89101112up, mux891011, 14'd0, ge12, numbers[17]);
+MX#(14) mux_89101112up(mux89101112up, mux891011, 14'd0, ge12, numbers[28]);
 
 //forth stage
 MX#(14) mux_shifted_unsign_pp(shifted_unsign_pp, mux01234567, mux89101112up, ge8, numbers[18]);
@@ -148,7 +148,7 @@ reg [50:0] sum;
 integer j;
 always @(*) begin
     sum = 0;
-    for (j=0; j<28; j=j+1) begin 
+    for (j=0; j<29; j=j+1) begin 
         sum = sum + numbers[j];
     end
 end

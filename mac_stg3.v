@@ -166,5 +166,15 @@ always@(posedge i_clk  or negedge i_rst_n) begin
         Q_frac_reg <= i_Q_frac;
     end
 end
-assign o_transistor_num = 0;
+
+reg [50:0] sum;
+integer j;
+always @(*) begin
+    sum = 0;
+    for (j=0; j<8; j=j+1) begin 
+        sum = sum + numbers[j];
+    end
+end
+
+assign o_transistor_num = sum;
 endmodule

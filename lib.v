@@ -900,7 +900,11 @@ endmodule
 
 //Comparator
 module COM(equivalent, greaterEqual, A, B, number);
+<<<<<<< HEAD
+    input  [3:0] A, B;
+=======
     input  [4-1:0] A, B;
+>>>>>>> f0e3052dca82d14d015995b7f5d7f4685ecef630
     output       equivalent, greaterEqual;
     output [50:0] number;
 

@@ -144,5 +144,14 @@ ADD#(15) add_100(
 
 MX#(15) mux_align_pp(align_pp, {1'b0, shifted_unsign_pp}, negative_num, pp_sign, numbers[27]);
 
+reg [50:0] sum;
+integer j;
+always @(*) begin
+    sum = 0;
+    for (j=0; j<28; j=j+1) begin 
+        sum = sum + numbers[j];
+    end
+end
 
+assign number = sum;
 endmodule

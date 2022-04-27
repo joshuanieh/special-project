@@ -97,14 +97,14 @@ wire [18-1:0] sum1to8;
 //                 $signed(aligned_pp7_r) +
 //                 $signed(aligned_pp8_r) +
 //                 $signed(aligned_pp9_r);
-ADD#(15) add12(.i_a(aligned_pp1_r), .i_b(aligned_pp2_r), .o_s(sum12[14:0], .o_c(sum12[15]), .number(numbers[0])));
-ADD#(15) add34(.i_a(aligned_pp3_r), .i_b(aligned_pp4_r), .o_s(sum34[14:0], .o_c(sum34[15]), .number(numbers[1])));
-ADD#(15) add56(.i_a(aligned_pp5_r), .i_b(aligned_pp6_r), .o_s(sum56[14:0], .o_c(sum56[15]), .number(numbers[2])));
-ADD#(15) add78(.i_a(aligned_pp7_r), .i_b(aligned_pp8_r), .o_s(sum78[14:0], .o_c(sum78[15]), .number(numbers[3])));
-ADD#(16) add1234(.i_a(sum12), .i_b(sum34), .o_s(sum1234[15:0], .o_c(sum1234[16]), .number(numbers[4])));
-ADD#(17) add5678(.i_a(sum56), .i_b(sum78), .o_s(sum5678[15:0], .o_c(sum5678[16]), .number(numbers[5])));
-ADD#(17) add1to8(.i_a(sum1234), .i_b(sum5678), .o_s(sum1to8[16:0], .o_c(sum1to8[17]), .number(numbers[6])));
-ADD#(18) add1to9(.i_a(sum1to8), .i_b({3'b0, aligned_pp9_r}), .o_s(o_psum[17:0], .o_c(o_psum[18]), .number(numbers[7])));
+ADD#(15) add12(.i_a(aligned_pp1_r), .i_b(aligned_pp2_r), .o_s(sum12[14:0]), .o_c(sum12[15]), .number(numbers[0]));
+ADD#(15) add34(.i_a(aligned_pp3_r), .i_b(aligned_pp4_r), .o_s(sum34[14:0]), .o_c(sum34[15]), .number(numbers[1]));
+ADD#(15) add56(.i_a(aligned_pp5_r), .i_b(aligned_pp6_r), .o_s(sum56[14:0]), .o_c(sum56[15]), .number(numbers[2]));
+ADD#(15) add78(.i_a(aligned_pp7_r), .i_b(aligned_pp8_r), .o_s(sum78[14:0]), .o_c(sum78[15]), .number(numbers[3]));
+ADD#(16) add1234(.i_a(sum12), .i_b(sum34), .o_s(sum1234[15:0]), .o_c(sum1234[16]), .number(numbers[4]));
+ADD#(17) add5678(.i_a(sum56), .i_b(sum78), .o_s(sum5678[15:0]), .o_c(sum5678[16]), .number(numbers[5]));
+ADD#(17) add1to8(.i_a(sum1234), .i_b(sum5678), .o_s(sum1to8[16:0]), .o_c(sum1to8[17]), .number(numbers[6]));
+ADD#(18) add1to9(.i_a(sum1to8), .i_b({3'b0, aligned_pp9_r}), .o_s(o_psum[17:0]), .o_c(o_psum[18]), .number(numbers[7]));
 always@(*) begin
     if (i_inhibit) begin
         valid_w = valid_r;

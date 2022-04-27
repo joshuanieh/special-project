@@ -69,7 +69,7 @@ module mac_stg2(input           i_clk,
                 output [ 5-1:0] o_Q_frac,
                 output [50:0] o_transistor_num);
 
-
+wire [50:0] numbers[9-1:0];
 reg valid_r, valid_w;
 
 // registers for partial products
@@ -108,41 +108,51 @@ assign o_Q_frac = Q_frac_reg;
 align_CG2_NOclkGating align1(.denorm_pp(pp1_r),
                              .exp(exp1_r),
                              .max_exp(max_exp_r),
-                             .align_pp(o_aligned_pp1));
+                             .align_pp(o_aligned_pp1),
+                             .number(numbers[0]));
 align_CG2_NOclkGating align2(.denorm_pp(pp2_r),
                              .exp(exp2_r),
                              .max_exp(max_exp_r),
-                             .align_pp(o_aligned_pp2));
+                             .align_pp(o_aligned_pp2),
+                             .number(numbers[1]));
 align_CG2_NOclkGating align3(.denorm_pp(pp3_r),
                              .exp(exp3_r),
                              .max_exp(max_exp_r),
-                             .align_pp(o_aligned_pp3));
+                             .align_pp(o_aligned_pp3),
+                             .number(numbers[2]));
 align_CG2_NOclkGating align4(.denorm_pp(pp4_r),
                              .exp(exp4_r),
                              .max_exp(max_exp_r),
-                             .align_pp(o_aligned_pp4));
+                             .align_pp(o_aligned_pp4),
+                             .number(numbers[3]));
 align_CG2_NOclkGating align5(.denorm_pp(pp5_r),
                              .exp(exp5_r),
                              .max_exp(max_exp_r),
-                             .align_pp(o_aligned_pp5));
+                             .align_pp(o_aligned_pp5),
+                             .number(numbers[4]));
 align_CG2_NOclkGating align6(.denorm_pp(pp6_r),
                              .exp(exp6_r),
                              .max_exp(max_exp_r),
-                             .align_pp(o_aligned_pp6));
+                             .align_pp(o_aligned_pp6),
+                             .number(numbers[5]));
 align_CG2_NOclkGating align7(.denorm_pp(pp7_r),
                              .exp(exp7_r),
                              .max_exp(max_exp_r),
-                             .align_pp(o_aligned_pp7));
+                             .align_pp(o_aligned_pp7),
+                             .number(numbers[6]));
 align_CG2_NOclkGating align8(.denorm_pp(pp8_r),
                              .exp(exp8_r),
                              .max_exp(max_exp_r),
-                             .align_pp(o_aligned_pp8));
+                             .align_pp(o_aligned_pp8),
+                             .number(numbers[7]));
 align_CG2_NOclkGating align9(.denorm_pp(pp9_r),
                              .exp(exp9_r),
                              .max_exp(max_exp_r),
-                             .align_pp(o_aligned_pp9));
+                             .align_pp(o_aligned_pp9),
+                             .number(numbers[8]));
 
 always@(*) begin
+    //Need to be changed to multiplexers, but every stage does have these things, the delay can be cancelled
     if (i_inhibit) begin
         valid_w = valid_r;
 
@@ -249,6 +259,15 @@ always@(posedge i_clk or negedge i_rst_n) begin
         Q_frac_reg <= i_Q_frac;
     end
 end
-assign o_transistor_num = 0;
 
+reg [50:0] sum;
+integer j;
+always @(*) begin
+    sum = 0;
+    for (j=0; j<9; j=j+1) begin 
+        sum = sum + numbers[j];
+    end
+end
+
+assign o_transistor_num = sum;
 endmodule

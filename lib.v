@@ -371,6 +371,7 @@ module ND3(Z,A,B,C,number);
            ( C *> Z ) = ( Tp_C_Z );
        endspecify
 endmodule
+
 module ND4(Z,A,B,C,D,number);
        output Z;
        input A,B,C,D;
@@ -398,6 +399,37 @@ module ND4(Z,A,B,C,D,number);
            ( D *> Z ) = ( Tp_D_Z );
        endspecify
 endmodule
+
+module ND5(Z,A,B,C,D,E,number);
+       output Z;
+       input A,B,C,D,E;
+ parameter size = 10'd50; 
+  output [size:0] number;
+  wire  [size:0] number;
+  assign number=11'd10;   
+       // netlist
+       nand g1(Z,A,B,C,D,E);
+
+       // specify block
+       specify
+
+           // delay parameters
+
+           specparam Tp_A_Z = 0.386;
+           specparam Tp_B_Z = 0.386;
+           specparam Tp_C_Z = 0.386;
+           specparam Tp_D_Z = 0.386;
+           specparam Tp_E_Z = 0.386;
+
+           // path delay
+           ( A *> Z ) = ( Tp_A_Z );
+           ( B *> Z ) = ( Tp_B_Z );
+           ( C *> Z ) = ( Tp_C_Z );
+           ( D *> Z ) = ( Tp_D_Z );
+           ( E *> Z ) = ( Tp_E_Z );
+       endspecify
+endmodule
+
 module NR2(Z,A,B,number);
         output Z;
        input A,B;
@@ -736,47 +768,46 @@ endmodule
 
 // endmodule
 
-// module OR#(
-// 	parameter BW = 2
-// )(
-// 	output [BW-1:0] o_z,
-// 	input i_a [0:BW-1],
-// 	output [50:0] number
-// );
+module OR#(
+	parameter BW = 2
+)(
+	output [BW-1:0] o_z,
+	input i_a [0:BW-1],
+	output [50:0] number
+);
 
-// wire [50:0] numbers [0:BW-1];
-// parameter l = BW%2 ? (BW+1)/2 : BW/2;
+wire [50:0] numbers [0:BW-1];
+parameter l = BW%2 ? (BW+1)/2 : BW/2;
 
-// wire or_result[0:l-1];
-// wire [2*l-1:0] l2 = BW%2 ? {i_a, 1'b0} : i_a;
-// wire [50:0] numbers2;
-// genvar i;
-// generate
-//     if(BW == 1) begin
-//         assign o_z = i_a;
-//         assign numbers2 = 0;
-//     end
-//     else begin
-//     	for (i=0; i<l; i=i+1) begin
-//     		OR2 or1(or_result[i], l2[2*i], l2[2*i+1], numbers[i]);
-//     	end
-//         OR#(l) or2(o_z, or_result, numbers2);
-//     end
+wire or_result[0:l-1];
+wire [2*l-1:0] l2 = BW%2 ? {i_a, 1'b0} : i_a;
+wire [50:0] numbers2;
+genvar i;
+generate
+    if(BW == 1) begin
+        assign o_z = i_a;
+        assign numbers2 = 0;
+    end
+    else begin
+    	for (i=0; i<l; i=i+1) begin
+    		OR2 or1(or_result[i], l2[2*i], l2[2*i+1], numbers[i]);
+    	end
+        OR#(l) or2(o_z, or_result, numbers2);
+    end
+endgenerate
 
-// endgenerate
+reg [50:0] sum;
+integer j;
+always @(*) begin
+	sum = 0;
+	for (j=0; j<l-1; j=j+1) begin 
+		sum = sum + numbers[j];
+	end
+end
 
-// reg [50:0] sum;
-// integer j;
-// always @(*) begin
-// 	sum = 0;
-// 	for (j=0; j<l-1; j=j+1) begin 
-// 		sum = sum + numbers[j];
-// 	end
-// end
+assign number = (BW%2) ? sum + numbers2 : sum + numbers[l-1] + numbers2;
 
-// assign number = (BW%2) ? sum + numbers2 : sum + numbers[l-1] + numbers2;
-
-// endmodule
+endmodule
 
 
 //HS1
@@ -898,14 +929,39 @@ module SUB#(
 
 endmodule
 
-//Comparator
-module COM(equivalent, greaterEqual, A, B, number);
-<<<<<<< HEAD
-    input  [3:0] A, B;
-=======
+//Equivalent gate
+module EQ(equivalent, A, B, number);
     input  [4-1:0] A, B;
->>>>>>> f0e3052dca82d14d015995b7f5d7f4685ecef630
-    output       equivalent, greaterEqual;
+    output       equivalent;
+    output [50:0] number;
+
+    wire   [50:0] numbers[0:4];
+
+    //equivalent = 1 iff A is equivalent to B
+    wire   [3:0] n;
+    EO g1(n[3], A[3], B[3], numbers[0]);
+    EO g2(n[2], A[2], B[2], numbers[1]);
+    EO g3(n[1], A[1], B[1], numbers[2]);
+    EO g4(n[0], A[0], B[0], numbers[3]);
+    NR4 g5(equivalent, n[3], n[2], n[1], n[0], numbers[4]);
+
+    reg [50:0] sum;
+    integer j;
+    always @(*) begin
+        sum = 0;
+        for (j=0; j<5; j=j+1) begin 
+            sum = sum + numbers[j];
+        end
+    end
+
+    assign number = sum;
+
+endmodule
+
+//Comparator 4 bits
+module COM(equivalent, greater, A, B, number);
+    input  [4-1:0] A, B;
+    output       equivalent, greater;
     output [50:0] number;
 
     wire   [50:0] numbers[0:17];
@@ -918,7 +974,7 @@ module COM(equivalent, greaterEqual, A, B, number);
     EO g4(n[0], A[0], B[0], numbers[3]);
     NR4 g5(equivalent, n[3], n[2], n[1], n[0], numbers[4]);
 
-    //greaterEqual = 1 iff A is greater than or equal to B
+    //greater = 1 iff A is greater than B
     wire   [3:0] invB;
     wire   [3:0] m;
     wire   [3:0] invN;
@@ -933,8 +989,8 @@ module COM(equivalent, greaterEqual, A, B, number);
     ND2 g12(m[0], A[3], invB[3], numbers[13]);
     ND3 g13(m[1], invN[3], A[2], invB[2], numbers[14]);
     ND4 g14(m[2], invN[3], invN[2], A[1], invB[1], numbers[15]);
-    ND4 g15(m[3], invN[3], invN[2], invN[1], A[0], numbers[16]);
-    ND4 g16(greaterEqual, m[3], m[2], m[1], m[0], numbers[17]);
+    ND5 g15(m[3], invN[3], invN[2], invN[1], A[0], invB[0], numbers[16]);
+    ND4 g16(greater, m[3], m[2], m[1], m[0], numbers[17]);
 
     reg [50:0] sum;
     integer j;

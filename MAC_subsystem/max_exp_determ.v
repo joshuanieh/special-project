@@ -101,6 +101,6 @@ always @(*) begin
 	end
 end
 
-assign number = 0;
+assign number = sum;
 
 endmodule

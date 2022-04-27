@@ -41,6 +41,8 @@ reg          sgn_r, sgn_w;
 reg [ 6-1:0] max_exp_r, max_exp_w;
 reg [ 5-1:0] Q_frac_reg;
 
+wire [50:0] numbers [0:1];
+
 assign o_valid = valid_r;
 
 exp_Handle_norm F2(.norm_sum_with_leading1(norm_sum_r),
@@ -50,7 +52,8 @@ exp_Handle_norm F2(.norm_sum_with_leading1(norm_sum_r),
                    .max_exp(max_exp_r),
                    .Q_frac(Q_frac_reg),
                    
-                   .MAC_output(o_conv));
+                   .MAC_output(o_conv),
+                   .number(numbers[0]));
 
 always@(*) begin
     if (i_inhibit) begin
@@ -91,6 +94,16 @@ always@(posedge i_clk  or negedge i_rst_n) begin
         Q_frac_reg  <= i_Q_frac   ;
     end
 end
-assign o_transistor_num = 0;
+
+reg [50:0] num;
+integer j;
+always @(*) begin
+    num = 0;
+    for (j=0; j<0; j=j+1) begin 
+        num = num + numbers[j];
+    end
+end
+
+assign o_transistor_num = num;
 
 endmodule

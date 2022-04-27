@@ -1004,3 +1004,46 @@ module COM(equivalent, greater, A, B, number);
     assign number = sum;
 
 endmodule
+
+module COM6(equivalent, greater, A, B, number);
+    input  [6-1:0] A, B;
+    output       equivalent, greater;
+    output [50:0] number;
+
+    wire   [50:0] numbers[0:17];
+
+    // wire high2(A[5] && ~B[5]) || ((A[5] == B[5]) && (A[4] && ~B[4]));
+
+
+    reg [50:0] sum;
+    integer j;
+    always @(*) begin
+        sum = 0;
+        for (j=0; j<18; j=j+1) begin 
+            sum = sum + numbers[j];
+        end
+    end
+
+    assign number = sum;
+
+endmodule
+
+module EQ6(equivalent, A, B, number);
+    input  [6-1:0] A, B;
+    output       equivalent;
+    output [50:0] number;
+
+    wire   [50:0] numbers[0:17];
+
+    reg [50:0] sum;
+    integer j;
+    always @(*) begin
+        sum = 0;
+        for (j=0; j<18; j=j+1) begin 
+            sum = sum + numbers[j];
+        end
+    end
+
+    assign number = sum;
+
+endmodule

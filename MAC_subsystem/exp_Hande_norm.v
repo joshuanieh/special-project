@@ -70,10 +70,6 @@ OR2 or6(need_to_operate_in_subnormal, final_exp_allzero, final_exp[7], numbers[8
 always@(*) begin
     MAC_output = wire_MAC_output;
 end
-always@(final_exp) begin
-    // $display("%d, %d, %d, %d, %d", mux0123, mux4567, mux01234567, g4, final_exp);
-    $display("%d, %d", wire_MAC_output, g8);
-end
 
 //first stage
 wire eq0;

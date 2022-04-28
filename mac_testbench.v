@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-`define CYCLE      0.800
+`define CYCLE      0.00800
 
 module mac_testbench();
 
@@ -25,14 +25,6 @@ always begin
 end
 
 integer latency;
-always @(posedge clk or negedge rstn) begin 
-    if (~rstn) begin 
-        latency = -1;
-    end
-    else begin
-        latency = latency + 1;
-    end
-end
 
 //-- Image / Weight / Golden Memory (65536)
 reg [24-1:0] IMG_MEM [0:N];
@@ -72,6 +64,7 @@ always @(posedge clk) begin
 
         mem_address <= 0;
         out_address <= 0;
+        latency = -1;
     end
     else begin
         if (sim_begin) begin
@@ -80,6 +73,7 @@ always @(posedge clk) begin
             
             mem_address <= mem_address + 1;
             out_address <= (o_valid) ? out_address + 1 : out_address;
+            latency = latency + 1;
         end
         else begin
             img_in <= 0;
@@ -223,6 +217,7 @@ integer l_p = 0;
 integer out_batch;
 always @(posedge clk) begin
     if (o_valid == 0 && mem_address > N+100) begin
+        $display("cycle time: %f", `CYCLE);
         $display("latency: %d", latency);
         $display("transistor numbers: %d", o_transistor_num);
         //-- Since the result has written back to the DRAM, we can write the result to the text file to check the content is correct or not.

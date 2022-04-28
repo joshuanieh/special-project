@@ -163,7 +163,7 @@ OR#(15)  g2011(norm_sum_with_leading1[0], norm_sum_with_leading1_array[0], numbe
 //         default: signed_exp_diff = 5'sd0;
 //     endcase
 // end
-wire signed [5-1:0] exp[15];
+wire signed [5-1:0] exp[15-1:0];
 assign exp[14] = 5'sd4;
 assign exp[13] = 5'sd3;
 assign exp[12] = 5'sd2;
@@ -261,16 +261,16 @@ wire [3:0] grs = {1'b0, guard_bit, round_bit, sticky_bit};
 always@(*) begin
     norm_sum_with_leading1_rne = wire_norm_sum_with_leading1_rne;
 end
-wire [0:0] grs_equal01245[4:0];
+wire [4:0] grs_equal01245;
 EQ eq0(grs_equal01245[0], grs, 4'b0000, numbers[70]);
 EQ eq1(grs_equal01245[1], grs, 4'b0001, numbers[63]);
 EQ eq2(grs_equal01245[2], grs, 4'b0010, numbers[64]);
 EQ eq4(grs_equal01245[3], grs, 4'b0100, numbers[65]);
 EQ eq5(grs_equal01245[4], grs, 4'b0101, numbers[66]);
 
-wire grs_not_equal01245;
-OR#(5) or01245(grs_not_equal01245, grs_equal01245[0], numbers[67]);
-MX#(12) mux_result(.o_z(wire_norm_sum_with_leading1_rne), .i_a(norm_sum_with_leading1_trun), .i_b(norm_sum_with_leading1_incr), .i_ctrl(grs_not_equal01245), .number(numbers[68]));
+wire grs__equal01245;
+OR#(5) or01245(grs__equal01245, grs_equal01245, numbers[67]);
+MX#(12) mux_result(.o_z(wire_norm_sum_with_leading1_rne), .i_a(norm_sum_with_leading1_incr), .i_b(norm_sum_with_leading1_trun), .i_ctrl(grs__equal01245), .number(numbers[68]));
 
 assign exp_carry = norm_sum_with_leading1_rne[11];
 

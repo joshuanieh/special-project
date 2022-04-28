@@ -719,6 +719,36 @@ module INV#(
 
 endmodule
 
+//multi bits inv
+module AND#(
+    parameter BW = 2
+)(
+    input [BW-1:0] i_a,
+    input [BW-1:0] i_b,
+    output [BW-1:0] o_z,
+    output [50:0] number
+);
+    wire [50:0] numbers[BW-1:0];
+    genvar i;
+    generate
+        for (i=0; i<BW; i=i+1) begin
+            AN2 g_i(o_z[i], i_a[i], i_b[i], numbers[i]);
+        end
+    endgenerate
+
+    reg [50:0] num;
+    integer j;
+    always @(*) begin
+        num = 0;
+        for (j=0; j<BW; j=j+1) begin 
+            num = num + numbers[j];
+        end
+    end
+
+    assign number = num;
+
+endmodule
+
 module MX#(
     parameter BW = 2
 )(

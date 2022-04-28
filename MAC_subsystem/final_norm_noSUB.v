@@ -1,7 +1,7 @@
 module final_norm_noSUB(
            input  [19-1:0] sum,
            output [11-1:0] final_norm_sum_with_leading1,
-           output [ 5-1:0] signed_exp_diff,
+           output signed [5-1:0] signed_exp_diff,
            output exp_carry,
            output sign,
            output [50:0] number
@@ -126,17 +126,6 @@ NR3 g_20(leading_vector[0], first_thirteen_bits_or, unsign_sum[4], inverted_unsi
 // end
 wire [11-1:0] norm_sum_with_leading1;
 wire [15-1:0] norm_sum_with_leading1_array[11-1:0];
-// assign norm_sum_with_leading1_array[10] = unsign_sum[17:3] & leading_vector;
-// assign norm_sum_with_leading1_array[9] = unsign_sum[16:2] & leading_vector;
-// assign norm_sum_with_leading1_array[8] = unsign_sum[15:1] & leading_vector;
-// assign norm_sum_with_leading1_array[7] = unsign_sum[14:0] & leading_vector;
-// assign norm_sum_with_leading1_array[6] = {unsign_sum[13:0], 1'd0} & leading_vector;
-// assign norm_sum_with_leading1_array[5] = {unsign_sum[12:0], 2'd0} & leading_vector;
-// assign norm_sum_with_leading1_array[4] = {unsign_sum[11:0], 3'd0} & leading_vector;
-// assign norm_sum_with_leading1_array[3] = {unsign_sum[10:0], 4'd0} & leading_vector;
-// assign norm_sum_with_leading1_array[2] = {unsign_sum[9:0], 5'd0} & leading_vector;
-// assign norm_sum_with_leading1_array[1] = {unsign_sum[8:0], 6'd0} & leading_vector;
-// assign norm_sum_with_leading1_array[0] = {unsign_sum[7:0], 7'd0} & leading_vector;
 AND#(15) g1001(norm_sum_with_leading1_array[10], unsign_sum[17:3], leading_vector, numbers[43]);
 AND#(15) g1002(norm_sum_with_leading1_array[9], unsign_sum[16:2], leading_vector, numbers[42]);
 AND#(15) g1003(norm_sum_with_leading1_array[8], unsign_sum[15:1], leading_vector, numbers[22]);
@@ -161,28 +150,66 @@ OR#(15)  g2009(norm_sum_with_leading1[2], norm_sum_with_leading1_array[2], numbe
 OR#(15)  g209(norm_sum_with_leading1[1], norm_sum_with_leading1_array[1], numbers[40]);
 OR#(15)  g2011(norm_sum_with_leading1[0], norm_sum_with_leading1_array[0], numbers[41]);
 // Change exp according to decimal point shift
-reg signed [5-1:0] signed_exp_diff;
-always @(*) begin
-    case (leading_vector)
-        15'b10000_00000_00000: signed_exp_diff =  5'sd4 ; // Decimal point shift 4-bit left (<-)
-        15'b01000_00000_00000: signed_exp_diff =  5'sd3 ; // Decimal point shift 3-bit left (<-)
-        15'b00100_00000_00000: signed_exp_diff =  5'sd2 ; // Decimal point shift 2-bit left (<-)
-        15'b00010_00000_00000: signed_exp_diff =  5'sd1 ; // Decimal point shift 1-bit left (<-)
-        15'b00001_00000_00000: signed_exp_diff =  5'sd0 ; // No shift
-        15'b00000_10000_00000: signed_exp_diff = -5'sd1 ; // Decimal point shift 1-bit right (->)
-        15'b00000_01000_00000: signed_exp_diff = -5'sd2 ; // Decimal point shift 2-bit right (->)
-        15'b00000_00100_00000: signed_exp_diff = -5'sd3 ; // Decimal point shift 3-bit right (->)
-        15'b00000_00010_00000: signed_exp_diff = -5'sd4 ; // Decimal point shift 4-bit right (->)
-        15'b00000_00001_00000: signed_exp_diff = -5'sd5 ; // Decimal point shift 5-bit right (->)
-        15'b00000_00000_10000: signed_exp_diff = -5'sd6 ; // Decimal point shift 6-bit right (->)
-        15'b00000_00000_01000: signed_exp_diff = -5'sd7 ; // Decimal point shift 7-bit right (->)
-        15'b00000_00000_00100: signed_exp_diff = -5'sd8 ; // Decimal point shift 8-bit right (->)
-        15'b00000_00000_00010: signed_exp_diff = -5'sd9 ; // Decimal point shift 9-bit right (->)
-        15'b00000_00000_00001: signed_exp_diff = -5'sd10; // Decimal point shift 10-bit right (->)
-        default: signed_exp_diff = 5'sd0;
-    endcase
-end
+// reg signed [5-1:0] signed_exp_diff;
+// always @(*) begin
+//     case (leading_vector)
+//         15'b10000_00000_00000: signed_exp_diff =  5'sd4 ; // Decimal point shift 4-bit left (<-)
+//         15'b01000_00000_00000: signed_exp_diff =  5'sd3 ; // Decimal point shift 3-bit left (<-)
+//         15'b00100_00000_00000: signed_exp_diff =  5'sd2 ; // Decimal point shift 2-bit left (<-)
+//         15'b00010_00000_00000: signed_exp_diff =  5'sd1 ; // Decimal point shift 1-bit left (<-)
+//         15'b00001_00000_00000: signed_exp_diff =  5'sd0 ; // No shift
+//         15'b00000_10000_00000: signed_exp_diff = -5'sd1 ; // Decimal point shift 1-bit right (->)
+//         15'b00000_01000_00000: signed_exp_diff = -5'sd2 ; // Decimal point shift 2-bit right (->)
+//         15'b00000_00100_00000: signed_exp_diff = -5'sd3 ; // Decimal point shift 3-bit right (->)
+//         15'b00000_00010_00000: signed_exp_diff = -5'sd4 ; // Decimal point shift 4-bit right (->)
+//         15'b00000_00001_00000: signed_exp_diff = -5'sd5 ; // Decimal point shift 5-bit right (->)
+//         15'b00000_00000_10000: signed_exp_diff = -5'sd6 ; // Decimal point shift 6-bit right (->)
+//         15'b00000_00000_01000: signed_exp_diff = -5'sd7 ; // Decimal point shift 7-bit right (->)
+//         15'b00000_00000_00100: signed_exp_diff = -5'sd8 ; // Decimal point shift 8-bit right (->)
+//         15'b00000_00000_00010: signed_exp_diff = -5'sd9 ; // Decimal point shift 9-bit right (->)
+//         15'b00000_00000_00001: signed_exp_diff = -5'sd10; // Decimal point shift 10-bit right (->)
+//         default: signed_exp_diff = 5'sd0;
+//     endcase
+// end
+wire signed [5-1:0] exp[15];
+assign exp[14] = 5'sd4;
+assign exp[13] = 5'sd3;
+assign exp[12] = 5'sd2;
+assign exp[11] = 5'sd1;
+assign exp[10] = 5'sd0;
+assign exp[9] = -5'sd1;
+assign exp[8] = -5'sd2;
+assign exp[7] = -5'sd3;
+assign exp[6] = -5'sd4;
+assign exp[5] = -5'sd5;
+assign exp[4] = -5'sd6;
+assign exp[3] = -5'sd7;
+assign exp[2] = -5'sd8;
+assign exp[1] = -5'sd9;
+assign exp[0] = -5'sd10;
 
+wire signed [5-1:0] signed_exp_diff;
+wire [15-1:0] signed_exp_diff_array[5-1:0];
+// assign signed_exp_diff_array[4] = {exp[14][4], exp[13][4], exp[12][4], exp[11][4], exp[10][4], exp[9][4], exp[8][4], exp[7][4], exp[6][4], exp[5][4], exp[4][4], exp[3][4], exp[2][4], exp[1][4], exp[0][4]} & leading_vector;
+// assign signed_exp_diff_array[3] = {exp[14][3], exp[13][3], exp[12][3], exp[11][3], exp[10][3], exp[9][3], exp[8][3], exp[7][3], exp[6][3], exp[5][3], exp[4][3], exp[3][3], exp[2][3], exp[1][3], exp[0][3]} & leading_vector;
+// assign signed_exp_diff_array[2] = {exp[14][2], exp[13][2], exp[12][2], exp[11][2], exp[10][2], exp[9][2], exp[8][2], exp[7][2], exp[6][2], exp[5][2], exp[4][2], exp[3][2], exp[2][2], exp[1][2], exp[0][2]} & leading_vector;
+// assign signed_exp_diff_array[1] = {exp[14][1], exp[13][1], exp[12][1], exp[11][1], exp[10][1], exp[9][1], exp[8][1], exp[7][1], exp[6][1], exp[5][1], exp[4][1], exp[3][1], exp[2][1], exp[1][1], exp[0][1]} & leading_vector;
+// assign signed_exp_diff_array[0] = {exp[14][0], exp[13][0], exp[12][0], exp[11][0], exp[10][0], exp[9][0], exp[8][0], exp[7][0], exp[6][0], exp[5][0], exp[4][0], exp[3][0], exp[2][0], exp[1][0], exp[0][0]} & leading_vector;
+AND#(15) g3001(signed_exp_diff_array[4], {exp[14][4], exp[13][4], exp[12][4], exp[11][4], exp[10][4], exp[9][4], exp[8][4], exp[7][4], exp[6][4], exp[5][4], exp[4][4], exp[3][4], exp[2][4], exp[1][4], exp[0][4]}, leading_vector, numbers[44]);
+AND#(15) g3002(signed_exp_diff_array[3], {exp[14][3], exp[13][3], exp[12][3], exp[11][3], exp[10][3], exp[9][3], exp[8][3], exp[7][3], exp[6][3], exp[5][3], exp[4][3], exp[3][3], exp[2][3], exp[1][3], exp[0][3]}, leading_vector, numbers[45]);
+AND#(15) g3003(signed_exp_diff_array[2], {exp[14][2], exp[13][2], exp[12][2], exp[11][2], exp[10][2], exp[9][2], exp[8][2], exp[7][2], exp[6][2], exp[5][2], exp[4][2], exp[3][2], exp[2][2], exp[1][2], exp[0][2]}, leading_vector, numbers[46]);
+AND#(15) g3004(signed_exp_diff_array[1], {exp[14][1], exp[13][1], exp[12][1], exp[11][1], exp[10][1], exp[9][1], exp[8][1], exp[7][1], exp[6][1], exp[5][1], exp[4][1], exp[3][1], exp[2][1], exp[1][1], exp[0][1]}, leading_vector, numbers[47]);
+AND#(15) g3005(signed_exp_diff_array[0], {exp[14][0], exp[13][0], exp[12][0], exp[11][0], exp[10][0], exp[9][0], exp[8][0], exp[7][0], exp[6][0], exp[5][0], exp[4][0], exp[3][0], exp[2][0], exp[1][0], exp[0][0]}, leading_vector, numbers[48]);
+
+OR#(15)  g4001(signed_exp_diff[4], signed_exp_diff_array[4], numbers[49]);
+OR#(15)  g4002(signed_exp_diff[3], signed_exp_diff_array[3], numbers[50]);
+OR#(15)  g4003(signed_exp_diff[2], signed_exp_diff_array[2], numbers[51]);
+OR#(15)  g4004(signed_exp_diff[1], signed_exp_diff_array[1], numbers[52]);
+OR#(15)  g4005(signed_exp_diff[0], signed_exp_diff_array[0], numbers[53]);
+
+// always @(*) begin
+//     $display("%b", exp[0][4]);
+// end
 /* -------------------------- Round to Nearest Even ------------------------- */
 wire guard_bit = norm_sum_with_leading1[0];
 reg round_bit, sticky_bit;

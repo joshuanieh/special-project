@@ -1111,6 +1111,39 @@ module COM6(equivalent, greater, A, B, number);
 
 endmodule
 
+module COM8(equivalent, greater, A, B, number);
+    input  [8-1:0] A, B;
+    output       equivalent, greater;
+    output [50:0] number;
+
+    wire   [50:0] numbers[0:4];
+    
+    wire eq_first4, g_first4;
+    COM cmp(eq_first4, g_first4, A[7:4], B[7:4], numbers[0]);
+
+    wire eq_last4, g_last4;
+    COM cmp(eq_last4, g_last4, A[3:0], B[3:0], numbers[1]);
+
+    AN3 o_eq(equivalent, eq_first4, eq_last4, numbers[2]);
+
+    // assign greater = g_first4 || (eq_first4 && g_last4);
+    wire tmp;
+    AN2 an1(tmp, eq_first4, g_last4, numbers[3]);
+    OR2 or1(greater, g_first4, tmp, numbers[4]);
+
+    reg [50:0] sum;
+    integer j;
+    always @(*) begin
+        sum = 0;
+        for (j=0; j<5; j=j+1) begin 
+            sum = sum + numbers[j];
+        end
+    end
+
+    assign number = sum;
+
+endmodule
+
 module EQ6(equivalent, A, B, number);
     input  [6-1:0] A, B;
     output       equivalent;
@@ -1131,6 +1164,34 @@ module EQ6(equivalent, A, B, number);
     always @(*) begin
         sum = 0;
         for (j=0; j<4; j=j+1) begin 
+            sum = sum + numbers[j];
+        end
+    end
+
+    assign number = sum;
+
+endmodule
+
+module EQ8(equivalent, A, B, number);
+    input  [8-1:0] A, B;
+    output       equivalent;
+    output [50:0] number;
+
+    wire   [50:0] numbers[0:2];
+
+    wire eq_first4, g_first4;
+    COM cmp(eq_first4, g_first4, A[7:4], B[7:4], numbers[0]);
+
+    wire eq_last4, g_last4;
+    COM cmp(eq_last4, g_last4, A[3:0], B[3:0], numbers[1]);
+
+    AN3 o_eq(equivalent, eq_first4, eq_last4, numbers[2]);
+
+    reg [50:0] sum;
+    integer j;
+    always @(*) begin
+        sum = 0;
+        for (j=0; j<3; j=j+1) begin 
             sum = sum + numbers[j];
         end
     end

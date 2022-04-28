@@ -91,14 +91,6 @@ NR2 g_19(leading_vector[1], first_thirteen_bits_or, inverted_unsigned_sum[4], nu
 
 // assign leading_vector[ 0] = ( (|unsign_sum[17: 4] == 0) && (unsign_sum[ 3] == 1'b1) ) ? 1'b1 : 0;
 NR3 g_20(leading_vector[0], first_thirteen_bits_or, unsign_sum[4], inverted_unsigned_sum[3], numbers[19]);
-// integer ij = 0;
-// always @(*) begin
-//     $display("%b", unsign_sum[16:3]);
-//     $display("%b", inverted_unsigned_sum);
-//     $display("%b", leading_vector);
-//     // $display("%d", ij);
-//     // ij = ij + 1;
-// end
 // norm_sum_with_leading1
 // | 10 |  9 |  8 |  7 |  6 |  5 |  4 |  3 |  2 |  1 |  0 |
 // |    .                                            | GB |
@@ -190,11 +182,6 @@ assign exp[0] = -5'sd10;
 
 wire signed [5-1:0] signed_exp_diff;
 wire [15-1:0] signed_exp_diff_array[5-1:0];
-// assign signed_exp_diff_array[4] = {exp[14][4], exp[13][4], exp[12][4], exp[11][4], exp[10][4], exp[9][4], exp[8][4], exp[7][4], exp[6][4], exp[5][4], exp[4][4], exp[3][4], exp[2][4], exp[1][4], exp[0][4]} & leading_vector;
-// assign signed_exp_diff_array[3] = {exp[14][3], exp[13][3], exp[12][3], exp[11][3], exp[10][3], exp[9][3], exp[8][3], exp[7][3], exp[6][3], exp[5][3], exp[4][3], exp[3][3], exp[2][3], exp[1][3], exp[0][3]} & leading_vector;
-// assign signed_exp_diff_array[2] = {exp[14][2], exp[13][2], exp[12][2], exp[11][2], exp[10][2], exp[9][2], exp[8][2], exp[7][2], exp[6][2], exp[5][2], exp[4][2], exp[3][2], exp[2][2], exp[1][2], exp[0][2]} & leading_vector;
-// assign signed_exp_diff_array[1] = {exp[14][1], exp[13][1], exp[12][1], exp[11][1], exp[10][1], exp[9][1], exp[8][1], exp[7][1], exp[6][1], exp[5][1], exp[4][1], exp[3][1], exp[2][1], exp[1][1], exp[0][1]} & leading_vector;
-// assign signed_exp_diff_array[0] = {exp[14][0], exp[13][0], exp[12][0], exp[11][0], exp[10][0], exp[9][0], exp[8][0], exp[7][0], exp[6][0], exp[5][0], exp[4][0], exp[3][0], exp[2][0], exp[1][0], exp[0][0]} & leading_vector;
 AND#(15) g3001(signed_exp_diff_array[4], {exp[14][4], exp[13][4], exp[12][4], exp[11][4], exp[10][4], exp[9][4], exp[8][4], exp[7][4], exp[6][4], exp[5][4], exp[4][4], exp[3][4], exp[2][4], exp[1][4], exp[0][4]}, leading_vector, numbers[44]);
 AND#(15) g3002(signed_exp_diff_array[3], {exp[14][3], exp[13][3], exp[12][3], exp[11][3], exp[10][3], exp[9][3], exp[8][3], exp[7][3], exp[6][3], exp[5][3], exp[4][3], exp[3][3], exp[2][3], exp[1][3], exp[0][3]}, leading_vector, numbers[45]);
 AND#(15) g3003(signed_exp_diff_array[2], {exp[14][2], exp[13][2], exp[12][2], exp[11][2], exp[10][2], exp[9][2], exp[8][2], exp[7][2], exp[6][2], exp[5][2], exp[4][2], exp[3][2], exp[2][2], exp[1][2], exp[0][2]}, leading_vector, numbers[46]);
@@ -212,29 +199,43 @@ OR#(15)  g4005(signed_exp_diff[0], signed_exp_diff_array[0], numbers[53]);
 // end
 /* -------------------------- Round to Nearest Even ------------------------- */
 wire guard_bit = norm_sum_with_leading1[0];
-reg round_bit, sticky_bit;
-always @(*) begin
-    case (leading_vector)
-        15'b10000_00000_00000: round_bit = unsign_sum[6]; // Decimal point shift 1-bit left (<-)
-        15'b01000_00000_00000: round_bit = unsign_sum[5]; // Decimal point shift 1-bit left (<-)
-        15'b00100_00000_00000: round_bit = unsign_sum[4]; // Decimal point shift 1-bit left (<-)
-        15'b00010_00000_00000: round_bit = unsign_sum[3]; // Decimal point shift 1-bit left (<-)
-        15'b00001_00000_00000: round_bit = unsign_sum[2]; // No shift
-        15'b00000_10000_00000: round_bit = unsign_sum[1]; // Decimal point shift 1-bit right (->)
-        15'b00000_01000_00000: round_bit = unsign_sum[0]; // Decimal point shift 2-bit right (->)
-        default: round_bit = 0;
-    endcase
-    case (leading_vector)
-        15'b10000_00000_00000: sticky_bit = |unsign_sum[5:0]; // Decimal point shift 1-bit left (<-)
-        15'b01000_00000_00000: sticky_bit = |unsign_sum[4:0]; // Decimal point shift 1-bit left (<-)
-        15'b00100_00000_00000: sticky_bit = |unsign_sum[3:0]; // Decimal point shift 1-bit left (<-)
-        15'b00010_00000_00000: sticky_bit = |unsign_sum[2:0]; // Decimal point shift 1-bit left (<-)
-        15'b00001_00000_00000: sticky_bit = |unsign_sum[1:0]; // No shift
-        15'b00000_10000_00000: sticky_bit = |unsign_sum[0]; // Decimal point shift 1-bit right (->)
-        default: sticky_bit = 0;
-    endcase
-end
+// reg round_bit, sticky_bit;
+// always @(*) begin
+//     case (leading_vector)
+//         15'b10000_00000_00000: round_bit = unsign_sum[6]; // Decimal point shift 1-bit left (<-)
+//         15'b01000_00000_00000: round_bit = unsign_sum[5]; // Decimal point shift 1-bit left (<-)
+//         15'b00100_00000_00000: round_bit = unsign_sum[4]; // Decimal point shift 1-bit left (<-)
+//         15'b00010_00000_00000: round_bit = unsign_sum[3]; // Decimal point shift 1-bit left (<-)
+//         15'b00001_00000_00000: round_bit = unsign_sum[2]; // No shift
+//         15'b00000_10000_00000: round_bit = unsign_sum[1]; // Decimal point shift 1-bit right (->)
+//         15'b00000_01000_00000: round_bit = unsign_sum[0]; // Decimal point shift 2-bit right (->)
+//         default: round_bit = 0;
+//     endcase
+//     case (leading_vector)
+//         15'b10000_00000_00000: sticky_bit = |unsign_sum[5:0]; // Decimal point shift 1-bit left (<-)
+//         15'b01000_00000_00000: sticky_bit = |unsign_sum[4:0]; // Decimal point shift 1-bit left (<-)
+//         15'b00100_00000_00000: sticky_bit = |unsign_sum[3:0]; // Decimal point shift 1-bit left (<-)
+//         15'b00010_00000_00000: sticky_bit = |unsign_sum[2:0]; // Decimal point shift 1-bit left (<-)
+//         15'b00001_00000_00000: sticky_bit = |unsign_sum[1:0]; // No shift
+//         15'b00000_10000_00000: sticky_bit = |unsign_sum[0]; // Decimal point shift 1-bit right (->)
+//         default: sticky_bit = 0;
+//     endcase
+// end
+wire round_bit, sticky_bit;
+wire [7-1:0] round_bit_array;
+AND#(7) g5001(round_bit_array, unsign_sum[6:0], leading_vector[14:8], numbers[54]);
+OR#(7)  g5002(round_bit, round_bit_array, numbers[55]);
 
+wire [6-1:0] sticky_bit_array, sticky_bit_array_real;
+assign sticky_bit_array[0] = unsign_sum[0];
+OR#(2)  g5003(sticky_bit_array[1], unsign_sum[1:0], numbers[56]);
+OR#(3)  g5004(sticky_bit_array[2], unsign_sum[2:0], numbers[57]);
+OR#(4)  g5005(sticky_bit_array[3], unsign_sum[3:0], numbers[58]);
+OR#(5)  g5006(sticky_bit_array[4], unsign_sum[4:0], numbers[59]);
+OR#(6)  g5007(sticky_bit_array[5], unsign_sum[5:0], numbers[60]);
+
+AND#(6) g5008(sticky_bit_array_real, sticky_bit_array, leading_vector[14:9], numbers[61]);
+OR#(6)  g5009(sticky_bit, sticky_bit_array_real, numbers[62]);
 
 wire [12-1:0] norm_sum_with_leading1_trun = {1'b0, norm_sum_with_leading1};
 wire [12-1:0] norm_sum_with_leading1_incr = norm_sum_with_leading1 + 1'b1;
@@ -283,7 +284,7 @@ reg [50:0] num;
 integer j;
 always @(*) begin
     num = 0;
-    for (j=0; j<44; j=j+1) begin 
+    for (j=0; j<63; j=j+1) begin 
         num = num + numbers[j];
     end
 end

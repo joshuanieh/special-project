@@ -238,31 +238,46 @@ end
 
 wire [12-1:0] norm_sum_with_leading1_trun = {1'b0, norm_sum_with_leading1};
 wire [12-1:0] norm_sum_with_leading1_incr = norm_sum_with_leading1 + 1'b1;
+wire [12-1:0] wire_norm_sum_with_leading1_rne;
 reg  [12-1:0] norm_sum_with_leading1_rne;
+wire [3:0] grs = {guard_bit, round_bit, sticky_bit};
 
 // norm_sum_with_leading1_rne
 // | 11 | 10 |  9 |  8 |  7 |  6 |  5 |  4 |  3 |  2 |  1 |  0 |
 // |         .                                                 |
-always @(*) begin
-    case ({guard_bit, round_bit, sticky_bit})
-        3'b0_00: norm_sum_with_leading1_rne = norm_sum_with_leading1_trun;
-        3'b0_01: norm_sum_with_leading1_rne = norm_sum_with_leading1_trun;
-        3'b0_10: norm_sum_with_leading1_rne = norm_sum_with_leading1_trun;
-        3'b0_11: norm_sum_with_leading1_rne = norm_sum_with_leading1_incr;
-        3'b1_00: norm_sum_with_leading1_rne = norm_sum_with_leading1_trun;
-        3'b1_01: norm_sum_with_leading1_rne = norm_sum_with_leading1_trun;
-        3'b1_10: norm_sum_with_leading1_rne = norm_sum_with_leading1_incr;
-        3'b1_11: norm_sum_with_leading1_rne = norm_sum_with_leading1_incr;
-    endcase
+// always @(*) begin
+//     case ({guard_bit, round_bit, sticky_bit})
+//         3'b0_00: norm_sum_with_leading1_rne = norm_sum_with_leading1_trun;
+//         3'b0_01: norm_sum_with_leading1_rne = norm_sum_with_leading1_trun;
+//         3'b0_10: norm_sum_with_leading1_rne = norm_sum_with_leading1_trun;
+//         3'b0_11: norm_sum_with_leading1_rne = norm_sum_with_leading1_incr;
+//         3'b1_00: norm_sum_with_leading1_rne = norm_sum_with_leading1_trun;
+//         3'b1_01: norm_sum_with_leading1_rne = norm_sum_with_leading1_trun;
+//         3'b1_10: norm_sum_with_leading1_rne = norm_sum_with_leading1_incr;
+//         3'b1_11: norm_sum_with_leading1_rne = norm_sum_with_leading1_incr;
+//     endcase
+// end
+always@(*) begin
+    norm_sum_with_leading1 = wire_norm_sum_with_leading1_rne;
 end
+wire grs_equal[7:0]
+EQ eq0(grs_equal[0], {1'b0, grs}, 4'b0000, numbers[]);
+EQ eq1(grs_equal[1], {1'b0, grs}, 4'b0001, numbers[]);
+EQ eq2(grs_equal[2], {1'b0, grs}, 4'b0010, numbers[]);
+EQ eq4(grs_equal[4], {1'b0, grs}, 4'b0100, numbers[]);
+EQ eq5(grs_equal[5], {1'b0, grs}, 4'b0101, numbers[]);
+
+wire grs_not_equal01245;
+OR#(5) or01245(grs_not_equal01245, {grs_equal[5:4], grs_equal[2:0]}, numbers[]);
+MX#(12) mux_result(.o_z(norm_sum_with_leading1_rne), .i_a(norm_sum_with_leading1_trun), .i_b(norm_sum_with_leading1_incr), .i_ctrl(grs_not_equal01245), .number(numbers[]));
 
 assign exp_carry = norm_sum_with_leading1_rne[11];
 
 // final_norm_sum_with_leading1
 // | 10 |  9 |  8 |  7 |  6 |  5 |  4 |  3 |  2 |  1 |  0 |
 // |    .                                                 |
-assign final_norm_sum_with_leading1 = (norm_sum_with_leading1_rne[11]) ? norm_sum_with_leading1_rne[11:1] : norm_sum_with_leading1_rne[10:0];
-
+// assign final_norm_sum_with_leading1 = (norm_sum_with_leading1_rne[11]) ? norm_sum_with_leading1_rne[11:1] : norm_sum_with_leading1_rne[10:0];
+MX#(11) mux_final(.o_z(final_norm_sum_with_leading1), .i_a(norm_sum_with_leading1_rne[10:0]), .i_b(norm_sum_with_leading1_rne[11:1]), .i_ctrl(exp_carry), .number(numbers[]));
 
 reg [50:0] num;
 integer j;

@@ -1119,12 +1119,12 @@ module COM8(equivalent, greater, A, B, number);
     wire   [50:0] numbers[0:4];
     
     wire eq_first4, g_first4;
-    COM cmp(eq_first4, g_first4, A[7:4], B[7:4], numbers[0]);
+    COM cmpf(eq_first4, g_first4, A[7:4], B[7:4], numbers[0]);
 
     wire eq_last4, g_last4;
-    COM cmp(eq_last4, g_last4, A[3:0], B[3:0], numbers[1]);
+    COM cmpl(eq_last4, g_last4, A[3:0], B[3:0], numbers[1]);
 
-    AN3 o_eq(equivalent, eq_first4, eq_last4, numbers[2]);
+    AN2 o_eq(equivalent, eq_first4, eq_last4, numbers[2]);
 
     // assign greater = g_first4 || (eq_first4 && g_last4);
     wire tmp;
@@ -1180,12 +1180,12 @@ module EQ8(equivalent, A, B, number);
     wire   [50:0] numbers[0:2];
 
     wire eq_first4, g_first4;
-    COM cmp(eq_first4, g_first4, A[7:4], B[7:4], numbers[0]);
+    COM cmpf(eq_first4, g_first4, A[7:4], B[7:4], numbers[0]);
 
     wire eq_last4, g_last4;
-    COM cmp(eq_last4, g_last4, A[3:0], B[3:0], numbers[1]);
+    COM cmpl(eq_last4, g_last4, A[3:0], B[3:0], numbers[1]);
 
-    AN3 o_eq(equivalent, eq_first4, eq_last4, numbers[2]);
+    AN2 o_eq(equivalent, eq_first4, eq_last4, numbers[2]);
 
     reg [50:0] sum;
     integer j;

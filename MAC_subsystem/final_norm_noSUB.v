@@ -102,29 +102,64 @@ NR3 g_20(leading_vector[0], first_thirteen_bits_or, unsign_sum[4], inverted_unsi
 // norm_sum_with_leading1
 // | 10 |  9 |  8 |  7 |  6 |  5 |  4 |  3 |  2 |  1 |  0 |
 // |    .                                            | GB |
-reg [11-1:0] norm_sum_with_leading1;
-always @(*) begin
-    case (leading_vector)
-        15'b10000_00000_00000: norm_sum_with_leading1 = unsign_sum[17: 7]; // Decimal point shift 4-bit left  (<-)
-        15'b01000_00000_00000: norm_sum_with_leading1 = unsign_sum[16: 6]; // Decimal point shift 3-bit left  (<-)
-        15'b00100_00000_00000: norm_sum_with_leading1 = unsign_sum[15: 5]; // Decimal point shift 2-bit left  (<-)
-        15'b00010_00000_00000: norm_sum_with_leading1 = unsign_sum[14: 4]; // Decimal point shift 1-bit left  (<-)
-        15'b00001_00000_00000: norm_sum_with_leading1 = unsign_sum[13: 3]; // No shift
-        15'b00000_10000_00000: norm_sum_with_leading1 = unsign_sum[12: 2]; // Decimal point shift 1-bit right (->)
-        15'b00000_01000_00000: norm_sum_with_leading1 = unsign_sum[11: 1]; // Decimal point shift 2-bit right (->)
-        15'b00000_00100_00000: norm_sum_with_leading1 = unsign_sum[10: 0]; // Decimal point shift 3-bit right (->)
+// reg [11-1:0] norm_sum_with_leading1;
+// always @(*) begin
+//     case (leading_vector)
+//         15'b10000_00000_00000: norm_sum_with_leading1 = unsign_sum[17: 7]; // Decimal point shift 4-bit left  (<-)
+//         15'b01000_00000_00000: norm_sum_with_leading1 = unsign_sum[16: 6]; // Decimal point shift 3-bit left  (<-)
+//         15'b00100_00000_00000: norm_sum_with_leading1 = unsign_sum[15: 5]; // Decimal point shift 2-bit left  (<-)
+//         15'b00010_00000_00000: norm_sum_with_leading1 = unsign_sum[14: 4]; // Decimal point shift 1-bit left  (<-)
+//         15'b00001_00000_00000: norm_sum_with_leading1 = unsign_sum[13: 3]; // No shift
+//         15'b00000_10000_00000: norm_sum_with_leading1 = unsign_sum[12: 2]; // Decimal point shift 1-bit right (->)
+//         15'b00000_01000_00000: norm_sum_with_leading1 = unsign_sum[11: 1]; // Decimal point shift 2-bit right (->)
+//         15'b00000_00100_00000: norm_sum_with_leading1 = unsign_sum[10: 0]; // Decimal point shift 3-bit right (->)
 
-        15'b00000_00010_00000: norm_sum_with_leading1 = {unsign_sum[ 9: 0], 1'd0}; // Decimal point shift 4-bit right (->)
-        15'b00000_00001_00000: norm_sum_with_leading1 = {unsign_sum[ 8: 0], 2'd0}; // Decimal point shift 5-bit right (->)
-        15'b00000_00000_10000: norm_sum_with_leading1 = {unsign_sum[ 7: 0], 3'd0}; // Decimal point shift 6-bit right (->)
-        15'b00000_00000_01000: norm_sum_with_leading1 = {unsign_sum[ 6: 0], 4'd0}; // Decimal point shift 7-bit right (->)
-        15'b00000_00000_00100: norm_sum_with_leading1 = {unsign_sum[ 5: 0], 5'd0}; // Decimal point shift 8-bit right (->)
-        15'b00000_00000_00010: norm_sum_with_leading1 = {unsign_sum[ 4: 0], 6'd0}; // Decimal point shift 9-bit right (->)
-        15'b00000_00000_00001: norm_sum_with_leading1 = {unsign_sum[ 3: 0], 7'd0}; // Decimal point shift 10-bit right
-        default: norm_sum_with_leading1 = 11'd0;
-    endcase
-end
+//         15'b00000_00010_00000: norm_sum_with_leading1 = {unsign_sum[ 9: 0], 1'd0}; // Decimal point shift 4-bit right (->)
+//         15'b00000_00001_00000: norm_sum_with_leading1 = {unsign_sum[ 8: 0], 2'd0}; // Decimal point shift 5-bit right (->)
+//         15'b00000_00000_10000: norm_sum_with_leading1 = {unsign_sum[ 7: 0], 3'd0}; // Decimal point shift 6-bit right (->)
+//         15'b00000_00000_01000: norm_sum_with_leading1 = {unsign_sum[ 6: 0], 4'd0}; // Decimal point shift 7-bit right (->)
+//         15'b00000_00000_00100: norm_sum_with_leading1 = {unsign_sum[ 5: 0], 5'd0}; // Decimal point shift 8-bit right (->)
+//         15'b00000_00000_00010: norm_sum_with_leading1 = {unsign_sum[ 4: 0], 6'd0}; // Decimal point shift 9-bit right (->)
+//         15'b00000_00000_00001: norm_sum_with_leading1 = {unsign_sum[ 3: 0], 7'd0}; // Decimal point shift 10-bit right
+//         default: norm_sum_with_leading1 = 11'd0;
+//     endcase
+// end
+wire [11-1:0] norm_sum_with_leading1;
+wire [15-1:0] norm_sum_with_leading1_array[11-1:0];
+// assign norm_sum_with_leading1_array[10] = unsign_sum[17:3] & leading_vector;
+// assign norm_sum_with_leading1_array[9] = unsign_sum[16:2] & leading_vector;
+// assign norm_sum_with_leading1_array[8] = unsign_sum[15:1] & leading_vector;
+// assign norm_sum_with_leading1_array[7] = unsign_sum[14:0] & leading_vector;
+// assign norm_sum_with_leading1_array[6] = {unsign_sum[13:0], 1'd0} & leading_vector;
+// assign norm_sum_with_leading1_array[5] = {unsign_sum[12:0], 2'd0} & leading_vector;
+// assign norm_sum_with_leading1_array[4] = {unsign_sum[11:0], 3'd0} & leading_vector;
+// assign norm_sum_with_leading1_array[3] = {unsign_sum[10:0], 4'd0} & leading_vector;
+// assign norm_sum_with_leading1_array[2] = {unsign_sum[9:0], 5'd0} & leading_vector;
+// assign norm_sum_with_leading1_array[1] = {unsign_sum[8:0], 6'd0} & leading_vector;
+// assign norm_sum_with_leading1_array[0] = {unsign_sum[7:0], 7'd0} & leading_vector;
+AND#(15) g1001(norm_sum_with_leading1_array[10], unsign_sum[17:3], leading_vector, numbers[43]);
+AND#(15) g1002(norm_sum_with_leading1_array[9], unsign_sum[16:2], leading_vector, numbers[42]);
+AND#(15) g1003(norm_sum_with_leading1_array[8], unsign_sum[15:1], leading_vector, numbers[22]);
+AND#(15) g1004(norm_sum_with_leading1_array[7], unsign_sum[14:0], leading_vector, numbers[23]);
+AND#(15) g1005(norm_sum_with_leading1_array[6], {unsign_sum[13:0], 1'd0}, leading_vector, numbers[24]);
+AND#(15) g1006(norm_sum_with_leading1_array[5], {unsign_sum[12:0], 2'd0}, leading_vector, numbers[25]);
+AND#(15) g1007(norm_sum_with_leading1_array[4], {unsign_sum[11:0], 3'd0}, leading_vector, numbers[26]);
+AND#(15) g1008(norm_sum_with_leading1_array[3], {unsign_sum[10:0], 4'd0}, leading_vector, numbers[27]);
+AND#(15) g1009(norm_sum_with_leading1_array[2], {unsign_sum[9:0], 5'd0}, leading_vector, numbers[28]);
+AND#(15) g1010(norm_sum_with_leading1_array[1], {unsign_sum[8:0], 6'd0}, leading_vector, numbers[29]);
+AND#(15) g1011(norm_sum_with_leading1_array[0], {unsign_sum[7:0], 7'd0}, leading_vector, numbers[30]);
 
+OR#(15)  g2001(norm_sum_with_leading1[10], norm_sum_with_leading1_array[10], numbers[31]);
+OR#(15)  g2002(norm_sum_with_leading1[9], norm_sum_with_leading1_array[9], numbers[32]);
+OR#(15)  g2003(norm_sum_with_leading1[8], norm_sum_with_leading1_array[8], numbers[33]);
+OR#(15)  g2004(norm_sum_with_leading1[7], norm_sum_with_leading1_array[7], numbers[34]);
+OR#(15)  g2005(norm_sum_with_leading1[6], norm_sum_with_leading1_array[6], numbers[35]);
+OR#(15)  g2006(norm_sum_with_leading1[5], norm_sum_with_leading1_array[5], numbers[36]);
+OR#(15)  g2007(norm_sum_with_leading1[4], norm_sum_with_leading1_array[4], numbers[37]);
+OR#(15)  g2008(norm_sum_with_leading1[3], norm_sum_with_leading1_array[3], numbers[38]);
+OR#(15)  g2009(norm_sum_with_leading1[2], norm_sum_with_leading1_array[2], numbers[39]);
+OR#(15)  g209(norm_sum_with_leading1[1], norm_sum_with_leading1_array[1], numbers[40]);
+OR#(15)  g2011(norm_sum_with_leading1[0], norm_sum_with_leading1_array[0], numbers[41]);
 // Change exp according to decimal point shift
 reg signed [5-1:0] signed_exp_diff;
 always @(*) begin
@@ -206,7 +241,7 @@ reg [50:0] num;
 integer j;
 always @(*) begin
     num = 0;
-    for (j=0; j<22; j=j+1) begin 
+    for (j=0; j<44; j=j+1) begin 
         num = num + numbers[j];
     end
 end

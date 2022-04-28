@@ -723,9 +723,9 @@ endmodule
 module AND#(
     parameter BW = 2
 )(
+    output [BW-1:0] o_z,
     input [BW-1:0] i_a,
     input [BW-1:0] i_b,
-    output [BW-1:0] o_z,
     output [50:0] number
 );
     wire [50:0] numbers[BW-1:0];

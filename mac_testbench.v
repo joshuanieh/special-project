@@ -1,5 +1,5 @@
-`timescale 1ns/1ps
-`define CYCLE      0.00800
+`timescale 1ns / 1ps
+`define CYCLE      12.00
 
 module mac_testbench();
 
@@ -178,40 +178,40 @@ end
 
 wire [50:0] o_transistor_num;
 
-mac        DUT(.clk(clk),
-               .i_rst_n(rstn),
-               .i_inhibit(1'b0),
-               .i_valid(i_valid),
-               .i_q(9'd17),
-               .zero_vector(9'd0),
+mac DUT(.clk(clk),
+    .i_rst_n(rstn),
+    .i_inhibit(1'b0),
+    .i_valid(i_valid),
+    .i_q(9'd17),
+    .zero_vector(9'd0),
 
-               // input pixels
-               .i_im1(i_im1),
-               .i_im2(i_im2),
-               .i_im3(i_im3),
-               .i_im4(i_im4),
-               .i_im5(i_im5),
-               .i_im6(i_im6),
-               .i_im7(i_im7),
-               .i_im8(i_im8),
-               .i_im9(i_im9),
+    // input pixels
+    .i_im1(i_im1),
+    .i_im2(i_im2),
+    .i_im3(i_im3),
+    .i_im4(i_im4),
+    .i_im5(i_im5),
+    .i_im6(i_im6),
+    .i_im7(i_im7),
+    .i_im8(i_im8),
+    .i_im9(i_im9),
 
-               // input weights
-               .i_ker1(i_ker1),
-               .i_ker2(i_ker2),
-               .i_ker3(i_ker3),
-               .i_ker4(i_ker4),
-               .i_ker5(i_ker5),
-               .i_ker6(i_ker6),
-               .i_ker7(i_ker7),
-               .i_ker8(i_ker8),
-               .i_ker9(i_ker9),
+    // input weights
+    .i_ker1(i_ker1),
+    .i_ker2(i_ker2),
+    .i_ker3(i_ker3),
+    .i_ker4(i_ker4),
+    .i_ker5(i_ker5),
+    .i_ker6(i_ker6),
+    .i_ker7(i_ker7),
+    .i_ker8(i_ker8),
+    .i_ker9(i_ker9),
 
-               // output ports
-               .o_valid(o_valid),
-               .o_conv(o_conv),
-               .o_transistor_num(o_transistor_num)
-              );
+    // output ports
+    .o_valid(o_valid),
+    .o_conv(o_conv),
+    .o_transistor_num(o_transistor_num)
+);
 
 integer l_p = 0;
 integer out_batch;

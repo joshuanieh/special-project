@@ -47,9 +47,7 @@ module mac_stg3(input           i_clk,
                 output 		    o_valid,
                 output [ 6-1:0] o_max_exp,
                 input  [ 5-1:0] i_Q_frac,
-                output [ 5-1:0] o_Q_frac,
-                output [50:0] o_transistor_num);
-wire [50:0] numbers[0:10];
+                output [ 5-1:0] o_Q_frac);
 
 // flags
 reg valid_r, valid_w;
@@ -86,27 +84,16 @@ assign o_Q_frac = Q_frac_reg;
 //                                                                          | ld .       |
 // | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 |  2 | 1 | 0 |
 // |  S |                        .                                        G |  R   S     |
-wire [16-1:0] sum12, sum34, sum56, sum78;
-wire [17-1:0] sum1234, sum5678;
-wire [18-1:0] sum1to8;
-// assign o_psum = $signed(aligned_pp1_r) +
-//                 $signed(aligned_pp2_r) +
-//                 $signed(aligned_pp3_r) +
-//                 $signed(aligned_pp4_r) +
-//                 $signed(aligned_pp5_r) +
-//                 $signed(aligned_pp6_r) +
-//                 $signed(aligned_pp7_r) +
-//                 $signed(aligned_pp8_r) +
-//                 $signed(aligned_pp9_r);
-wire [7:0] garbage_carry;
-ADD#(16) add12(.i_a({aligned_pp1_r[14], aligned_pp1_r}), .i_b({aligned_pp2_r[14], aligned_pp2_r}), .o_s(sum12[15:0]), .o_c(garbage_carry[0]), .number(numbers[0]));
-ADD#(16) add34(.i_a({aligned_pp3_r[14], aligned_pp3_r}), .i_b({aligned_pp4_r[14], aligned_pp4_r}), .o_s(sum34[15:0]), .o_c(garbage_carry[1]), .number(numbers[1]));
-ADD#(16) add56(.i_a({aligned_pp5_r[14], aligned_pp5_r}), .i_b({aligned_pp6_r[14], aligned_pp6_r}), .o_s(sum56[15:0]), .o_c(garbage_carry[2]), .number(numbers[2]));
-ADD#(16) add78(.i_a({aligned_pp7_r[14], aligned_pp7_r}), .i_b({aligned_pp8_r[14], aligned_pp8_r}), .o_s(sum78[15:0]), .o_c(garbage_carry[3]), .number(numbers[3]));
-ADD#(17) add1234(.i_a({sum12[15], sum12}), .i_b({sum34[15], sum34}), .o_s(sum1234[16:0]), .o_c(garbage_carry[4]), .number(numbers[4]));
-ADD#(17) add5678(.i_a({sum56[15], sum56}), .i_b({sum78[15], sum78}), .o_s(sum5678[16:0]), .o_c(garbage_carry[5]), .number(numbers[5]));
-ADD#(18) add1to8(.i_a({sum1234[16], sum1234}), .i_b({sum5678[16], sum5678}), .o_s(sum1to8[17:0]), .o_c(garbage_carry[6]), .number(numbers[6]));
-ADD#(19) add1to9(.i_a({sum1to8[17], sum1to8}), .i_b({{4{aligned_pp9_r[14]}}, aligned_pp9_r}), .o_s(o_psum[18:0]), .o_c(garbage_carry[7]), .number(numbers[7]));
+assign o_psum = $signed(aligned_pp1_r) +
+                $signed(aligned_pp2_r) +
+                $signed(aligned_pp3_r) +
+                $signed(aligned_pp4_r) +
+                $signed(aligned_pp5_r) +
+                $signed(aligned_pp6_r) +
+                $signed(aligned_pp7_r) +
+                $signed(aligned_pp8_r) +
+                $signed(aligned_pp9_r);
+
 always@(*) begin
     if (i_inhibit) begin
         valid_w = valid_r;
@@ -166,15 +153,4 @@ always@(posedge i_clk  or negedge i_rst_n) begin
         Q_frac_reg <= i_Q_frac;
     end
 end
-
-reg [50:0] sum;
-integer j;
-always @(*) begin
-    sum = 0;
-    for (j=0; j<8; j=j+1) begin 
-        sum = sum + numbers[j];
-    end
-end
-
-assign o_transistor_num = sum;
 endmodule

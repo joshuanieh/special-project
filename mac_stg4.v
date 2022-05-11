@@ -17,6 +17,7 @@
 *								 Modify the port width of i_psum to 16			
 * 2.0.0   Hsieh    2020/11/02    Change to 4-bit FloatSD4 weight
 **************************************************************************************************/
+// `include "./MAC_top/MAC_subsystem/final_norm_noSUB.v"
 
 module mac_stg4(input 		    i_clk,
                 input 		    i_rst_n,
@@ -33,8 +34,7 @@ module mac_stg4(input 		    i_clk,
                 output 		    o_sgn,
 
                 input  [ 5-1:0] i_Q_frac,
-                output [ 5-1:0] o_Q_frac,
-                output [50:0] o_transistor_num);
+                output [ 5-1:0] o_Q_frac);
 
 reg          valid_r, valid_w;
 reg [19-1:0] psum_r, psum_w;
@@ -51,8 +51,7 @@ final_norm_noSUB F1(.sum(psum_r),
                     .final_norm_sum_with_leading1(o_norm_sum),
                     .signed_exp_diff(o_exp_diff),
                     .exp_carry(o_exp_carry),
-                    .sign(o_sgn),
-                    .number(o_transistor_num));
+                    .sign(o_sgn));
 
 always@(*) begin
     if (i_inhibit) begin
@@ -81,4 +80,5 @@ always@(posedge i_clk  or negedge i_rst_n) begin
         Q_frac_reg <= i_Q_frac;
     end
 end
+
 endmodule

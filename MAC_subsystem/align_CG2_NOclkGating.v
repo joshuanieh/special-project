@@ -1,8 +1,11 @@
 module align_CG2_NOclkGating(
+           input i_clk,
            input  [ 4-1:0] denorm_pp,
            input  [ 6-1:0] exp,
            input  [ 6-1:0] max_exp,
+           input i_valid,
            output [15-1:0] align_pp,
+           output o_valid,
            output [50:0]   number
        );
 
@@ -89,30 +92,59 @@ wire [14-1:0] mux1011;
 COM6 com_10(eq10, g10, exp_diff, 6'd10, numbers[11]);
 MX#(14) mux_1011(mux1011, {11'd0, denorm_pp_with_leading_one}, {10'd0, denorm_pp_with_leading_one,  1'd0}, eq10, numbers[12]);
 
-wire ge2, ge4, ge6, ge8, ge10;
+reg ge12;
+wire eq12, g12, ge12_wire;
+COM6 com_12(eq12, g12, exp_diff, 6'd12, numbers[17]);
+OR2 or8(ge12_wire, g12, eq12, numbers[24]);
+
+reg ge4, ge8;
+wire ge2, ge4_wire, ge6, ge8_wire, ge10;
 OR2 or3(ge2, g2, eq2, numbers[19]);
-OR2 or4(ge4, g4, eq4, numbers[20]);
+OR2 or4(ge4_wire, g4, eq4, numbers[20]);
 OR2 or5(ge6, g6, eq6, numbers[21]);
-OR2 or6(ge8, g8, eq8, numbers[22]);
+OR2 or6(ge8_wire, g8, eq8, numbers[22]);
 OR2 or7(ge10, g10, eq10, numbers[23]);
 //second stage
-wire [14-1:0] mux0123;
-MX#(14) mux_0123(mux0123, mux01, mux23, ge2, numbers[13]);
+wire [14-1:0] mux0123_wire;
+reg [14-1:0] mux0123;
+MX#(14) mux_0123(mux0123_wire, mux01, mux23, ge2, numbers[13]);
 
-wire [14-1:0] mux4567;
-MX#(14) mux_4567(mux4567, mux45, mux67, ge6, numbers[14]);
+wire [14-1:0] mux4567_wire;
+reg [14-1:0] mux4567;
+MX#(14) mux_4567(mux4567_wire, mux45, mux67, ge6, numbers[14]);
 
-wire [14-1:0] mux891011;
-MX#(14) mux_891011(mux891011, mux89, mux1011, ge10, numbers[15]);
+wire [14-1:0] mux891011_wire;
+reg [14-1:0] mux891011;
+MX#(14) mux_891011(mux891011_wire, mux89, mux1011, ge10, numbers[15]);
 
+reg o_valid_half;
+integer out_batch;
+always @(posedge i_clk) begin
+    ge4 = ge4_wire;
+    ge8 = ge8_wire;
+    ge12 = ge12_wire;
+    mux0123 = mux0123_wire;
+    mux4567 = mux4567_wire;
+    mux891011 = mux891011_wire;
+    o_valid_half = i_valid;
+    if(i_valid) begin
+        out_batch = $fopen("120_each_stage_output.txt", "a");
+        $fwrite(out_batch, "\nStage 2-1\n");
+        $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
+        $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
+        $fwrite(out_batch, "Stage 2-1: %06X\n", ge12);
+        $fwrite(out_batch, "Stage 2-1: %06X\n", mux0123);
+        $fwrite(out_batch, "Stage 2-1: %06X\n", mux4567);
+        $fwrite(out_batch, "Stage 2-1: %06X\n", mux891011);
+        $fclose(out_batch);
+    end
+end
+assign o_valid = o_valid_half;
 //third stage
 wire [14-1:0] mux01234567;
 MX#(14) mux_01234567(mux01234567, mux0123, mux4567, ge4, numbers[16]);
 
 wire [14-1:0] mux89101112up;
-wire eq12, g12, ge12;
-COM6 com_12(eq12, g12, exp_diff, 6'd12, numbers[17]);
-OR2 or8(ge12, g12, eq12, numbers[24]);
 MX#(14) mux_89101112up(mux89101112up, mux891011, 14'd0, ge12, numbers[28]);
 
 //forth stage

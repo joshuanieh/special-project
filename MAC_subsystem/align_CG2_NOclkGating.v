@@ -30,7 +30,8 @@ SUB#(6) sub1(
 // denorm_pp
 // | 3 |  2 | 1 | 0 |
 // | S | ld .       |
-wire pp_sign = denorm_pp[3];
+wire pp_sign_wire = denorm_pp[3];
+reg pp_sign;
 
 
 // denorm_pp_with_leading_one
@@ -129,6 +130,7 @@ always @(posedge i_clk) begin
     mux0123 = mux0123_wire;
     mux4567 = mux4567_wire;
     mux891011 = mux891011_wire;
+    pp_sign = pp_sign_wire;
     o_valid_half = i_valid;
     Q_frac_half = i_Q_frac;
     if(i_valid) begin

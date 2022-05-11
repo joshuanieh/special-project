@@ -5,6 +5,8 @@ module align_CG2_NOclkGating(
            input  [ 6-1:0] max_exp,
            input i_valid,
            input [5-1:0] i_Q_frac,
+           input [6-1:0] i_max_exp,
+           output [6-1:0] o_max_exp,
            output [15-1:0] align_pp,
            output o_valid,
            output [5-1:0] o_Q_frac,
@@ -122,6 +124,7 @@ MX#(14) mux_891011(mux891011_wire, mux89, mux1011, ge10, numbers[15]);
 
 reg [5-1:0] Q_frac_half;
 reg o_valid_half;
+reg [6-1:0] max_exp_half;
 integer out_batch;
 always @(posedge i_clk) begin
     ge4 <= ge4_wire;
@@ -133,6 +136,7 @@ always @(posedge i_clk) begin
     pp_sign <= pp_sign_wire;
     o_valid_half <= i_valid;
     Q_frac_half <= i_Q_frac;
+    max_exp_half <= i_max_exp;
     if(i_valid) begin
         out_batch = $fopen("120_each_stage_output.txt", "a");
         $fwrite(out_batch, "\nStage 2-1\n");
@@ -147,6 +151,7 @@ always @(posedge i_clk) begin
 end
 assign o_valid = o_valid_half;
 assign o_Q_frac = Q_frac_half;
+assign o_max_exp = max_exp_half;
 //third stage
 wire [14-1:0] mux01234567;
 MX#(14) mux_01234567(mux01234567, mux0123, mux4567, ge4, numbers[16]);

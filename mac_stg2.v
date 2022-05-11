@@ -95,58 +95,60 @@ reg [6-1:0] exp8_r, exp8_w;
 reg [6-1:0] exp9_r, exp9_w;
 
 // register for the maximum exponential term
-reg [6-1:0] max_exp_r, max_exp_w;
-
-assign o_max_exp = max_exp_r;
+reg [6-1:0] max_exp_r, max_exp_w, max_exp_reg;
+wire [6-1:0] o_exp[0:8];
+assign o_max_exp = o_exp[0];
 
 reg [5-1:0] Q_frac_reg;
-assign o_Q_frac = Q_frac_reg;
+reg i_valid_r;
+reg [5-1:0] i_Q_frac_r;
+assign o_Q_frac = o_Q_frac_tmp[0];
 wire [8:0] o_valid_array;
 wire [5-1:0] o_Q_frac_tmp[0:8];
-assign o_valid = valid_r;
+assign o_valid = o_valid_array[0];
 //-- Instantiation
-align_CG2_NOclkGating align1(.i_Q_frac(i_Q_frac), .o_Q_frac(o_Q_frac_tmp[0]), .i_valid(i_valid), .i_clk(i_clk), .denorm_pp(pp1_r),
-                             .exp(exp1_r),
+align_CG2_NOclkGating align1(.i_Q_frac(i_Q_frac_r), .o_Q_frac(o_Q_frac_tmp[0]), .i_valid(i_valid_r), .i_clk(i_clk), .denorm_pp(pp1_r),
+                             .exp(exp1_r), .i_max_exp(max_exp_r), .o_max_exp(o_exp[0]),
                              .max_exp(max_exp_r),
                              .align_pp(o_aligned_pp1),
                              .number(numbers[0]), .o_valid(o_valid_array[0]));
-align_CG2_NOclkGating align2(.i_Q_frac(i_Q_frac), .o_Q_frac(o_Q_frac_tmp[1]), .i_valid(i_valid), .i_clk(i_clk), .denorm_pp(pp2_r),
-                             .exp(exp2_r),
+align_CG2_NOclkGating align2(.i_Q_frac(i_Q_frac_r), .o_Q_frac(o_Q_frac_tmp[1]), .i_valid(i_valid_r), .i_clk(i_clk), .denorm_pp(pp2_r),
+                             .exp(exp2_r), .i_max_exp(max_exp_r), .o_max_exp(o_exp[1]),
                              .max_exp(max_exp_r),
                              .align_pp(o_aligned_pp2),
                              .number(numbers[1]), .o_valid(o_valid_array[1]));
-align_CG2_NOclkGating align3(.i_Q_frac(i_Q_frac), .o_Q_frac(o_Q_frac_tmp[2]), .i_valid(i_valid), .i_clk(i_clk), .denorm_pp(pp3_r),
-                             .exp(exp3_r),
+align_CG2_NOclkGating align3(.i_Q_frac(i_Q_frac_r), .o_Q_frac(o_Q_frac_tmp[2]), .i_valid(i_valid_r), .i_clk(i_clk), .denorm_pp(pp3_r),
+                             .exp(exp3_r), .i_max_exp(max_exp_r), .o_max_exp(o_exp[2]),
                              .max_exp(max_exp_r),
                              .align_pp(o_aligned_pp3),
                              .number(numbers[2]), .o_valid(o_valid_array[2]));
-align_CG2_NOclkGating align4(.i_Q_frac(i_Q_frac), .o_Q_frac(o_Q_frac_tmp[3]), .i_valid(i_valid), .i_clk(i_clk), .denorm_pp(pp4_r),
-                             .exp(exp4_r),
+align_CG2_NOclkGating align4(.i_Q_frac(i_Q_frac_r), .o_Q_frac(o_Q_frac_tmp[3]), .i_valid(i_valid_r), .i_clk(i_clk), .denorm_pp(pp4_r),
+                             .exp(exp4_r), .i_max_exp(max_exp_r), .o_max_exp(o_exp[3]),
                              .max_exp(max_exp_r),
                              .align_pp(o_aligned_pp4),
                              .number(numbers[3]), .o_valid(o_valid_array[3]));
-align_CG2_NOclkGating align5(.i_Q_frac(i_Q_frac), .o_Q_frac(o_Q_frac_tmp[4]), .i_valid(i_valid), .i_clk(i_clk), .denorm_pp(pp5_r),
-                             .exp(exp5_r),
+align_CG2_NOclkGating align5(.i_Q_frac(i_Q_frac_r), .o_Q_frac(o_Q_frac_tmp[4]), .i_valid(i_valid_r), .i_clk(i_clk), .denorm_pp(pp5_r),
+                             .exp(exp5_r), .i_max_exp(max_exp_r), .o_max_exp(o_exp[4]),
                              .max_exp(max_exp_r),
                              .align_pp(o_aligned_pp5),
                              .number(numbers[4]), .o_valid(o_valid_array[4]));
-align_CG2_NOclkGating align6(.i_Q_frac(i_Q_frac), .o_Q_frac(o_Q_frac_tmp[5]), .i_valid(i_valid), .i_clk(i_clk), .denorm_pp(pp6_r),
-                             .exp(exp6_r),
+align_CG2_NOclkGating align6(.i_Q_frac(i_Q_frac_r), .o_Q_frac(o_Q_frac_tmp[5]), .i_valid(i_valid_r), .i_clk(i_clk), .denorm_pp(pp6_r),
+                             .exp(exp6_r), .i_max_exp(max_exp_r), .o_max_exp(o_exp[5]),
                              .max_exp(max_exp_r),
                              .align_pp(o_aligned_pp6),
                              .number(numbers[5]), .o_valid(o_valid_array[5]));
-align_CG2_NOclkGating align7(.i_Q_frac(i_Q_frac), .o_Q_frac(o_Q_frac_tmp[6]), .i_valid(i_valid), .i_clk(i_clk), .denorm_pp(pp7_r),
-                             .exp(exp7_r),
+align_CG2_NOclkGating align7(.i_Q_frac(i_Q_frac_r), .o_Q_frac(o_Q_frac_tmp[6]), .i_valid(i_valid_r), .i_clk(i_clk), .denorm_pp(pp7_r),
+                             .exp(exp7_r), .i_max_exp(max_exp_r), .o_max_exp(o_exp[6]),
                              .max_exp(max_exp_r),
                              .align_pp(o_aligned_pp7),
                              .number(numbers[6]), .o_valid(o_valid_array[6]));
-align_CG2_NOclkGating align8(.i_Q_frac(i_Q_frac), .o_Q_frac(o_Q_frac_tmp[7]), .i_valid(i_valid), .i_clk(i_clk), .denorm_pp(pp8_r),
-                             .exp(exp8_r),
+align_CG2_NOclkGating align8(.i_Q_frac(i_Q_frac_r), .o_Q_frac(o_Q_frac_tmp[7]), .i_valid(i_valid_r), .i_clk(i_clk), .denorm_pp(pp8_r),
+                             .exp(exp8_r), .i_max_exp(max_exp_r), .o_max_exp(o_exp[7]),
                              .max_exp(max_exp_r),
                              .align_pp(o_aligned_pp8),
                              .number(numbers[7]), .o_valid(o_valid_array[7]));
-align_CG2_NOclkGating align9(.i_Q_frac(i_Q_frac), .o_Q_frac(o_Q_frac_tmp[8]), .i_valid(i_valid), .i_clk(i_clk), .denorm_pp(pp9_r),
-                             .exp(exp9_r),
+align_CG2_NOclkGating align9(.i_Q_frac(i_Q_frac_r), .o_Q_frac(o_Q_frac_tmp[8]), .i_valid(i_valid_r), .i_clk(i_clk), .denorm_pp(pp9_r),
+                             .exp(exp9_r), .i_max_exp(max_exp_r), .o_max_exp(o_exp[8]),
                              .max_exp(max_exp_r),
                              .align_pp(o_aligned_pp9),
                              .number(numbers[8]), .o_valid(o_valid_array[8]));
@@ -231,10 +233,12 @@ always@(posedge i_clk or negedge i_rst_n) begin
 
         max_exp_r <= 0;
         Q_frac_reg <= 0;
+        i_valid_r <= 0;
+        i_Q_frac_r <= 0;
     end
     else begin
         // valid_r <= valid_w;
-        valid_r <= o_valid_array[0];
+        // valid_r <= o_valid_array[0];
 
         pp1_r <= pp1_w;
         pp2_r <= pp2_w;
@@ -255,9 +259,11 @@ always@(posedge i_clk or negedge i_rst_n) begin
         exp7_r <= exp7_w;
         exp8_r <= exp8_w;
         exp9_r <= exp9_w;
-
+        i_valid_r <= i_valid;
+        i_Q_frac_r <= i_Q_frac;
         max_exp_r <= max_exp_w;
-        Q_frac_reg <= o_Q_frac_tmp[0];
+        // Q_frac_reg <= o_Q_frac_tmp[0];
+        // max_exp_reg <= o_exp[0];
     end
 end
 

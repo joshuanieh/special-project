@@ -110,6 +110,7 @@ wire [50:0] numbers [0:10-1];
 
 assign o_valid = valid_r;
 assign o_Q_frac = Q_frac_reg;
+assign o_skip = skip_r;
 
 // instantiation
 PPgenerator pp_gen1(.image(im1_r),

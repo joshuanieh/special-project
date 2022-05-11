@@ -86,15 +86,14 @@ wire [6-1:0] stg1_exp7;
 wire [6-1:0] stg1_exp8;
 wire [6-1:0] stg1_exp9;
 
-// maximum exponenti
-wire [6-1:0] stg1_max_exp;
+wire [9-1:0] stg1_skip;
+
 wire [5-1:0] o_Q_frac_stg1, o_Q_frac_stg2, o_Q_frac_stg2_1, o_Q_frac_stg3, o_Q_frac_stg4;
 
 // flags
 wire 	   stg1_valid;
 
 // aligned partial products
-wire [ 9-1:0] stg2_1_skip;
 wire [15-1:0] stg2_app1;
 wire [15-1:0] stg2_app2;
 wire [15-1:0] stg2_app3;
@@ -108,8 +107,8 @@ wire [ 6-1:0] stg2_1_max_exp;
 wire [ 6-1:0] stg2_max_exp;
 wire          stg2_1_valid;
 wire 	      stg2_valid;
-wire [14-1:0] o_shifted_unsign_pp[0:8];
-wire          o_pp_sign[0:8];
+wire [14-1:0] stg2_1_shifted_unsign_pp[0:8];
+wire          stg2_1_pp_sign[0:8];
 
 wire [19-1:0] stg3_psum;
 wire 		      stg3_valid;
@@ -189,7 +188,7 @@ mac_stg1 stg1(.i_clk(clk),
               .o_exp7(stg1_exp7),
               .o_exp8(stg1_exp8),
               .o_exp9(stg1_exp9),
-              .o_skip(stg_2_1_skip),
+              .o_skip(stg1_skip),
               .o_valid(stg1_valid),
               .o_Q_frac(o_Q_frac_stg1),
               .o_transistor_num(number[2]));
@@ -198,6 +197,7 @@ mac_stg2_1 stg2_1(.i_clk(clk),
               .i_rst_n(i_rst_n),
               .i_valid(stg1_valid),
               .i_inhibit(i_inhibit),
+              .i_skip(stg1_skip),
 
               .i_pp1(stg1_pp1),
               .i_pp2(stg1_pp2),
@@ -219,27 +219,26 @@ mac_stg2_1 stg2_1(.i_clk(clk),
               .i_exp8(stg1_exp8),
               .i_exp9(stg1_exp9),
 
-              .i_max_exp(stg1_max_exp),
               .i_Q_frac(o_Q_frac_stg1),
 
-              .o_shifted_unsign_pp1(o_shifted_unsign_pp[0]),
-              .o_shifted_unsign_pp2(o_shifted_unsign_pp[1]),
-              .o_shifted_unsign_pp3(o_shifted_unsign_pp[2]),
-              .o_shifted_unsign_pp4(o_shifted_unsign_pp[3]),
-              .o_shifted_unsign_pp5(o_shifted_unsign_pp[4]),
-              .o_shifted_unsign_pp6(o_shifted_unsign_pp[5]),
-              .o_shifted_unsign_pp7(o_shifted_unsign_pp[6]),
-              .o_shifted_unsign_pp8(o_shifted_unsign_pp[7]),
-              .o_shifted_unsign_pp9(o_shifted_unsign_pp[8]),
-              .o_pp_sign1(o_pp_sign[0]),
-              .o_pp_sign2(o_pp_sign[1]),
-              .o_pp_sign3(o_pp_sign[2]),
-              .o_pp_sign4(o_pp_sign[3]),
-              .o_pp_sign5(o_pp_sign[4]),
-              .o_pp_sign6(o_pp_sign[5]),
-              .o_pp_sign7(o_pp_sign[6]),
-              .o_pp_sign8(o_pp_sign[7]),
-              .o_pp_sign9(o_pp_sign[8]),
+              .o_shifted_unsign_pp1(stg2_1_shifted_unsign_pp[0]),
+              .o_shifted_unsign_pp2(stg2_1_shifted_unsign_pp[1]),
+              .o_shifted_unsign_pp3(stg2_1_shifted_unsign_pp[2]),
+              .o_shifted_unsign_pp4(stg2_1_shifted_unsign_pp[3]),
+              .o_shifted_unsign_pp5(stg2_1_shifted_unsign_pp[4]),
+              .o_shifted_unsign_pp6(stg2_1_shifted_unsign_pp[5]),
+              .o_shifted_unsign_pp7(stg2_1_shifted_unsign_pp[6]),
+              .o_shifted_unsign_pp8(stg2_1_shifted_unsign_pp[7]),
+              .o_shifted_unsign_pp9(stg2_1_shifted_unsign_pp[8]),
+              .o_pp_sign1(stg2_1_pp_sign[0]),
+              .o_pp_sign2(stg2_1_pp_sign[1]),
+              .o_pp_sign3(stg2_1_pp_sign[2]),
+              .o_pp_sign4(stg2_1_pp_sign[3]),
+              .o_pp_sign5(stg2_1_pp_sign[4]),
+              .o_pp_sign6(stg2_1_pp_sign[5]),
+              .o_pp_sign7(stg2_1_pp_sign[6]),
+              .o_pp_sign8(stg2_1_pp_sign[7]),
+              .o_pp_sign9(stg2_1_pp_sign[8]),
 
               .o_max_exp(stg2_1_max_exp),
 
@@ -253,24 +252,24 @@ mac_stg2_2 stg2_2(.i_clk(clk),
               .i_inhibit(i_inhibit),
 
               .i_max_exp(stg2_1_max_exp),
-              .i_shifted_unsign_pp1(o_shifted_unsign_pp[0]),
-              .i_shifted_unsign_pp2(o_shifted_unsign_pp[1]),
-              .i_shifted_unsign_pp3(o_shifted_unsign_pp[2]),
-              .i_shifted_unsign_pp4(o_shifted_unsign_pp[3]),
-              .i_shifted_unsign_pp5(o_shifted_unsign_pp[4]),
-              .i_shifted_unsign_pp6(o_shifted_unsign_pp[5]),
-              .i_shifted_unsign_pp7(o_shifted_unsign_pp[6]),
-              .i_shifted_unsign_pp8(o_shifted_unsign_pp[7]),
-              .i_shifted_unsign_pp9(o_shifted_unsign_pp[8]),
-              .i_pp_sign1(o_pp_sign[0]),
-              .i_pp_sign2(o_pp_sign[1]),
-              .i_pp_sign3(o_pp_sign[2]),
-              .i_pp_sign4(o_pp_sign[3]),
-              .i_pp_sign5(o_pp_sign[4]),
-              .i_pp_sign6(o_pp_sign[5]),
-              .i_pp_sign7(o_pp_sign[6]),
-              .i_pp_sign8(o_pp_sign[7]),
-              .i_pp_sign9(o_pp_sign[8]),
+              .i_shifted_unsign_pp1(stg2_1_shifted_unsign_pp[0]),
+              .i_shifted_unsign_pp2(stg2_1_shifted_unsign_pp[1]),
+              .i_shifted_unsign_pp3(stg2_1_shifted_unsign_pp[2]),
+              .i_shifted_unsign_pp4(stg2_1_shifted_unsign_pp[3]),
+              .i_shifted_unsign_pp5(stg2_1_shifted_unsign_pp[4]),
+              .i_shifted_unsign_pp6(stg2_1_shifted_unsign_pp[5]),
+              .i_shifted_unsign_pp7(stg2_1_shifted_unsign_pp[6]),
+              .i_shifted_unsign_pp8(stg2_1_shifted_unsign_pp[7]),
+              .i_shifted_unsign_pp9(stg2_1_shifted_unsign_pp[8]),
+              .i_pp_sign1(stg2_1_pp_sign[0]),
+              .i_pp_sign2(stg2_1_pp_sign[1]),
+              .i_pp_sign3(stg2_1_pp_sign[2]),
+              .i_pp_sign4(stg2_1_pp_sign[3]),
+              .i_pp_sign5(stg2_1_pp_sign[4]),
+              .i_pp_sign6(stg2_1_pp_sign[5]),
+              .i_pp_sign7(stg2_1_pp_sign[6]),
+              .i_pp_sign8(stg2_1_pp_sign[7]),
+              .i_pp_sign9(stg2_1_pp_sign[8]),
 
               .i_Q_frac(o_Q_frac_stg2_1),
 

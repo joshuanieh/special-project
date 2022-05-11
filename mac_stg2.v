@@ -179,7 +179,7 @@ always@(*) begin
         max_exp_w = max_exp_r;
     end
     else begin
-        valid_w = i_valid;
+        valid_w = o_valid_array[0];
 
         pp1_w = i_pp1;
         pp2_w = i_pp2;

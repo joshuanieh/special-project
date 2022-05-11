@@ -124,15 +124,15 @@ reg [5-1:0] Q_frac_half;
 reg o_valid_half;
 integer out_batch;
 always @(posedge i_clk) begin
-    ge4 = ge4_wire;
-    ge8 = ge8_wire;
-    ge12 = ge12_wire;
-    mux0123 = mux0123_wire;
-    mux4567 = mux4567_wire;
-    mux891011 = mux891011_wire;
-    pp_sign = pp_sign_wire;
-    o_valid_half = i_valid;
-    Q_frac_half = i_Q_frac;
+    ge4 <= ge4_wire;
+    ge8 <= ge8_wire;
+    ge12 <= ge12_wire;
+    mux0123 <= mux0123_wire;
+    mux4567 <= mux4567_wire;
+    mux891011 <= mux891011_wire;
+    pp_sign <= pp_sign_wire;
+    o_valid_half <= i_valid;
+    Q_frac_half <= i_Q_frac;
     if(i_valid) begin
         out_batch = $fopen("120_each_stage_output.txt", "a");
         $fwrite(out_batch, "\nStage 2-1\n");

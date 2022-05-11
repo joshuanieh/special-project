@@ -102,7 +102,7 @@ assign o_max_exp = max_exp_r;
 reg [5-1:0] Q_frac_reg;
 assign o_Q_frac = Q_frac_reg;
 wire [8:0] o_valid_array;
-assign o_valid = o_valid_array[0];
+assign o_valid = valid_r;
 //-- Instantiation
 align_CG2_NOclkGating align1(.i_valid(i_valid), .i_clk(i_clk), .denorm_pp(pp1_r),
                              .exp(exp1_r),
@@ -232,7 +232,8 @@ always@(posedge i_clk or negedge i_rst_n) begin
         Q_frac_reg <= 0;
     end
     else begin
-        valid_r <= valid_w;
+        // valid_r <= valid_w;
+        valid_r <= o_valid_array[0];
 
         pp1_r <= pp1_w;
         pp2_r <= pp2_w;

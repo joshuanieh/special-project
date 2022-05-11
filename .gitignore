@@ -1,5 +1,5 @@
 a.out
 result.txt
-wave.vcd
+*.vcd
 result_*.txt
 *_each_stage_output.txt

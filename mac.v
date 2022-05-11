@@ -88,7 +88,7 @@ wire [6-1:0] stg1_exp9;
 
 // maximum exponenti
 wire [6-1:0] stg1_max_exp;
-wire [5-1:0] o_Q_frac_stg1, o_Q_frac_stg2, o_Q_frac_stg3, o_Q_frac_stg4;
+wire [5-1:0] o_Q_frac_stg1, o_Q_frac_stg2, o_Q_frac_stg2_1, o_Q_frac_stg3, o_Q_frac_stg4;
 
 // flags
 wire 	   stg1_valid;
@@ -104,8 +104,12 @@ wire [15-1:0] stg2_app6;
 wire [15-1:0] stg2_app7;
 wire [15-1:0] stg2_app8;
 wire [15-1:0] stg2_app9;
+wire [ 6-1:0] stg2_1_max_exp;
 wire [ 6-1:0] stg2_max_exp;
-wire 	        stg2_valid;
+wire          stg2_1_valid;
+wire 	      stg2_valid;
+wire [14-1:0] o_shifted_unsign_pp[0:8];
+wire          o_pp_sign[0:8];
 
 wire [19-1:0] stg3_psum;
 wire 		      stg3_valid;
@@ -125,7 +129,7 @@ wire          o_valid_in;
 reg  [16-1:0] conv_r;
 wire [16-1:0] conv_w;
 
-wire [50:0]   number[9-1:0];
+wire [50:0]   number[10-1:0];
 //-- <MK Sun Adding some new flag to indicate>
 // wire o_update_mode_stg1, o_update_mode_stg2, o_update_mode_stg3, o_update_mode_stg4;
 
@@ -190,7 +194,7 @@ mac_stg1 stg1(.i_clk(clk),
               .o_Q_frac(o_Q_frac_stg1),
               .o_transistor_num(number[2]));
 
-mac_stg2 stg2(.i_clk(clk),
+mac_stg2_1 stg2_1(.i_clk(clk),
               .i_rst_n(i_rst_n),
               .i_valid(stg1_valid),
               .i_inhibit(i_inhibit),
@@ -216,6 +220,59 @@ mac_stg2 stg2(.i_clk(clk),
               .i_exp9(stg1_exp9),
 
               .i_max_exp(stg1_max_exp),
+              .i_Q_frac(o_Q_frac_stg1),
+
+              .o_shifted_unsign_pp1(o_shifted_unsign_pp[0]),
+              .o_shifted_unsign_pp2(o_shifted_unsign_pp[1]),
+              .o_shifted_unsign_pp3(o_shifted_unsign_pp[2]),
+              .o_shifted_unsign_pp4(o_shifted_unsign_pp[3]),
+              .o_shifted_unsign_pp5(o_shifted_unsign_pp[4]),
+              .o_shifted_unsign_pp6(o_shifted_unsign_pp[5]),
+              .o_shifted_unsign_pp7(o_shifted_unsign_pp[6]),
+              .o_shifted_unsign_pp8(o_shifted_unsign_pp[7]),
+              .o_shifted_unsign_pp9(o_shifted_unsign_pp[8]),
+              .o_pp_sign1(o_pp_sign[0]),
+              .o_pp_sign2(o_pp_sign[1]),
+              .o_pp_sign3(o_pp_sign[2]),
+              .o_pp_sign4(o_pp_sign[3]),
+              .o_pp_sign5(o_pp_sign[4]),
+              .o_pp_sign6(o_pp_sign[5]),
+              .o_pp_sign7(o_pp_sign[6]),
+              .o_pp_sign8(o_pp_sign[7]),
+              .o_pp_sign9(o_pp_sign[8]),
+
+              .o_max_exp(stg2_1_max_exp),
+
+              .o_valid(stg2_1_valid),
+              .o_Q_frac(o_Q_frac_stg2_1),
+              .o_transistor_num(number[3]));
+
+mac_stg2_2 stg2_2(.i_clk(clk),
+              .i_rst_n(i_rst_n),
+              .i_valid(stg2_1_valid),
+              .i_inhibit(i_inhibit),
+
+              .i_max_exp(stg2_1_max_exp),
+              .i_shifted_unsign_pp1(o_shifted_unsign_pp[0]),
+              .i_shifted_unsign_pp2(o_shifted_unsign_pp[1]),
+              .i_shifted_unsign_pp3(o_shifted_unsign_pp[2]),
+              .i_shifted_unsign_pp4(o_shifted_unsign_pp[3]),
+              .i_shifted_unsign_pp5(o_shifted_unsign_pp[4]),
+              .i_shifted_unsign_pp6(o_shifted_unsign_pp[5]),
+              .i_shifted_unsign_pp7(o_shifted_unsign_pp[6]),
+              .i_shifted_unsign_pp8(o_shifted_unsign_pp[7]),
+              .i_shifted_unsign_pp9(o_shifted_unsign_pp[8]),
+              .i_pp_sign1(o_pp_sign[0]),
+              .i_pp_sign2(o_pp_sign[1]),
+              .i_pp_sign3(o_pp_sign[2]),
+              .i_pp_sign4(o_pp_sign[3]),
+              .i_pp_sign5(o_pp_sign[4]),
+              .i_pp_sign6(o_pp_sign[5]),
+              .i_pp_sign7(o_pp_sign[6]),
+              .i_pp_sign8(o_pp_sign[7]),
+              .i_pp_sign9(o_pp_sign[8]),
+
+              .i_Q_frac(o_Q_frac_stg2_1),
 
               .o_aligned_pp1(stg2_app1),
               .o_aligned_pp2(stg2_app2),
@@ -229,9 +286,9 @@ mac_stg2 stg2(.i_clk(clk),
               .o_max_exp(stg2_max_exp),
 
               .o_valid(stg2_valid),
-              .i_Q_frac(o_Q_frac_stg1),
               .o_Q_frac(o_Q_frac_stg2),
-              .o_transistor_num(number[3]));
+              .o_transistor_num(number[9]));
+
 
 mac_stg3 stg3(.i_clk(clk),
               .i_rst_n(i_rst_n),
@@ -293,7 +350,7 @@ reg [50:0] sum;
 integer j;
 always @(*) begin
     sum = 0;
-    for (j=0; j<9; j=j+1) begin 
+    for (j=0; j<10; j=j+1) begin 
         sum = sum + number[j];
     end
 end

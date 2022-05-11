@@ -94,6 +94,7 @@ wire [5-1:0] o_Q_frac_stg1, o_Q_frac_stg2, o_Q_frac_stg3, o_Q_frac_stg4;
 wire 	   stg1_valid;
 
 // aligned partial products
+wire [ 9-1:0] stg2_1_skip;
 wire [15-1:0] stg2_app1;
 wire [15-1:0] stg2_app2;
 wire [15-1:0] stg2_app3;
@@ -145,7 +146,7 @@ mac_stg1 stg1(.i_clk(clk),
               .i_valid(i_valid),
               .i_inhibit(i_inhibit),
               .Q_frac(Q_frac),
-              .skip(zero_vector),
+              .i_skip(zero_vector),
               .i_im1(i_im1),
               .i_im2(i_im2),
               .i_im3(i_im3),
@@ -184,7 +185,7 @@ mac_stg1 stg1(.i_clk(clk),
               .o_exp7(stg1_exp7),
               .o_exp8(stg1_exp8),
               .o_exp9(stg1_exp9),
-              .o_max_exp(stg1_max_exp),
+              .o_skip(stg_2_1_skip),
               .o_valid(stg1_valid),
               .o_Q_frac(o_Q_frac_stg1),
               .o_transistor_num(number[2]));

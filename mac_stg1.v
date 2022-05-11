@@ -33,7 +33,7 @@ module mac_stg1(input          i_clk,
                 input          i_valid,
                 input          i_inhibit,
                 input  [5-1:0] Q_frac,
-                input  [9-1:0] skip,     // is it zero skipping part...
+                input  [9-1:0] i_skip,     // is it zero skipping part...
                 input  [8-1:0] i_im1,
                 input  [8-1:0] i_im2,
                 input  [8-1:0] i_im3,
@@ -74,7 +74,8 @@ module mac_stg1(input          i_clk,
                 output [6-1:0] o_exp8,    // <MK Sun, change from 9 bits to 6 bits.>
                 output [6-1:0] o_exp9,    // <MK Sun, change from 9 bits to 6 bits.>
 
-                output [6-1:0] o_max_exp, // <MK Sun, change from 9 bits to 6 bits.>
+                output [9-1:0] o_skip,
+
                 output 		   o_valid,
                 output [5-1:0] o_Q_frac,
                 output [50:0]  o_transistor_num);
@@ -105,7 +106,7 @@ reg [4-1:0] ker9_r, ker9_w;
 
 reg [9-1:0] skip_r;
 
-wire [50:0] numbers [0:10];
+wire [50:0] numbers [0:10-1];
 
 assign o_valid = valid_r;
 assign o_Q_frac = Q_frac_reg;
@@ -157,18 +158,18 @@ PPgenerator pp_gen9(.image(im9_r),
                     .exp(o_exp9),
                     .number(numbers[8]) );
 
-max_exp_determ max_exp1(.skip(skip_r),
-                        .exp1(o_exp1),
-                        .exp2(o_exp2),
-                        .exp3(o_exp3),
-                        .exp4(o_exp4),
-                        .exp5(o_exp5),
-                        .exp6(o_exp6),
-                        .exp7(o_exp7),
-                        .exp8(o_exp8),
-                        .exp9(o_exp9),
-                        .max_exp(o_max_exp),
-                        .number(numbers[9]) );
+// max_exp_determ max_exp1(.skip(skip_r),
+//                         .exp1(o_exp1),
+//                         .exp2(o_exp2),
+//                         .exp3(o_exp3),
+//                         .exp4(o_exp4),
+//                         .exp5(o_exp5),
+//                         .exp6(o_exp6),
+//                         .exp7(o_exp7),
+//                         .exp8(o_exp8),
+//                         .exp9(o_exp9),
+//                         .max_exp(o_max_exp),
+//                         .number(numbers[9]) );
 
 always@(*) begin
     if (i_inhibit) begin
@@ -260,7 +261,7 @@ always@(posedge i_clk or negedge i_rst_n) begin
         ker7_r  <= ker7_w ;
         ker8_r  <= ker8_w ;
         ker9_r  <= ker9_w ;
-        skip_r  <= skip   ;
+        skip_r  <= i_skip   ;
 
         Q_frac_reg <= Q_frac_wire;
         // Q_frac_reg <= (i_inhibit) ? Q_frac_reg : Q_frac;
@@ -269,13 +270,13 @@ end
 
 wire [4:0] Q_frac_wire;
 wire [4:0] Q_frac_wire2 = Q_frac_reg;
-MX#(5) mux1(Q_frac_wire, Q_frac, Q_frac_wire2, i_inhibit, numbers[10]);
+MX#(5) mux1(Q_frac_wire, Q_frac, Q_frac_wire2, i_inhibit, numbers[9]);
 
 reg [50:0] sum;
 integer j;
 always @(*) begin
 	sum = 0;
-	for (j=0; j<11; j=j+1) begin 
+	for (j=0; j<10; j=j+1) begin 
 		sum = sum + numbers[j];
 	end
 end

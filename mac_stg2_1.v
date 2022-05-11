@@ -31,6 +31,7 @@ module mac_stg2_1(input           i_clk,
                 input           i_rst_n,
                 input           i_valid,
                 input           i_inhibit,
+                input  [ 9-1:0] i_skip,
                 input  [ 4-1:0] i_pp1,
                 input  [ 4-1:0] i_pp2,
                 input  [ 4-1:0] i_pp3,
@@ -50,8 +51,6 @@ module mac_stg2_1(input           i_clk,
                 input  [ 6-1:0] i_exp7,
                 input  [ 6-1:0] i_exp8,
                 input  [ 6-1:0] i_exp9,
-
-                input  [ 6-1:0] i_max_exp,
 
                 output [14-1:0] shifted_unsign_pp1,
                 output [14-1:0] shifted_unsign_pp2,
@@ -79,8 +78,9 @@ module mac_stg2_1(input           i_clk,
                 output [ 5-1:0] o_Q_frac,
                 output [50:0] o_transistor_num);
 
-wire [50:0] numbers[9-1:0];
+wire [50:0] numbers[10-1:0];
 reg valid_r, valid_w;
+reg [9-1:0] skip_r, skip_w;
 
 // registers for partial products
 reg [4-1:0] pp1_r, pp1_w;
@@ -105,67 +105,76 @@ reg [6-1:0] exp8_r, exp8_w;
 reg [6-1:0] exp9_r, exp9_w;
 
 // register for the maximum exponential term
-reg [6-1:0] max_exp_r, max_exp_w;
-
-assign o_max_exp = max_exp_r;
-
 assign o_valid = valid_r;
 
 reg [5-1:0] Q_frac_reg;
 assign o_Q_frac = Q_frac_reg;
 
 //-- Instantiation
+max_exp_determ max_exp1(.skip(skip_r),
+                        .exp1(i_exp1),
+                        .exp2(i_exp2),
+                        .exp3(i_exp3),
+                        .exp4(i_exp4),
+                        .exp5(i_exp5),
+                        .exp6(i_exp6),
+                        .exp7(i_exp7),
+                        .exp8(i_exp8),
+                        .exp9(i_exp9),
+                        .max_exp(o_max_exp),
+                        .number(numbers[9]) );
+
 align_CG2_NOclkGating_1 align1(.denorm_pp(pp1_r),
                              .exp(exp1_r),
-                             .max_exp(max_exp_r),
+                             .max_exp(o_max_exp),
                              .shifted_unsign_pp(shifted_unsign_pp1),
                              .pp_sign(pp_sign1),
                              .number(numbers[0]));
 align_CG2_NOclkGating_1 align2(.denorm_pp(pp2_r),
                              .exp(exp2_r),
-                             .max_exp(max_exp_r),
+                             .max_exp(o_max_exp),
                              .shifted_unsign_pp(shifted_unsign_pp2),
                              .pp_sign(pp_sign2),
                              .number(numbers[1]));
 align_CG2_NOclkGating_1 align3(.denorm_pp(pp3_r),
                              .exp(exp3_r),
-                             .max_exp(max_exp_r),
+                             .max_exp(o_max_exp),
                              .shifted_unsign_pp(shifted_unsign_pp3),
                              .pp_sign(pp_sign3),
                              .number(numbers[2]));
 align_CG2_NOclkGating_1 align4(.denorm_pp(pp4_r),
                              .exp(exp4_r),
-                             .max_exp(max_exp_r),
+                             .max_exp(o_max_exp),
                              .shifted_unsign_pp(shifted_unsign_pp4),
                              .pp_sign(pp_sign4),
                              .number(numbers[3]));
 align_CG2_NOclkGating_1 align5(.denorm_pp(pp5_r),
                              .exp(exp5_r),
-                             .max_exp(max_exp_r),
+                             .max_exp(o_max_exp),
                              .shifted_unsign_pp(shifted_unsign_pp5),
                              .pp_sign(pp_sign5),
                              .number(numbers[4]));
 align_CG2_NOclkGating_1 align6(.denorm_pp(pp6_r),
                              .exp(exp6_r),
-                             .max_exp(max_exp_r),
+                             .max_exp(o_max_exp),
                              .shifted_unsign_pp(shifted_unsign_pp6),
                              .pp_sign(pp_sign6),
                              .number(numbers[5]));
 align_CG2_NOclkGating_1 align7(.denorm_pp(pp7_r),
                              .exp(exp7_r),
-                             .max_exp(max_exp_r),
+                             .max_exp(o_max_exp),
                              .shifted_unsign_pp(shifted_unsign_pp7),
                              .pp_sign(pp_sign7),
                              .number(numbers[6]));
 align_CG2_NOclkGating_1 align8(.denorm_pp(pp8_r),
                              .exp(exp8_r),
-                             .max_exp(max_exp_r),
+                             .max_exp(o_max_exp),
                              .shifted_unsign_pp(shifted_unsign_pp8),
                              .pp_sign(pp_sign8),
                              .number(numbers[7]));
 align_CG2_NOclkGating_1 align9(.denorm_pp(pp9_r),
                              .exp(exp9_r),
-                             .max_exp(max_exp_r),
+                             .max_exp(o_max_exp),
                              .shifted_unsign_pp(shifted_unsign_pp9),
                              .pp_sign(pp_sign9),
                              .number(numbers[8]));
@@ -195,7 +204,7 @@ always@(*) begin
         exp8_w = exp8_r;
         exp9_w = exp9_r;
 
-        max_exp_w = max_exp_r;
+        skip_w = skip_r;
     end
     else begin
         valid_w = i_valid;
@@ -220,7 +229,7 @@ always@(*) begin
         exp8_w = i_exp8;
         exp9_w = i_exp9;
 
-        max_exp_w = i_max_exp;
+        skip_w = i_skip;
     end
 end
 
@@ -248,7 +257,7 @@ always@(posedge i_clk or negedge i_rst_n) begin
         exp8_r <= 0;
         exp9_r <= 0;
 
-        max_exp_r <= 0;
+        skip_r <= 0;
         Q_frac_reg <= 0;
     end
     else begin
@@ -274,7 +283,7 @@ always@(posedge i_clk or negedge i_rst_n) begin
         exp8_r <= exp8_w;
         exp9_r <= exp9_w;
 
-        max_exp_r <= max_exp_w;
+        skip_r <= skip_w;
         Q_frac_reg <= i_Q_frac;
     end
 end
@@ -283,7 +292,7 @@ reg [50:0] sum;
 integer j;
 always @(*) begin
     sum = 0;
-    for (j=0; j<9; j=j+1) begin 
+    for (j=0; j<10; j=j+1) begin 
         sum = sum + numbers[j];
     end
 end

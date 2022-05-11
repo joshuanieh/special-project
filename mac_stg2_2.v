@@ -71,28 +71,6 @@ module mac_stg2_2(
 
 wire [50:0] numbers[9-1:0];
 
-// registers for partial products
-reg [4-1:0] pp1_r, pp1_w;
-reg [4-1:0] pp2_r, pp2_w;
-reg [4-1:0] pp3_r, pp3_w;
-reg [4-1:0] pp4_r, pp4_w;
-reg [4-1:0] pp5_r, pp5_w;
-reg [4-1:0] pp6_r, pp6_w;
-reg [4-1:0] pp7_r, pp7_w;
-reg [4-1:0] pp8_r, pp8_w;
-reg [4-1:0] pp9_r, pp9_w;
-
-// registers for exponents
-reg [6-1:0] exp1_r, exp1_w;
-reg [6-1:0] exp2_r, exp2_w;
-reg [6-1:0] exp3_r, exp3_w;
-reg [6-1:0] exp4_r, exp4_w;
-reg [6-1:0] exp5_r, exp5_w;
-reg [6-1:0] exp6_r, exp6_w;
-reg [6-1:0] exp7_r, exp7_w;
-reg [6-1:0] exp8_r, exp8_w;
-reg [6-1:0] exp9_r, exp9_w;
-
 // register for the maximum exponential term
 reg [6-1:0] max_exp_r, max_exp_w;
 assign o_max_exp = max_exp_r;
@@ -103,7 +81,8 @@ assign o_valid = valid_r;
 reg [5-1:0] Q_frac_reg, Q_frac_w;
 assign o_Q_frac = Q_frac_reg;
 
-reg [14-1:0] shifted_unsign_pp_r[0:8], shifted_unsign_pp_w[0:8], pp_sign_r[0:8], pp_sign_w[0:8];
+reg [14-1:0] shifted_unsign_pp_r[0:8], shifted_unsign_pp_w[0:8];
+reg pp_sign_r[0:8], pp_sign_w[0:8];
 
 //-- Instantiation
 align_CG2_NOclkGating_2 align1(.i_shifted_unsign_pp(shifted_unsign_pp_r[0]),

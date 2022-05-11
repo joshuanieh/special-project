@@ -156,7 +156,7 @@ always @(negedge i_clk) begin
     if(o_valid_half) begin
         case (print)
             4'd0: begin
-                out_batch = $fopen("./2_1/0_120_2_1_output.txt", "a");
+                out_batch = $fopen("MAC_subsystem/m2_1/0_120_2_1_output.txt", "a");
                 $fwrite(out_batch, "\nStage 2-1\n");
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
@@ -167,7 +167,7 @@ always @(negedge i_clk) begin
                 $fclose(out_batch);
             end
             4'd1: begin 
-                out_batch = $fopen("./2_1/1_120_2_1_output.txt", "a");
+                out_batch = $fopen("MAC_subsystem/m2_1/1_120_2_1_output.txt", "a");
                 $fwrite(out_batch, "\nStage 2-1\n");
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
@@ -178,7 +178,7 @@ always @(negedge i_clk) begin
                 $fclose(out_batch);
             end
             4'd2: begin 
-                out_batch = $fopen("./2_1/2_120_2_1_output.txt", "a");
+                out_batch = $fopen("MAC_subsystem/m2_1/2_120_2_1_output.txt", "a");
                 $fwrite(out_batch, "\nStage 2-1\n");
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
@@ -189,7 +189,7 @@ always @(negedge i_clk) begin
                 $fclose(out_batch);
             end
             4'd3: begin 
-                out_batch = $fopen("./2_1/3_120_2_1_output.txt", "a");
+                out_batch = $fopen("MAC_subsystem/m2_1/3_120_2_1_output.txt", "a");
                 $fwrite(out_batch, "\nStage 2-1\n");
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
@@ -200,7 +200,7 @@ always @(negedge i_clk) begin
                 $fclose(out_batch);
             end
             4'd4: begin 
-                out_batch = $fopen("./2_1/4_120_2_1_output.txt", "a");
+                out_batch = $fopen("MAC_subsystem/m2_1/4_120_2_1_output.txt", "a");
                 $fwrite(out_batch, "\nStage 2-1\n");
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
@@ -211,7 +211,7 @@ always @(negedge i_clk) begin
                 $fclose(out_batch);
             end
             4'd5: begin 
-                out_batch = $fopen("./2_1/5_120_2_1_output.txt", "a");
+                out_batch = $fopen("MAC_subsystem/m2_1/5_120_2_1_output.txt", "a");
                 $fwrite(out_batch, "\nStage 2-1\n");
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
@@ -222,7 +222,7 @@ always @(negedge i_clk) begin
                 $fclose(out_batch);
             end
             4'd6: begin 
-                out_batch = $fopen("./2_1/6_120_2_1_output.txt", "a");
+                out_batch = $fopen("MAC_subsystem/m2_1/6_120_2_1_output.txt", "a");
                 $fwrite(out_batch, "\nStage 2-1\n");
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
@@ -233,7 +233,7 @@ always @(negedge i_clk) begin
                 $fclose(out_batch);
             end
             4'd7: begin 
-                out_batch = $fopen("./2_1/7_120_2_1_output.txt", "a");
+                out_batch = $fopen("MAC_subsystem/m2_1/7_120_2_1_output.txt", "a");
                 $fwrite(out_batch, "\nStage 2-1\n");
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
@@ -244,7 +244,7 @@ always @(negedge i_clk) begin
                 $fclose(out_batch);
             end
             4'd8: begin 
-                out_batch = $fopen("./2_1/8_120_2_1_output.txt", "a");
+                out_batch = $fopen("MAC_subsystem/m2_1/8_120_2_1_output.txt", "a");
                 $fwrite(out_batch, "\nStage 2-1\n");
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
                 $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);

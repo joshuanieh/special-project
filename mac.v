@@ -299,23 +299,23 @@ integer out_batch;
 initial begin
     out_batch = $fopen("120_each_stage_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/2_1/0_120_2_1_output.txt", "w");
+    out_batch = $fopen("MAC_subsystem/m2_1/0_120_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/2_1/1_120_2_1_output.txt", "w");
+    out_batch = $fopen("MAC_subsystem/m2_1/1_120_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/2_1/2_120_2_1_output.txt", "w");
+    out_batch = $fopen("MAC_subsystem/m2_1/2_120_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/2_1/3_120_2_1_output.txt", "w");
+    out_batch = $fopen("MAC_subsystem/m2_1/3_120_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/2_1/4_120_2_1_output.txt", "w");
+    out_batch = $fopen("MAC_subsystem/m2_1/4_120_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/2_1/5_120_2_1_output.txt", "w");
+    out_batch = $fopen("MAC_subsystem/m2_1/5_120_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/2_1/6_120_2_1_output.txt", "w");
+    out_batch = $fopen("MAC_subsystem/m2_1/6_120_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/2_1/7_120_2_1_output.txt", "w");
+    out_batch = $fopen("MAC_subsystem/m2_1/7_120_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/2_1/8_120_2_1_output.txt", "w");
+    out_batch = $fopen("MAC_subsystem/m2_1/8_120_2_1_output.txt", "w");
     $fclose(out_batch);
 end
 

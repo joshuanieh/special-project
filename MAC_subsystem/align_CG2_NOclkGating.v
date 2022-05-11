@@ -1,5 +1,7 @@
 module align_CG2_NOclkGating(
            input i_clk,
+           input i_rst_n,
+           input [3:0] print,
            input  [ 4-1:0] denorm_pp,
            input  [ 6-1:0] exp,
            input  [ 6-1:0] max_exp,
@@ -137,16 +139,123 @@ always @(posedge i_clk) begin
     o_valid_half <= i_valid;
     Q_frac_half <= i_Q_frac;
     max_exp_half <= i_max_exp;
-    if(i_valid) begin
-        out_batch = $fopen("120_each_stage_output.txt", "a");
-        $fwrite(out_batch, "\nStage 2-1\n");
-        $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
-        $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
-        $fwrite(out_batch, "Stage 2-1: %06X\n", ge12);
-        $fwrite(out_batch, "Stage 2-1: %06X\n", mux0123);
-        $fwrite(out_batch, "Stage 2-1: %06X\n", mux4567);
-        $fwrite(out_batch, "Stage 2-1: %06X\n", mux891011);
-        $fclose(out_batch);
+end
+always @(negedge i_rst_n) begin
+    ge4 <= 0;
+    ge8 <= 0;
+    ge12 <= 0;
+    mux0123 <= 0;
+    mux4567 <= 0;
+    mux891011 <= 0;
+    pp_sign <= 0;
+    o_valid_half <= 0;
+    Q_frac_half <= 0;
+    max_exp_half <= 0;
+end
+always @(negedge i_clk) begin
+    if(o_valid_half) begin
+        case (print)
+            4'd0: begin
+                out_batch = $fopen("./2_1/0_120_2_1_output.txt", "a");
+                $fwrite(out_batch, "\nStage 2-1\n");
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge12);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux0123);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux4567);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux891011);
+                $fclose(out_batch);
+            end
+            4'd1: begin 
+                out_batch = $fopen("./2_1/1_120_2_1_output.txt", "a");
+                $fwrite(out_batch, "\nStage 2-1\n");
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge12);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux0123);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux4567);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux891011);
+                $fclose(out_batch);
+            end
+            4'd2: begin 
+                out_batch = $fopen("./2_1/2_120_2_1_output.txt", "a");
+                $fwrite(out_batch, "\nStage 2-1\n");
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge12);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux0123);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux4567);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux891011);
+                $fclose(out_batch);
+            end
+            4'd3: begin 
+                out_batch = $fopen("./2_1/3_120_2_1_output.txt", "a");
+                $fwrite(out_batch, "\nStage 2-1\n");
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge12);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux0123);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux4567);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux891011);
+                $fclose(out_batch);
+            end
+            4'd4: begin 
+                out_batch = $fopen("./2_1/4_120_2_1_output.txt", "a");
+                $fwrite(out_batch, "\nStage 2-1\n");
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge12);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux0123);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux4567);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux891011);
+                $fclose(out_batch);
+            end
+            4'd5: begin 
+                out_batch = $fopen("./2_1/5_120_2_1_output.txt", "a");
+                $fwrite(out_batch, "\nStage 2-1\n");
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge12);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux0123);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux4567);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux891011);
+                $fclose(out_batch);
+            end
+            4'd6: begin 
+                out_batch = $fopen("./2_1/6_120_2_1_output.txt", "a");
+                $fwrite(out_batch, "\nStage 2-1\n");
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge12);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux0123);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux4567);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux891011);
+                $fclose(out_batch);
+            end
+            4'd7: begin 
+                out_batch = $fopen("./2_1/7_120_2_1_output.txt", "a");
+                $fwrite(out_batch, "\nStage 2-1\n");
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge12);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux0123);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux4567);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux891011);
+                $fclose(out_batch);
+            end
+            4'd8: begin 
+                out_batch = $fopen("./2_1/8_120_2_1_output.txt", "a");
+                $fwrite(out_batch, "\nStage 2-1\n");
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge4);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge8);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", ge12);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux0123);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux4567);
+                $fwrite(out_batch, "Stage 2-1: %06X\n", mux891011);
+                $fclose(out_batch);
+            end
+            default: out_batch = 0;
+        endcase
     end
 end
 assign o_valid = o_valid_half;

@@ -23,7 +23,7 @@ wire [2-1:0] image_mant = image[1:0];
 wire         weight_sign = weight[3];
 wire [3-1:0] weight_exp  = weight[2:0];
 
-// Add zero floag in case the image or weight is zero
+// Add zero flag in case the image or weight is zero
 // wire zero_img_flag = image[6:0] == 0;
 wire zero_img_flag;
 wire [1:0] img_flag_tmp;

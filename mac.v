@@ -297,32 +297,32 @@ integer l_p = 0;
 integer out_batch;
 
 initial begin
-    out_batch = $fopen("120_each_stage_output.txt", "w");
+    out_batch = $fopen("075_each_stage_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/m2_1/0_120_2_1_output.txt", "w");
+    out_batch = $fopen("075/0_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/m2_1/1_120_2_1_output.txt", "w");
+    out_batch = $fopen("075/1_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/m2_1/2_120_2_1_output.txt", "w");
+    out_batch = $fopen("075/2_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/m2_1/3_120_2_1_output.txt", "w");
+    out_batch = $fopen("075/3_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/m2_1/4_120_2_1_output.txt", "w");
+    out_batch = $fopen("075/4_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/m2_1/5_120_2_1_output.txt", "w");
+    out_batch = $fopen("075/5_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/m2_1/6_120_2_1_output.txt", "w");
+    out_batch = $fopen("075/6_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/m2_1/7_120_2_1_output.txt", "w");
+    out_batch = $fopen("075/7_2_1_output.txt", "w");
     $fclose(out_batch);
-    out_batch = $fopen("MAC_subsystem/m2_1/8_120_2_1_output.txt", "w");
+    out_batch = $fopen("075/8_2_1_output.txt", "w");
     $fclose(out_batch);
 end
 
 always @(posedge clk) begin
     //-- file open for the case we are going to print out the message to text.
     if(i_valid) begin
-        out_batch = $fopen("120_each_stage_output.txt", "a");
+        out_batch = $fopen("075_each_stage_output.txt", "a");
 
         $fwrite(out_batch, "\nStage 1\n");
         $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp1);

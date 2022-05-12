@@ -86,6 +86,9 @@ wire [6-1:0] stg1_exp7;
 wire [6-1:0] stg1_exp8;
 wire [6-1:0] stg1_exp9;
 
+wire [6-1:0] stg1_wire_2_1;
+wire [6-1:0] stg1_wire_2_2;
+
 wire [9-1:0] stg1_skip;
 
 wire [5-1:0] o_Q_frac_stg1, o_Q_frac_stg2, o_Q_frac_stg2_1, o_Q_frac_stg3, o_Q_frac_stg4;
@@ -188,6 +191,10 @@ mac_stg1 stg1(.i_clk(clk),
               .o_exp7(stg1_exp7),
               .o_exp8(stg1_exp8),
               .o_exp9(stg1_exp9),
+
+              .o_wire2_1(stg1_wire_2_1),
+              .o_wire2_2(stg1_wire_2_2),
+
               .o_skip(stg1_skip),
               .o_valid(stg1_valid),
               .o_Q_frac(o_Q_frac_stg1),
@@ -219,6 +226,8 @@ mac_stg2_1 stg2_1(.i_clk(clk),
               .i_exp8(stg1_exp8),
               .i_exp9(stg1_exp9),
 
+              .i_wire2_1(stg1_wire_2_1),
+              .i_wire2_2(stg1_wire_2_2),
               .i_Q_frac(o_Q_frac_stg1),
 
               .o_shifted_unsign_pp1(stg2_1_shifted_unsign_pp[0]),

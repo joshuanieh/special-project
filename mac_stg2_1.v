@@ -52,6 +52,9 @@ module mac_stg2_1(input           i_clk,
                 input  [ 6-1:0] i_exp8,
                 input  [ 6-1:0] i_exp9,
 
+                input  [6-1:0] i_wire2_1,
+                input  [6-1:0] i_wire2_2,
+
                 input  [ 5-1:0] i_Q_frac,
 
                 output [14-1:0] o_shifted_unsign_pp1,
@@ -105,6 +108,9 @@ reg [6-1:0] exp7_r, exp7_w;
 reg [6-1:0] exp8_r, exp8_w;
 reg [6-1:0] exp9_r, exp9_w;
 
+reg [6-1:0] wire2_1_w, wire2_1_r;
+reg [6-1:0] wire2_2_w, wire2_2_r;
+
 // register for the maximum exponential term
 assign o_valid = valid_r;
 
@@ -112,18 +118,11 @@ reg [5-1:0] Q_frac_reg;
 assign o_Q_frac = Q_frac_reg;
 
 //-- Instantiation
-max_exp_determ max_exp1(.skip(skip_r),
-                        .exp1(i_exp1),
-                        .exp2(i_exp2),
-                        .exp3(i_exp3),
-                        .exp4(i_exp4),
-                        .exp5(i_exp5),
-                        .exp6(i_exp6),
-                        .exp7(i_exp7),
-                        .exp8(i_exp8),
-                        .exp9(i_exp9),
-                        .max_exp(o_max_exp),
-                        .number(numbers[9]) );
+max_exp_determ_2 exp2(.i_wire2_1(i_wire2_1),
+                      .i_wire2_2(i_wire2_2),
+                      .i_exp9(i_exp9),
+                      .o_max_exp(o_max_exp),
+                      .number(numbers[9])		);
 
 align_CG2_NOclkGating_1 align1(.denorm_pp(pp1_r),
                              .exp(exp1_r),
@@ -205,6 +204,8 @@ always@(*) begin
         exp8_w = exp8_r;
         exp9_w = exp9_r;
 
+        wire2_1_w = wire2_1_r;
+        wire2_2_w = wire2_2_r;
         skip_w = skip_r;
     end
     else begin
@@ -229,6 +230,9 @@ always@(*) begin
         exp7_w = i_exp7;
         exp8_w = i_exp8;
         exp9_w = i_exp9;
+        
+        wire2_1_w = i_wire2_1;
+        wire2_2_w = i_wire2_2;
 
         skip_w = i_skip;
     end
@@ -258,6 +262,9 @@ always@(posedge i_clk or negedge i_rst_n) begin
         exp8_r <= 0;
         exp9_r <= 0;
 
+        wire2_1_r <= 0;
+        wire2_2_r <= 0;
+
         skip_r <= 0;
         Q_frac_reg <= 0;
     end
@@ -283,6 +290,9 @@ always@(posedge i_clk or negedge i_rst_n) begin
         exp7_r <= exp7_w;
         exp8_r <= exp8_w;
         exp9_r <= exp9_w;
+
+        wire2_1_r <= wire2_1_w;
+        wire2_2_r <= wire2_2_w;
 
         skip_r <= skip_w;
         Q_frac_reg <= i_Q_frac;

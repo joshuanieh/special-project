@@ -73,6 +73,9 @@ module mac_stg1(input          i_clk,
                 output [6-1:0] o_exp7,    // <MK Sun, change from 9 bits to 6 bits.>
                 output [6-1:0] o_exp8,    // <MK Sun, change from 9 bits to 6 bits.>
                 output [6-1:0] o_exp9,    // <MK Sun, change from 9 bits to 6 bits.>
+                
+                output [6-1:0] o_wire2_1,
+                output [6-1:0] o_wire2_2,
 
                 output [9-1:0] o_skip,
 
@@ -159,18 +162,19 @@ PPgenerator pp_gen9(.image(im9_r),
                     .exp(o_exp9),
                     .number(numbers[8]) );
 
-// max_exp_determ max_exp1(.skip(skip_r),
-//                         .exp1(o_exp1),
-//                         .exp2(o_exp2),
-//                         .exp3(o_exp3),
-//                         .exp4(o_exp4),
-//                         .exp5(o_exp5),
-//                         .exp6(o_exp6),
-//                         .exp7(o_exp7),
-//                         .exp8(o_exp8),
-//                         .exp9(o_exp9),
-//                         .max_exp(o_max_exp),
-//                         .number(numbers[9]) );
+max_exp_determ_1 max_exp1(.skip(skip_r),
+                        .exp1(o_exp1),
+                        .exp2(o_exp2),
+                        .exp3(o_exp3),
+                        .exp4(o_exp4),
+                        .exp5(o_exp5),
+                        .exp6(o_exp6),
+                        .exp7(o_exp7),
+                        .exp8(o_exp8),
+                        .exp9(o_exp9),
+                        .o_wire2_1(o_wire2_1),
+                        .o_wire2_2(o_wire2_2),
+                        .number(numbers[9]) );
 
 always@(*) begin
     if (i_inhibit) begin

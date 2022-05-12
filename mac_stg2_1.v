@@ -118,9 +118,9 @@ reg [5-1:0] Q_frac_reg;
 assign o_Q_frac = Q_frac_reg;
 
 //-- Instantiation
-max_exp_determ_2 exp2(.i_wire2_1(i_wire2_1),
-                      .i_wire2_2(i_wire2_2),
-                      .i_exp9(i_exp9),
+max_exp_determ_2 exp2(.i_wire2_1(wire2_1_r),
+                      .i_wire2_2(wire2_2_r),
+                      .i_exp9(exp9_r),
                       .o_max_exp(o_max_exp),
                       .number(numbers[9])		);
 

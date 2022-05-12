@@ -354,6 +354,106 @@ mac_stg5 stg5(.i_clk       (clk),
               .o_conv(stg5_o_conv),
               .o_transistor_num(number[6]));
 
+// integer out_batch;
+
+// initial begin
+//     out_batch = $fopen("072_each_stage_output.txt", "w");
+//     $fclose(out_batch);
+// end
+
+// always @(posedge clk) begin
+//     //-- file open for the case we are going to print out the message to text.
+//     if(i_valid) begin
+//         out_batch = $fopen("072_each_stage_output.txt", "a");
+
+//         $fwrite(out_batch, "\nStage 1\n");
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp1);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp2);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp3);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp4);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp5);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp6);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp7);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp8);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp9);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp1);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp2);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp3);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp4);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp5);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp6);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp7);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp8);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp9);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_wire_2_1);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_wire_2_2);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_skip);
+//         $fwrite(out_batch, "Stage 1: %06X\n", stg1_valid);
+//         $fwrite(out_batch, "Stage 1: %06X\n", o_Q_frac_stg1);
+        
+//         $fwrite(out_batch, "\nStage 2-1\n");
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_shifted_unsign_pp[0]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_shifted_unsign_pp[1]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_shifted_unsign_pp[2]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_shifted_unsign_pp[3]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_shifted_unsign_pp[4]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_shifted_unsign_pp[5]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_shifted_unsign_pp[6]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_shifted_unsign_pp[7]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_shifted_unsign_pp[8]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_pp_sign[0]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_pp_sign[1]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_pp_sign[2]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_pp_sign[3]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_pp_sign[4]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_pp_sign[5]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_pp_sign[6]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_pp_sign[7]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_pp_sign[8]);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_max_exp);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", stg2_1_valid);
+//         $fwrite(out_batch, "Stage 2-1: %06X\n", o_Q_frac_stg2_1);
+
+//         $fwrite(out_batch, "\nStage 2-2\n");
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", stg2_app1);
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", stg2_app2);
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", stg2_app3);
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", stg2_app4);
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", stg2_app5);
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", stg2_app6);
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", stg2_app7);
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", stg2_app8);
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", stg2_app9);
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", stg2_max_exp);
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", stg2_valid);
+//         $fwrite(out_batch, "Stage 2-2: %06X\n", o_Q_frac_stg2);
+        
+//         $fwrite(out_batch, "\nStage 3\n");
+//         $fwrite(out_batch, "Stage 3: %06X\n", stg3_psum);
+//         $fwrite(out_batch, "Stage 3: %06X\n", stg3_valid);
+//         $fwrite(out_batch, "Stage 3: %06X\n", stg3_max_exp);
+//         $fwrite(out_batch, "Stage 3: %06X\n", o_Q_frac_stg3);
+        
+//         $fwrite(out_batch, "\nStage 4\n");
+//         $fwrite(out_batch, "Stage 4: %06X\n", stg4_max_exp);
+//         $fwrite(out_batch, "Stage 4: %06X\n", stg4_valid);
+//         $fwrite(out_batch, "Stage 4: %06X\n", stg4_norm_sum);
+//         $fwrite(out_batch, "Stage 4: %06X\n", stg4_exp_diff);
+//         $fwrite(out_batch, "Stage 4: %06X\n", stg4_exp_carry);
+//         $fwrite(out_batch, "Stage 4: %06X\n", stg4_sgn);
+//         $fwrite(out_batch, "Stage 4: %06X\n", o_Q_frac_stg4);
+        
+//         $fwrite(out_batch, "\nStage 5\n");
+//         $fwrite(out_batch, "Stage 5: %06X\n", stg5_o_valid);
+//         $fwrite(out_batch, "Stage 5: %06X\n", stg5_o_conv);
+
+//         $fclose(out_batch);
+//     end
+// end
+// assign number[4] = 0;
+// assign number[5] = 0;
+// assign number[6] = 0;
+
 reg [50:0] sum;
 integer j;
 always @(*) begin

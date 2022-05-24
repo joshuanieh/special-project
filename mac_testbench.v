@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-`define CYCLE      12.00
+`define CYCLE      9.00
 
 module mac_testbench();
 

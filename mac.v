@@ -115,7 +115,9 @@ wire [14-1:0] stg2_shifted_unsign_pp9;
 wire [ 6-1:0] stg2_max_exp;
 wire 	        stg2_valid;
 
-wire [19-1:0] stg3_psum;
+// wire [19-1:0] stg3_psum;
+wire [19-1:0] stg3_extend_sum1234;
+wire [19-1:0] stg3_extend_sum5678;
 wire 		      stg3_valid;
 wire [ 6-1:0] stg3_max_exp;
 
@@ -277,7 +279,9 @@ mac_stg3 stg3(.i_clk(clk),
 
               .i_max_exp(stg2_max_exp),
 
-              .o_psum(stg3_psum),
+            //   .o_psum(stg3_psum),
+              .o_extend_sum1234(stg3_extend_sum1234),
+              .o_extend_sum5678(stg3_extend_sum5678),
               .o_valid(stg3_valid),
               .o_max_exp(stg3_max_exp),
               .i_Q_frac(o_Q_frac_stg2),
@@ -288,7 +292,9 @@ mac_stg4 stg4(.i_clk     (clk),
               .i_rst_n   (i_rst_n),
               .i_valid   (stg3_valid),
               .i_inhibit (i_inhibit),
-              .i_psum    (stg3_psum),
+            //   .i_psum    (stg3_psum),
+              .i_extend_sum1234(stg3_extend_sum1234),
+              .i_extend_sum5678(stg3_extend_sum5678),
               .i_max_exp (stg3_max_exp),
 
               .o_max_exp   (stg4_max_exp),
@@ -322,7 +328,7 @@ integer out_batch;
 always @(posedge clk) begin
     //-- file open for the case we are going to print out the message to text.
     if(i_valid) begin
-        out_batch = $fopen("120_each_stage_output.txt", "a");
+        out_batch = $fopen("090_each_stage_output.txt", "a");
 
         $fwrite(out_batch, "\nStage 1\n");
         $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp1);
@@ -371,7 +377,8 @@ always @(posedge clk) begin
         $fwrite(out_batch, "Stage 2: %06X\n", o_Q_frac_stg2);
         
         $fwrite(out_batch, "\nStage 3\n");
-        $fwrite(out_batch, "Stage 3: %06X\n", stg3_psum);
+        $fwrite(out_batch, "Stage 3: %06X\n", stg3_extend_sum1234);
+        $fwrite(out_batch, "Stage 3: %06X\n", stg3_extend_sum5678);
         $fwrite(out_batch, "Stage 3: %06X\n", stg3_valid);
         $fwrite(out_batch, "Stage 3: %06X\n", stg3_max_exp);
         $fwrite(out_batch, "Stage 3: %06X\n", o_Q_frac_stg3);

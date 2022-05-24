@@ -64,6 +64,15 @@ wire [50:0] numbers[0:100];
 reg valid_r, valid_w;
 
 // pipeline registers
+reg pp_sign1_r, pp_sign1_w;
+reg pp_sign2_r, pp_sign2_w;
+reg pp_sign3_r, pp_sign3_w;
+reg pp_sign4_r, pp_sign4_w;
+reg pp_sign5_r, pp_sign5_w;
+reg pp_sign6_r, pp_sign6_w;
+reg pp_sign7_r, pp_sign7_w;
+reg pp_sign8_r, pp_sign8_w;
+reg pp_sign9_r, pp_sign9_w;
 reg [14-1:0] shifted_unsign_pp1_r, shifted_unsign_pp1_w;
 reg [14-1:0] shifted_unsign_pp2_r, shifted_unsign_pp2_w;
 reg [14-1:0] shifted_unsign_pp3_r, shifted_unsign_pp3_w;
@@ -100,7 +109,7 @@ ADD#(15) add_101(
     .number(numbers[15])
 );
 
-MX#(15) mux_align_pp1(align_pp1, {1'b0, shifted_unsign_pp1_r}, negative_num_1, i_pp_sign1, numbers[25]);
+MX#(15) mux_align_pp1(align_pp1, {1'b0, shifted_unsign_pp1_r}, negative_num_1, pp_sign1_r, numbers[25]);
 
 //2's complements
 wire [15-1:0] inv_tmp_2, negative_num_2, align_pp2;
@@ -119,7 +128,7 @@ ADD#(15) add_102(
     .number(numbers[33])
 );
 
-MX#(15) mux_align_pp2(align_pp2, {1'b0, shifted_unsign_pp2_r}, negative_num_2, i_pp_sign2, numbers[26]);
+MX#(15) mux_align_pp2(align_pp2, {1'b0, shifted_unsign_pp2_r}, negative_num_2, pp_sign2_r, numbers[26]);
 
 //2's complements
 wire [15-1:0] inv_tmp_3, negative_num_3, align_pp3;
@@ -138,7 +147,7 @@ ADD#(15) add_103(
     .number(numbers[17])
 );
 
-MX#(15) mux_align_pp3(align_pp3, {1'b0, shifted_unsign_pp3_r}, negative_num_3, i_pp_sign3, numbers[27]);
+MX#(15) mux_align_pp3(align_pp3, {1'b0, shifted_unsign_pp3_r}, negative_num_3, pp_sign3_r, numbers[27]);
 
 //2's complements
 wire [15-1:0] inv_tmp_4, negative_num_4, align_pp4;
@@ -157,7 +166,7 @@ ADD#(15) add_104(
     .number(numbers[18])
 );
 
-MX#(15) mux_align_pp4(align_pp4, {1'b0, shifted_unsign_pp4_r}, negative_num_4, i_pp_sign4, numbers[28]);
+MX#(15) mux_align_pp4(align_pp4, {1'b0, shifted_unsign_pp4_r}, negative_num_4, pp_sign4_r, numbers[28]);
 
 //2's complements
 wire [15-1:0] inv_tmp_5, negative_num_5, align_pp5;
@@ -176,7 +185,7 @@ ADD#(15) add_105(
     .number(numbers[19])
 );
 
-MX#(15) mux_align_pp5(align_pp5, {1'b0, shifted_unsign_pp5_r}, negative_num_5, i_pp_sign5, numbers[29]);
+MX#(15) mux_align_pp5(align_pp5, {1'b0, shifted_unsign_pp5_r}, negative_num_5, pp_sign5_r, numbers[29]);
 
 //2's complements
 wire [15-1:0] inv_tmp_6, negative_num_6, align_pp6;
@@ -195,7 +204,7 @@ ADD#(15) add_106(
     .number(numbers[20])
 );
 
-MX#(15) mux_align_pp6(align_pp6, {1'b0, shifted_unsign_pp6_r}, negative_num_6, i_pp_sign6, numbers[30]);
+MX#(15) mux_align_pp6(align_pp6, {1'b0, shifted_unsign_pp6_r}, negative_num_6, pp_sign6_r, numbers[30]);
 
 //2's complements
 wire [15-1:0] inv_tmp_7, negative_num_7, align_pp7;
@@ -214,7 +223,7 @@ ADD#(15) add_107(
     .number(numbers[21])
 );
 
-MX#(15) mux_align_pp7(align_pp7, {1'b0, shifted_unsign_pp7_r}, negative_num_7, i_pp_sign7, numbers[31]);
+MX#(15) mux_align_pp7(align_pp7, {1'b0, shifted_unsign_pp7_r}, negative_num_7, pp_sign7_r, numbers[31]);
 
 //2's complements
 wire [15-1:0] inv_tmp_8, negative_num_8, align_pp8;
@@ -233,7 +242,7 @@ ADD#(15) add_108(
     .number(numbers[23])
 );
 
-MX#(15) mux_align_pp8(align_pp8, {1'b0, shifted_unsign_pp8_r}, negative_num_8, i_pp_sign8, numbers[32]);
+MX#(15) mux_align_pp8(align_pp8, {1'b0, shifted_unsign_pp8_r}, negative_num_8, pp_sign8_r, numbers[32]);
 
 //2's complements
 wire [15-1:0] inv_tmp_9, negative_num_9, align_pp9;
@@ -252,7 +261,7 @@ ADD#(15) add_109(
     .number(numbers[24])
 );
 
-MX#(15) mux_align_pp9(align_pp9, {1'b0, shifted_unsign_pp9_r}, negative_num_9, i_pp_sign9, numbers[34]);
+MX#(15) mux_align_pp9(align_pp9, {1'b0, shifted_unsign_pp9_r}, negative_num_9, pp_sign9_r, numbers[34]);
 
 // i_aligned_pp
 //                    exp_diff = 11    ----->           |  2 | 1 | 0 |
@@ -269,15 +278,15 @@ MX#(15) mux_align_pp9(align_pp9, {1'b0, shifted_unsign_pp9_r}, negative_num_9, i
 wire [16-1:0] sum12, sum34, sum56, sum78;
 wire [17-1:0] sum1234, sum5678;
 wire [18-1:0] sum1to8;
-// assign o_psum = $signed(shifted_unsign_pp1_r) +
-//                 $signed(shifted_unsign_pp2_r) +
-//                 $signed(shifted_unsign_pp3_r) +
-//                 $signed(shifted_unsign_pp4_r) +
-//                 $signed(shifted_unsign_pp5_r) +
-//                 $signed(shifted_unsign_pp6_r) +
-//                 $signed(shifted_unsign_pp7_r) +
-//                 $signed(shifted_unsign_pp8_r) +
-//                 $signed(shifted_unsign_pp9_r);
+// assign o_psum = $signed(align_pp1) +
+//                 $signed(align_pp2) +
+//                 $signed(align_pp3) +
+//                 $signed(align_pp4) +
+//                 $signed(align_pp5) +
+//                 $signed(align_pp6) +
+//                 $signed(align_pp7) +
+//                 $signed(align_pp8) +
+//                 $signed(align_pp9);
 wire [7:0] garbage_carry;
 ADD#(16) add12(.i_a({align_pp1[14], align_pp1}), .i_b({align_pp2[14], align_pp2}), .o_s(sum12[15:0]), .o_c(garbage_carry[0]), .number(numbers[0]));
 ADD#(16) add34(.i_a({align_pp3[14], align_pp3}), .i_b({align_pp4[14], align_pp4}), .o_s(sum34[15:0]), .o_c(garbage_carry[1]), .number(numbers[1]));
@@ -290,6 +299,15 @@ ADD#(19) add1to9(.i_a({sum1to8[17], sum1to8}), .i_b({{4{align_pp9[14]}}, align_p
 always@(*) begin
     if (i_inhibit) begin
         valid_w = valid_r;
+        pp_sign1_w = pp_sign1_r;
+        pp_sign2_w = pp_sign2_r;
+        pp_sign3_w = pp_sign3_r;
+        pp_sign4_w = pp_sign4_r;
+        pp_sign5_w = pp_sign5_r;
+        pp_sign6_w = pp_sign6_r;
+        pp_sign7_w = pp_sign7_r;
+        pp_sign8_w = pp_sign8_r;
+        pp_sign9_w = pp_sign9_r;
         shifted_unsign_pp1_w = shifted_unsign_pp1_r;
         shifted_unsign_pp2_w = shifted_unsign_pp2_r;
         shifted_unsign_pp3_w = shifted_unsign_pp3_r;
@@ -303,6 +321,15 @@ always@(*) begin
     end
     else begin
         valid_w = i_valid;
+        pp_sign1_w = i_pp_sign1;
+        pp_sign2_w = i_pp_sign2;
+        pp_sign3_w = i_pp_sign3;
+        pp_sign4_w = i_pp_sign4;
+        pp_sign5_w = i_pp_sign5;
+        pp_sign6_w = i_pp_sign6;
+        pp_sign7_w = i_pp_sign7;
+        pp_sign8_w = i_pp_sign8;
+        pp_sign9_w = i_pp_sign9;
         shifted_unsign_pp1_w = i_shifted_unsign_pp1;
         shifted_unsign_pp2_w = i_shifted_unsign_pp2;
         shifted_unsign_pp3_w = i_shifted_unsign_pp3;
@@ -319,6 +346,15 @@ end
 always@(posedge i_clk  or negedge i_rst_n) begin
     if (~i_rst_n) begin
         valid_r <= 0;
+        pp_sign1_r <= 0;
+        pp_sign2_r <= 0;
+        pp_sign3_r <= 0;
+        pp_sign4_r <= 0;
+        pp_sign5_r <= 0;
+        pp_sign6_r <= 0;
+        pp_sign7_r <= 0;
+        pp_sign8_r <= 0;
+        pp_sign9_r <= 0;
         shifted_unsign_pp1_r <= 0;
         shifted_unsign_pp2_r <= 0;
         shifted_unsign_pp3_r <= 0;
@@ -333,6 +369,15 @@ always@(posedge i_clk  or negedge i_rst_n) begin
     end
     else begin
         valid_r <= valid_w;
+        pp_sign1_r <= pp_sign1_w;
+        pp_sign2_r <= pp_sign2_w;
+        pp_sign3_r <= pp_sign3_w;
+        pp_sign4_r <= pp_sign4_w;
+        pp_sign5_r <= pp_sign5_w;
+        pp_sign6_r <= pp_sign6_w;
+        pp_sign7_r <= pp_sign7_w;
+        pp_sign8_r <= pp_sign8_w;
+        pp_sign9_r <= pp_sign9_w;
         shifted_unsign_pp1_r <= shifted_unsign_pp1_w;
         shifted_unsign_pp2_r <= shifted_unsign_pp2_w;
         shifted_unsign_pp3_r <= shifted_unsign_pp3_w;

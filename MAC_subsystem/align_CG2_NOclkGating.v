@@ -59,64 +59,41 @@ wire [3-1:0] denorm_pp_with_leading_one = denorm_pp[2:0];
 // end
 wire [14-1:0] shifted_unsign_pp;
 //first stage
-wire eq0;
+wire eq11, g11;
+COM6 com_11(eq11, g11, exp_diff, 6'd11, numbers[17]);
+
 wire [14-1:0] mux01;
-EQ6 eq_0(eq0, exp_diff, 6'd0, numbers[1]);
-MX#(14) mux_01(mux01, {1'd0, denorm_pp_with_leading_one, 10'd0}, {denorm_pp_with_leading_one, 11'd0}, eq0, numbers[2]);
-
-wire eq2, g2;
 wire [14-1:0] mux23;
-COM6 com_2(eq2, g2, exp_diff, 6'd2, numbers[3]);
-MX#(14) mux_23(mux23, {3'd0, denorm_pp_with_leading_one,  8'd0}, {2'd0, denorm_pp_with_leading_one,  9'd0}, eq2, numbers[4]);
-
-wire eq4, g4;
 wire [14-1:0] mux45;
-COM6 com_4(eq4, g4, exp_diff, 6'd4, numbers[5]);
-MX#(14) mux_45(mux45, {5'd0, denorm_pp_with_leading_one,  6'd0}, {4'd0, denorm_pp_with_leading_one,  7'd0}, eq4, numbers[6]);
-
-wire eq6, g6;
 wire [14-1:0] mux67;
-COM6 com_6(eq6, g6, exp_diff, 6'd6, numbers[7]);
-MX#(14) mux_67(mux67, {7'd0, denorm_pp_with_leading_one,  4'd0}, {6'd0, denorm_pp_with_leading_one,  5'd0}, eq6, numbers[8]);
-
-wire eq8, g8;
 wire [14-1:0] mux89;
-COM6 com_8(eq8, g8, exp_diff, 6'd8, numbers[9]);
-MX#(14) mux_89(mux89, {9'd0, denorm_pp_with_leading_one,  2'd0}, {8'd0, denorm_pp_with_leading_one,  3'd0}, eq8, numbers[10]);
-
-wire eq10, g10;
 wire [14-1:0] mux1011;
-COM6 com_10(eq10, g10, exp_diff, 6'd10, numbers[11]);
-MX#(14) mux_1011(mux1011, {11'd0, denorm_pp_with_leading_one}, {10'd0, denorm_pp_with_leading_one,  1'd0}, eq10, numbers[12]);
 
-wire ge2, ge4, ge6, ge8, ge10;
-OR2 or3(ge2, g2, eq2, numbers[19]);
-OR2 or4(ge4, g4, eq4, numbers[20]);
-OR2 or5(ge6, g6, eq6, numbers[21]);
-OR2 or6(ge8, g8, eq8, numbers[22]);
-OR2 or7(ge10, g10, eq10, numbers[23]);
+MX#(14) mux_01(mux01, {denorm_pp_with_leading_one, 11'd0}, {1'd0, denorm_pp_with_leading_one, 10'd0}, exp_diff[0], numbers[2]);
+MX#(14) mux_23(mux23, {2'd0, denorm_pp_with_leading_one,  9'd0}, {3'd0, denorm_pp_with_leading_one,  8'd0}, exp_diff[0], numbers[4]);
+MX#(14) mux_45(mux45, {4'd0, denorm_pp_with_leading_one,  7'd0}, {5'd0, denorm_pp_with_leading_one,  6'd0}, exp_diff[0], numbers[6]);
+MX#(14) mux_67(mux67, {6'd0, denorm_pp_with_leading_one,  5'd0}, {7'd0, denorm_pp_with_leading_one,  4'd0}, exp_diff[0], numbers[8]);
+MX#(14) mux_89(mux89, {8'd0, denorm_pp_with_leading_one,  3'd0}, {9'd0, denorm_pp_with_leading_one,  2'd0}, exp_diff[0], numbers[10]);
+MX#(14) mux_1011(mux1011, {10'd0, denorm_pp_with_leading_one,  1'd0}, {11'd0, denorm_pp_with_leading_one}, exp_diff[0], numbers[12]);
+
 //second stage
 wire [14-1:0] mux0123;
-MX#(14) mux_0123(mux0123, mux01, mux23, ge2, numbers[13]);
-
 wire [14-1:0] mux4567;
-MX#(14) mux_4567(mux4567, mux45, mux67, ge6, numbers[14]);
-
 wire [14-1:0] mux891011;
-MX#(14) mux_891011(mux891011, mux89, mux1011, ge10, numbers[15]);
+
+MX#(14) mux_0123(mux0123, mux01, mux23, exp_diff[1], numbers[13]);
+MX#(14) mux_4567(mux4567, mux45, mux67, exp_diff[1], numbers[14]);
+MX#(14) mux_891011(mux891011, mux89, mux1011, exp_diff[1], numbers[15]);
 
 //third stage
 wire [14-1:0] mux01234567;
-MX#(14) mux_01234567(mux01234567, mux0123, mux4567, ge4, numbers[16]);
+wire [14-1:0] mux01234567891011;
 
-wire [14-1:0] mux89101112up;
-wire eq12, g12, ge12;
-COM6 com_12(eq12, g12, exp_diff, 6'd12, numbers[17]);
-OR2 or8(ge12, g12, eq12, numbers[24]);
-MX#(14) mux_89101112up(mux89101112up, mux891011, 14'd0, ge12, numbers[28]);
+MX#(14) mux_01234567(mux01234567, mux0123, mux4567, exp_diff[2], numbers[16]);
+MX#(14) mux_89101112up(mux01234567891011, mux01234567, mux891011, exp_diff[3], numbers[28]);
 
 //forth stage
-MX#(14) mux_shifted_unsign_pp(shifted_unsign_pp, mux01234567, mux89101112up, ge8, numbers[18]);
+MX#(14) mux_shifted_unsign_pp(shifted_unsign_pp, mux01234567891011, 14'd0, g11, numbers[18]);
 
 
 /* ----------------------------- Sign Extension ----------------------------- */

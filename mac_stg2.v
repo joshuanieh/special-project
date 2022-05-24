@@ -152,7 +152,6 @@ align_CG2_NOclkGating align9(.denorm_pp(pp9_r),
                              .number(numbers[8]));
 
 always@(*) begin
-    //Need to be changed to multiplexers, but every stage does have these things, the delay can be cancelled
     if (i_inhibit) begin
         valid_w = valid_r;
 

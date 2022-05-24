@@ -59,8 +59,9 @@ wire [3-1:0] denorm_pp_with_leading_one = denorm_pp[2:0];
 // end
 wire [14-1:0] shifted_unsign_pp;
 //first stage
-wire eq11, g11;
-COM6 com_11(eq11, g11, exp_diff, 6'd11, numbers[1]);
+wire g11, a;
+AN2 an2(a, exp_diff[2], exp_diff[3], numbers[1]);
+OR3 or3(g11, a, exp_diff[4], exp_diff[5], numbers[17]);
 
 wire [14-1:0] mux01;
 wire [14-1:0] mux23;
@@ -95,7 +96,6 @@ MX#(14) mux_89101112up(mux01234567891011, mux01234567, mux891011, exp_diff[3], n
 //forth stage
 MX#(14) mux_shifted_unsign_pp(shifted_unsign_pp, mux01234567891011, 14'd0, g11, numbers[13]);
 
-
 /* ----------------------------- Sign Extension ----------------------------- */
 // align_pp
 //                    exp_diff = 11    ----->           |  2 | 1 | 0 |
@@ -125,7 +125,7 @@ reg [50:0] sum;
 integer j;
 always @(*) begin
     sum = 0;
-    for (j=0; j<17; j=j+1) begin 
+    for (j=0; j<18; j=j+1) begin 
         sum = sum + numbers[j];
     end
 end

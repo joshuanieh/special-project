@@ -119,7 +119,7 @@ ADD#(15) add_102(
     .number(numbers[33])
 );
 
-MX#(15) mux_align_pp2(align_pp2, {1'b0, shifted_unsign_pp1_r}, negative_num_2, i_pp_sign2, numbers[26]);
+MX#(15) mux_align_pp2(align_pp2, {1'b0, shifted_unsign_pp2_r}, negative_num_2, i_pp_sign2, numbers[26]);
 
 //2's complements
 wire [15-1:0] inv_tmp_3, negative_num_3, align_pp3;
@@ -138,7 +138,7 @@ ADD#(15) add_103(
     .number(numbers[17])
 );
 
-MX#(15) mux_align_pp3(align_pp3, {1'b0, shifted_unsign_pp1_r}, negative_num_3, i_pp_sign3, numbers[27]);
+MX#(15) mux_align_pp3(align_pp3, {1'b0, shifted_unsign_pp3_r}, negative_num_3, i_pp_sign3, numbers[27]);
 
 //2's complements
 wire [15-1:0] inv_tmp_4, negative_num_4, align_pp4;
@@ -157,7 +157,7 @@ ADD#(15) add_104(
     .number(numbers[18])
 );
 
-MX#(15) mux_align_pp4(align_pp4, {1'b0, shifted_unsign_pp1_r}, negative_num_4, i_pp_sign4, numbers[28]);
+MX#(15) mux_align_pp4(align_pp4, {1'b0, shifted_unsign_pp4_r}, negative_num_4, i_pp_sign4, numbers[28]);
 
 //2's complements
 wire [15-1:0] inv_tmp_5, negative_num_5, align_pp5;
@@ -176,7 +176,7 @@ ADD#(15) add_105(
     .number(numbers[19])
 );
 
-MX#(15) mux_align_pp5(align_pp5, {1'b0, shifted_unsign_pp1_r}, negative_num_5, i_pp_sign5, numbers[29]);
+MX#(15) mux_align_pp5(align_pp5, {1'b0, shifted_unsign_pp5_r}, negative_num_5, i_pp_sign5, numbers[29]);
 
 //2's complements
 wire [15-1:0] inv_tmp_6, negative_num_6, align_pp6;
@@ -195,7 +195,7 @@ ADD#(15) add_106(
     .number(numbers[20])
 );
 
-MX#(15) mux_align_pp6(align_pp6, {1'b0, shifted_unsign_pp1_r}, negative_num_6, i_pp_sign6, numbers[30]);
+MX#(15) mux_align_pp6(align_pp6, {1'b0, shifted_unsign_pp6_r}, negative_num_6, i_pp_sign6, numbers[30]);
 
 //2's complements
 wire [15-1:0] inv_tmp_7, negative_num_7, align_pp7;
@@ -214,7 +214,7 @@ ADD#(15) add_107(
     .number(numbers[21])
 );
 
-MX#(15) mux_align_pp7(align_pp7, {1'b0, shifted_unsign_pp1_r}, negative_num_7, i_pp_sign7, numbers[31]);
+MX#(15) mux_align_pp7(align_pp7, {1'b0, shifted_unsign_pp7_r}, negative_num_7, i_pp_sign7, numbers[31]);
 
 //2's complements
 wire [15-1:0] inv_tmp_8, negative_num_8, align_pp8;
@@ -233,7 +233,7 @@ ADD#(15) add_108(
     .number(numbers[23])
 );
 
-MX#(15) mux_align_pp8(align_pp8, {1'b0, shifted_unsign_pp1_r}, negative_num_8, i_pp_sign8, numbers[32]);
+MX#(15) mux_align_pp8(align_pp8, {1'b0, shifted_unsign_pp8_r}, negative_num_8, i_pp_sign8, numbers[32]);
 
 //2's complements
 wire [15-1:0] inv_tmp_9, negative_num_9, align_pp9;
@@ -252,7 +252,7 @@ ADD#(15) add_109(
     .number(numbers[24])
 );
 
-MX#(15) mux_align_pp9(align_pp9, {1'b0, shifted_unsign_pp1_r}, negative_num_9, i_pp_sign9, numbers[34]);
+MX#(15) mux_align_pp9(align_pp9, {1'b0, shifted_unsign_pp9_r}, negative_num_9, i_pp_sign9, numbers[34]);
 
 // i_aligned_pp
 //                    exp_diff = 11    ----->           |  2 | 1 | 0 |

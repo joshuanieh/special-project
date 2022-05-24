@@ -122,23 +122,137 @@ ADD#(15) add_100(
 MX#(15) mux_align_pp(align_pp2, {1'b0, shifted_unsign_pp1_r}, negative_num_2, i_pp_sign2, numbers[16]);
 
 //2's complements
-wire [15-1:0] inv_tmp_2, negative_num_2, align_pp2;
-wire whatsoever2;
+wire [15-1:0] inv_tmp_3, negative_num_3, align_pp3;
+wire whatsoever3;
 INV#(15) inv_100(
-    .i_a({1'b0, shifted_unsign_pp2_r}),
-    .o_z(inv_tmp_2),
+    .i_a({1'b0, shifted_unsign_pp3_r}),
+    .o_z(inv_tmp_3),
     .number(numbers[14])
 );
 
 ADD#(15) add_100(
-    .i_a(inv_tmp_2),
+    .i_a(inv_tmp_3),
     .i_b(15'b1),
-    .o_s(negative_num_2),
-    .o_c(whatsoever2),
+    .o_s(negative_num_3),
+    .o_c(whatsoever3),
     .number(numbers[15])
 );
 
-MX#(15) mux_align_pp(align_pp2, {1'b0, shifted_unsign_pp1_r}, negative_num_2, i_pp_sign2, numbers[16]);
+MX#(15) mux_align_pp(align_pp3, {1'b0, shifted_unsign_pp1_r}, negative_num_3, i_pp_sign3, numbers[16]);
+
+//2's complements
+wire [15-1:0] inv_tmp_4, negative_num_4, align_pp4;
+wire whatsoever4;
+INV#(15) inv_100(
+    .i_a({1'b0, shifted_unsign_pp4_r}),
+    .o_z(inv_tmp_4),
+    .number(numbers[14])
+);
+
+ADD#(15) add_100(
+    .i_a(inv_tmp_4),
+    .i_b(15'b1),
+    .o_s(negative_num_4),
+    .o_c(whatsoever4),
+    .number(numbers[15])
+);
+
+MX#(15) mux_align_pp(align_pp4, {1'b0, shifted_unsign_pp1_r}, negative_num_4, i_pp_sign4, numbers[16]);
+
+//2's complements
+wire [15-1:0] inv_tmp_5, negative_num_5, align_pp5;
+wire whatsoever5;
+INV#(15) inv_100(
+    .i_a({1'b0, shifted_unsign_pp5_r}),
+    .o_z(inv_tmp_5),
+    .number(numbers[14])
+);
+
+ADD#(15) add_100(
+    .i_a(inv_tmp_5),
+    .i_b(15'b1),
+    .o_s(negative_num_5),
+    .o_c(whatsoever5),
+    .number(numbers[15])
+);
+
+MX#(15) mux_align_pp(align_pp5, {1'b0, shifted_unsign_pp1_r}, negative_num_5, i_pp_sign5, numbers[16]);
+
+//2's complements
+wire [15-1:0] inv_tmp_6, negative_num_6, align_pp6;
+wire whatsoever6;
+INV#(15) inv_100(
+    .i_a({1'b0, shifted_unsign_pp6_r}),
+    .o_z(inv_tmp_6),
+    .number(numbers[14])
+);
+
+ADD#(15) add_100(
+    .i_a(inv_tmp_6),
+    .i_b(15'b1),
+    .o_s(negative_num_6),
+    .o_c(whatsoever6),
+    .number(numbers[15])
+);
+
+MX#(15) mux_align_pp(align_pp6, {1'b0, shifted_unsign_pp1_r}, negative_num_6, i_pp_sign6, numbers[16]);
+
+//2's complements
+wire [15-1:0] inv_tmp_7, negative_num_7, align_pp7;
+wire whatsoever7;
+INV#(15) inv_100(
+    .i_a({1'b0, shifted_unsign_pp7_r}),
+    .o_z(inv_tmp_7),
+    .number(numbers[14])
+);
+
+ADD#(15) add_100(
+    .i_a(inv_tmp_7),
+    .i_b(15'b1),
+    .o_s(negative_num_7),
+    .o_c(whatsoever7),
+    .number(numbers[15])
+);
+
+MX#(15) mux_align_pp(align_pp7, {1'b0, shifted_unsign_pp1_r}, negative_num_7, i_pp_sign7, numbers[16]);
+
+//2's complements
+wire [15-1:0] inv_tmp_8, negative_num_8, align_pp8;
+wire whatsoever8;
+INV#(15) inv_100(
+    .i_a({1'b0, shifted_unsign_pp8_r}),
+    .o_z(inv_tmp_8),
+    .number(numbers[14])
+);
+
+ADD#(15) add_100(
+    .i_a(inv_tmp_8),
+    .i_b(15'b1),
+    .o_s(negative_num_8),
+    .o_c(whatsoever8),
+    .number(numbers[15])
+);
+
+MX#(15) mux_align_pp(align_pp8, {1'b0, shifted_unsign_pp1_r}, negative_num_8, i_pp_sign8, numbers[16]);
+
+//2's complements
+wire [15-1:0] inv_tmp_9, negative_num_9, align_pp9;
+wire whatsoever9;
+INV#(15) inv_100(
+    .i_a({1'b0, shifted_unsign_pp9_r}),
+    .o_z(inv_tmp_9),
+    .number(numbers[14])
+);
+
+ADD#(15) add_100(
+    .i_a(inv_tmp_9),
+    .i_b(15'b1),
+    .o_s(negative_num_9),
+    .o_c(whatsoever9),
+    .number(numbers[15])
+);
+
+MX#(15) mux_align_pp(align_pp9, {1'b0, shifted_unsign_pp1_r}, negative_num_9, i_pp_sign9, numbers[16]);
 
 // i_aligned_pp
 //                    exp_diff = 11    ----->           |  2 | 1 | 0 |

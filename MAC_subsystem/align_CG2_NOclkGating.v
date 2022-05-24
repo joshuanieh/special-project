@@ -60,7 +60,7 @@ wire [3-1:0] denorm_pp_with_leading_one = denorm_pp[2:0];
 wire [14-1:0] shifted_unsign_pp;
 //first stage
 wire eq11, g11;
-COM6 com_11(eq11, g11, exp_diff, 6'd11, numbers[17]);
+COM6 com_11(eq11, g11, exp_diff, 6'd11, numbers[1]);
 
 wire [14-1:0] mux01;
 wire [14-1:0] mux23;
@@ -70,30 +70,30 @@ wire [14-1:0] mux89;
 wire [14-1:0] mux1011;
 
 MX#(14) mux_01(mux01, {denorm_pp_with_leading_one, 11'd0}, {1'd0, denorm_pp_with_leading_one, 10'd0}, exp_diff[0], numbers[2]);
-MX#(14) mux_23(mux23, {2'd0, denorm_pp_with_leading_one,  9'd0}, {3'd0, denorm_pp_with_leading_one,  8'd0}, exp_diff[0], numbers[4]);
-MX#(14) mux_45(mux45, {4'd0, denorm_pp_with_leading_one,  7'd0}, {5'd0, denorm_pp_with_leading_one,  6'd0}, exp_diff[0], numbers[6]);
-MX#(14) mux_67(mux67, {6'd0, denorm_pp_with_leading_one,  5'd0}, {7'd0, denorm_pp_with_leading_one,  4'd0}, exp_diff[0], numbers[8]);
-MX#(14) mux_89(mux89, {8'd0, denorm_pp_with_leading_one,  3'd0}, {9'd0, denorm_pp_with_leading_one,  2'd0}, exp_diff[0], numbers[10]);
-MX#(14) mux_1011(mux1011, {10'd0, denorm_pp_with_leading_one,  1'd0}, {11'd0, denorm_pp_with_leading_one}, exp_diff[0], numbers[12]);
+MX#(14) mux_23(mux23, {2'd0, denorm_pp_with_leading_one,  9'd0}, {3'd0, denorm_pp_with_leading_one,  8'd0}, exp_diff[0], numbers[3]);
+MX#(14) mux_45(mux45, {4'd0, denorm_pp_with_leading_one,  7'd0}, {5'd0, denorm_pp_with_leading_one,  6'd0}, exp_diff[0], numbers[4]);
+MX#(14) mux_67(mux67, {6'd0, denorm_pp_with_leading_one,  5'd0}, {7'd0, denorm_pp_with_leading_one,  4'd0}, exp_diff[0], numbers[5]);
+MX#(14) mux_89(mux89, {8'd0, denorm_pp_with_leading_one,  3'd0}, {9'd0, denorm_pp_with_leading_one,  2'd0}, exp_diff[0], numbers[6]);
+MX#(14) mux_1011(mux1011, {10'd0, denorm_pp_with_leading_one,  1'd0}, {11'd0, denorm_pp_with_leading_one}, exp_diff[0], numbers[7]);
 
 //second stage
 wire [14-1:0] mux0123;
 wire [14-1:0] mux4567;
 wire [14-1:0] mux891011;
 
-MX#(14) mux_0123(mux0123, mux01, mux23, exp_diff[1], numbers[13]);
-MX#(14) mux_4567(mux4567, mux45, mux67, exp_diff[1], numbers[14]);
-MX#(14) mux_891011(mux891011, mux89, mux1011, exp_diff[1], numbers[15]);
+MX#(14) mux_0123(mux0123, mux01, mux23, exp_diff[1], numbers[8]);
+MX#(14) mux_4567(mux4567, mux45, mux67, exp_diff[1], numbers[9]);
+MX#(14) mux_891011(mux891011, mux89, mux1011, exp_diff[1], numbers[10]);
 
 //third stage
 wire [14-1:0] mux01234567;
 wire [14-1:0] mux01234567891011;
 
-MX#(14) mux_01234567(mux01234567, mux0123, mux4567, exp_diff[2], numbers[16]);
-MX#(14) mux_89101112up(mux01234567891011, mux01234567, mux891011, exp_diff[3], numbers[28]);
+MX#(14) mux_01234567(mux01234567, mux0123, mux4567, exp_diff[2], numbers[11]);
+MX#(14) mux_89101112up(mux01234567891011, mux01234567, mux891011, exp_diff[3], numbers[12]);
 
 //forth stage
-MX#(14) mux_shifted_unsign_pp(shifted_unsign_pp, mux01234567891011, 14'd0, g11, numbers[18]);
+MX#(14) mux_shifted_unsign_pp(shifted_unsign_pp, mux01234567891011, 14'd0, g11, numbers[13]);
 
 
 /* ----------------------------- Sign Extension ----------------------------- */
@@ -108,7 +108,7 @@ wire whatsoever;
 INV#(15) inv_100(
     .i_a({1'b0, shifted_unsign_pp}),
     .o_z(inv_tmp),
-    .number(numbers[25])
+    .number(numbers[14])
 );
 
 ADD#(15) add_100(
@@ -116,16 +116,16 @@ ADD#(15) add_100(
     .i_b(15'b1),
     .o_s(negative_num),
     .o_c(whatsoever),
-    .number(numbers[26])
+    .number(numbers[15])
 );
 
-MX#(15) mux_align_pp(align_pp, {1'b0, shifted_unsign_pp}, negative_num, pp_sign, numbers[27]);
+MX#(15) mux_align_pp(align_pp, {1'b0, shifted_unsign_pp}, negative_num, pp_sign, numbers[16]);
 
 reg [50:0] sum;
 integer j;
 always @(*) begin
     sum = 0;
-    for (j=0; j<29; j=j+1) begin 
+    for (j=0; j<17; j=j+1) begin 
         sum = sum + numbers[j];
     end
 end

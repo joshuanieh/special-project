@@ -94,15 +94,24 @@ wire [5-1:0] o_Q_frac_stg1, o_Q_frac_stg2, o_Q_frac_stg3, o_Q_frac_stg4;
 wire 	   stg1_valid;
 
 // aligned partial products
-wire [15-1:0] stg2_app1;
-wire [15-1:0] stg2_app2;
-wire [15-1:0] stg2_app3;
-wire [15-1:0] stg2_app4;
-wire [15-1:0] stg2_app5;
-wire [15-1:0] stg2_app6;
-wire [15-1:0] stg2_app7;
-wire [15-1:0] stg2_app8;
-wire [15-1:0] stg2_app9;
+wire          stg2_pp_sign1;
+wire          stg2_pp_sign2;
+wire          stg2_pp_sign3;
+wire          stg2_pp_sign4;
+wire          stg2_pp_sign5;
+wire          stg2_pp_sign6;
+wire          stg2_pp_sign7;
+wire          stg2_pp_sign8;
+wire          stg2_pp_sign9;
+wire [14-1:0] stg2_shifted_unsign_pp1;
+wire [14-1:0] stg2_shifted_unsign_pp2;
+wire [14-1:0] stg2_shifted_unsign_pp3;
+wire [14-1:0] stg2_shifted_unsign_pp4;
+wire [14-1:0] stg2_shifted_unsign_pp5;
+wire [14-1:0] stg2_shifted_unsign_pp6;
+wire [14-1:0] stg2_shifted_unsign_pp7;
+wire [14-1:0] stg2_shifted_unsign_pp8;
+wire [14-1:0] stg2_shifted_unsign_pp9;
 wire [ 6-1:0] stg2_max_exp;
 wire 	        stg2_valid;
 
@@ -216,15 +225,25 @@ mac_stg2 stg2(.i_clk(clk),
 
               .i_max_exp(stg1_max_exp),
 
-              .o_aligned_pp1(stg2_app1),
-              .o_aligned_pp2(stg2_app2),
-              .o_aligned_pp3(stg2_app3),
-              .o_aligned_pp4(stg2_app4),
-              .o_aligned_pp5(stg2_app5),
-              .o_aligned_pp6(stg2_app6),
-              .o_aligned_pp7(stg2_app7),
-              .o_aligned_pp8(stg2_app8),
-              .o_aligned_pp9(stg2_app9),
+              .o_pp_sign1(stg2_pp_sign1),
+              .o_pp_sign2(stg2_pp_sign2),
+              .o_pp_sign3(stg2_pp_sign3),
+              .o_pp_sign4(stg2_pp_sign4),
+              .o_pp_sign5(stg2_pp_sign5),
+              .o_pp_sign6(stg2_pp_sign6),
+              .o_pp_sign7(stg2_pp_sign7),
+              .o_pp_sign8(stg2_pp_sign8),
+              .o_pp_sign9(stg2_pp_sign9),
+              .o_shifted_unsign_pp1(stg2_shifted_unsign_pp1),
+              .o_shifted_unsign_pp2(stg2_shifted_unsign_pp2),
+              .o_shifted_unsign_pp3(stg2_shifted_unsign_pp3),
+              .o_shifted_unsign_pp4(stg2_shifted_unsign_pp4),
+              .o_shifted_unsign_pp5(stg2_shifted_unsign_pp5),
+              .o_shifted_unsign_pp6(stg2_shifted_unsign_pp6),
+              .o_shifted_unsign_pp7(stg2_shifted_unsign_pp7),
+              .o_shifted_unsign_pp8(stg2_shifted_unsign_pp8),
+              .o_shifted_unsign_pp9(stg2_shifted_unsign_pp9),
+
               .o_max_exp(stg2_max_exp),
 
               .o_valid(stg2_valid),
@@ -236,16 +255,26 @@ mac_stg3 stg3(.i_clk(clk),
               .i_rst_n(i_rst_n),
               .i_valid(stg2_valid),
               .i_inhibit(i_inhibit),
+              
+              .i_pp_sign1(stg2_pp_sign1),
+              .i_pp_sign2(stg2_pp_sign2),
+              .i_pp_sign3(stg2_pp_sign3),
+              .i_pp_sign4(stg2_pp_sign4),
+              .i_pp_sign5(stg2_pp_sign5),
+              .i_pp_sign6(stg2_pp_sign6),
+              .i_pp_sign7(stg2_pp_sign7),
+              .i_pp_sign8(stg2_pp_sign8),
+              .i_pp_sign9(stg2_pp_sign9),
+              .i_shifted_unsign_pp1(stg2_shifted_unsign_pp1),
+              .i_shifted_unsign_pp2(stg2_shifted_unsign_pp2),
+              .i_shifted_unsign_pp3(stg2_shifted_unsign_pp3),
+              .i_shifted_unsign_pp4(stg2_shifted_unsign_pp4),
+              .i_shifted_unsign_pp5(stg2_shifted_unsign_pp5),
+              .i_shifted_unsign_pp6(stg2_shifted_unsign_pp6),
+              .i_shifted_unsign_pp7(stg2_shifted_unsign_pp7),
+              .i_shifted_unsign_pp8(stg2_shifted_unsign_pp8),
+              .i_shifted_unsign_pp9(stg2_shifted_unsign_pp9),
 
-              .i_aligned_pp1(stg2_app1),
-              .i_aligned_pp2(stg2_app2),
-              .i_aligned_pp3(stg2_app3),
-              .i_aligned_pp4(stg2_app4),
-              .i_aligned_pp5(stg2_app5),
-              .i_aligned_pp6(stg2_app6),
-              .i_aligned_pp7(stg2_app7),
-              .i_aligned_pp8(stg2_app8),
-              .i_aligned_pp9(stg2_app9),
               .i_max_exp(stg2_max_exp),
 
               .o_psum(stg3_psum),
@@ -287,6 +316,82 @@ mac_stg5 stg5(.i_clk       (clk),
               .o_valid(stg5_o_valid),
               .o_conv(stg5_o_conv),
               .o_transistor_num(number[6]));
+
+integer out_batch;
+
+always @(posedge clk) begin
+    //-- file open for the case we are going to print out the message to text.
+    if(i_valid) begin
+        out_batch = $fopen("120_each_stage_output.txt", "a");
+
+        $fwrite(out_batch, "\nStage 1\n");
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp1);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp2);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp3);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp4);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp5);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp6);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp7);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp8);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_pp9);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp1);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp2);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp3);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp4);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp5);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp6);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp7);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp8);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_exp9);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_max_exp);
+        $fwrite(out_batch, "Stage 1: %06X\n", stg1_valid);
+        $fwrite(out_batch, "Stage 1: %06X\n", o_Q_frac_stg1);
+
+        $fwrite(out_batch, "\nStage 2\n");
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_pp_sign1);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_pp_sign2);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_pp_sign3);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_pp_sign4);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_pp_sign5);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_pp_sign6);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_pp_sign7);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_pp_sign8);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_pp_sign9);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_shifted_unsign_pp1);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_shifted_unsign_pp2);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_shifted_unsign_pp3);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_shifted_unsign_pp4);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_shifted_unsign_pp5);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_shifted_unsign_pp6);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_shifted_unsign_pp7);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_shifted_unsign_pp8);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_shifted_unsign_pp9);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_max_exp);
+        $fwrite(out_batch, "Stage 2: %06X\n", stg2_valid);
+        $fwrite(out_batch, "Stage 2: %06X\n", o_Q_frac_stg2);
+        
+        $fwrite(out_batch, "\nStage 3\n");
+        $fwrite(out_batch, "Stage 3: %06X\n", stg3_psum);
+        $fwrite(out_batch, "Stage 3: %06X\n", stg3_valid);
+        $fwrite(out_batch, "Stage 3: %06X\n", stg3_max_exp);
+        $fwrite(out_batch, "Stage 3: %06X\n", o_Q_frac_stg3);
+        
+        $fwrite(out_batch, "\nStage 4\n");
+        $fwrite(out_batch, "Stage 4: %06X\n", stg4_max_exp);
+        $fwrite(out_batch, "Stage 4: %06X\n", stg4_valid);
+        $fwrite(out_batch, "Stage 4: %06X\n", stg4_norm_sum);
+        $fwrite(out_batch, "Stage 4: %06X\n", stg4_exp_diff);
+        $fwrite(out_batch, "Stage 4: %06X\n", stg4_exp_carry);
+        $fwrite(out_batch, "Stage 4: %06X\n", stg4_sgn);
+        $fwrite(out_batch, "Stage 4: %06X\n", o_Q_frac_stg4);
+        
+        $fwrite(out_batch, "\nStage 5\n");
+        $fwrite(out_batch, "Stage 5: %06X\n", stg5_o_valid);
+        $fwrite(out_batch, "Stage 5: %06X\n", stg5_o_conv);
+
+        $fclose(out_batch);
+    end
+end
 
 reg [50:0] sum;
 integer j;

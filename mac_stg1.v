@@ -280,6 +280,6 @@ always @(*) begin
 	end
 end
 
-assign o_transistor_num = sum;
+assign o_transistor_num = sum + 123*27;
 
 endmodule

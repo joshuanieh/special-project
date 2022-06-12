@@ -41,7 +41,7 @@ reg          sgn_r, sgn_w;
 reg [ 6-1:0] max_exp_r, max_exp_w;
 reg [ 5-1:0] Q_frac_reg;
 
-// wire [50:0] numbers [0:1];
+wire [50:0] numbers;
 
 assign o_valid = valid_r;
 
@@ -53,7 +53,7 @@ exp_Handle_norm F2(.norm_sum_with_leading1(norm_sum_r),
                    .Q_frac(Q_frac_reg),
                    
                    .MAC_output(o_conv),
-                   .number(o_transistor_num));
+                   .number(numbers));
 
 always@(*) begin
     if (i_inhibit) begin
@@ -104,6 +104,7 @@ end
 //     end
 // end
 
-// assign o_transistor_num = num;
+//Doesn't count _w
+assign o_transistor_num = numbers + 30 * 27;
 
 endmodule

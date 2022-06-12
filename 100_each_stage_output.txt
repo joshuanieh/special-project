@@ -1,0 +1,8190 @@
+
+Stage 1
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 000010
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000b
+Stage 1: 000017
+Stage 1: 000017
+Stage 1: 000000
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 0000e0
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 002000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000004
+Stage 2: 000016
+Stage 2: 000000
+Stage 2: 000011
+
+Stage 3
+Stage 3: 000000
+Stage 3: 000000
+Stage 3: 000000
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000000
+Stage 5: 000000
+
+Stage 1
+Stage 1: 00000f
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 000010
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000b
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000070
+Stage 2: 0000e0
+Stage 2: 000000
+Stage 2: 001000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000017
+Stage 2: 000000
+Stage 2: 000011
+
+Stage 3
+Stage 3: 001f24
+Stage 3: 000000
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000000
+Stage 5: 000000
+
+Stage 1
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000070
+Stage 2: 0000e0
+Stage 2: 000000
+Stage 2: 001000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 0000a0
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 03e870
+Stage 3: 000000
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000000
+Stage 4: 0007c9
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000000
+Stage 5: 000000
+
+Stage 1
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 0000e0
+Stage 2: 000000
+Stage 2: 000280
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 0000a0
+Stage 2: 000200
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e910
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000000
+Stage 4: 0007d1
+Stage 4: 000004
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000000
+Stage 5: 00001f
+
+Stage 1
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 00000e
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000500
+Stage 2: 000100
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000140
+Stage 2: 000400
+Stage 2: 002800
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07de00
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0005bc
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000000
+Stage 5: 0007d1
+
+Stage 1
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000c
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000016
+Stage 1: 00000e
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000500
+Stage 2: 000100
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 001000
+Stage 2: 000400
+Stage 2: 002800
+Stage 2: 000020
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 003340
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000440
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00802d
+
+Stage 1
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 00000c
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 00000e
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000100
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 001000
+Stage 2: 000380
+Stage 2: 002800
+Stage 2: 000020
+Stage 2: 000800
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 002220
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000668
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008044
+
+Stage 1
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 0000e0
+Stage 2: 000800
+Stage 2: 0001c0
+Stage 2: 0000a0
+Stage 2: 000010
+Stage 2: 000400
+Stage 2: 003800
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 001da0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000444
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000033
+
+Stage 1
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 00000c
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 000007
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000014
+Stage 1: 00000f
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 0000e0
+Stage 2: 000140
+Stage 2: 0001c0
+Stage 2: 0000a0
+Stage 2: 000100
+Stage 2: 000400
+Stage 2: 003800
+Stage 2: 000500
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c0d0
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000768
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000022
+
+Stage 1
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 00000c
+Stage 1: 000005
+Stage 1: 000006
+Stage 1: 00000d
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000014
+Stage 1: 00000f
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 0000e0
+Stage 2: 000140
+Stage 2: 000000
+Stage 2: 0000a0
+Stage 2: 000100
+Stage 2: 000500
+Stage 2: 003800
+Stage 2: 000500
+Stage 2: 000038
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c180
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0007e6
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00001d
+
+Stage 1
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 000014
+Stage 1: 000018
+Stage 1: 000018
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000140
+Stage 2: 000000
+Stage 2: 0000e0
+Stage 2: 000100
+Stage 2: 000500
+Stage 2: 003000
+Stage 2: 000500
+Stage 2: 000038
+Stage 2: 000500
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c478
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0007d0
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00807e
+
+Stage 1
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000018
+Stage 1: 000015
+Stage 1: 000018
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000070
+Stage 2: 000a00
+Stage 2: 000280
+Stage 2: 001800
+Stage 2: 000000
+Stage 2: 00001c
+Stage 2: 000280
+Stage 2: 002800
+Stage 2: 000018
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 003218
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000771
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00807d
+
+Stage 1
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000006
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 000016
+Stage 1: 000014
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000018
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000018
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000070
+Stage 2: 000a00
+Stage 2: 000380
+Stage 2: 001800
+Stage 2: 000000
+Stage 2: 0000c0
+Stage 2: 000280
+Stage 2: 002800
+Stage 2: 000400
+Stage 2: 000018
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 004eac
+Stage 3: 000001
+Stage 3: 000018
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000643
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008077
+
+Stage 1
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 000014
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000a00
+Stage 2: 000380
+Stage 2: 000050
+Stage 2: 000000
+Stage 2: 0000c0
+Stage 2: 000060
+Stage 2: 002800
+Stage 2: 000400
+Stage 2: 000060
+Stage 2: 000018
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0043d0
+Stage 3: 000001
+Stage 3: 000018
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000018
+Stage 4: 000001
+Stage 4: 0004eb
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000064
+
+Stage 1
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 000004
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000f
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 00000e
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000e00
+Stage 2: 000140
+Stage 2: 002800
+Stage 2: 000300
+Stage 2: 000180
+Stage 2: 001800
+Stage 2: 001000
+Stage 2: 000180
+Stage 2: 000280
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 002a10
+Stage 3: 000001
+Stage 3: 000018
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000018
+Stage 4: 000001
+Stage 4: 00043d
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00013a
+
+Stage 1
+Stage 1: 00000d
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 000004
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 00000c
+Stage 1: 000012
+Stage 1: 00000e
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000140
+Stage 2: 002800
+Stage 2: 002000
+Stage 2: 000180
+Stage 2: 001800
+Stage 2: 000800
+Stage 2: 000180
+Stage 2: 000280
+Stage 2: 000038
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07cdc0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000018
+Stage 4: 000001
+Stage 4: 000542
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00010f
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000004
+Stage 1: 00000d
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 000016
+Stage 1: 000000
+Stage 1: 000018
+Stage 1: 000014
+Stage 1: 00000c
+Stage 1: 000014
+Stage 1: 00000e
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000018
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 002800
+Stage 2: 002000
+Stage 2: 000000
+Stage 2: 001800
+Stage 2: 000800
+Stage 2: 00000a
+Stage 2: 000280
+Stage 2: 000038
+Stage 2: 000500
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07d688
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000648
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 0000a8
+
+Stage 1
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000018
+Stage 1: 000014
+Stage 1: 00000c
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000012
+Stage 1: 000018
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000800
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000200
+Stage 2: 000000
+Stage 2: 000380
+Stage 2: 00000e
+Stage 2: 000140
+Stage 2: 0000a0
+Stage 2: 000018
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07d03e
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 00052f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008032
+
+Stage 1
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 000018
+Stage 1: 000014
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000018
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000300
+Stage 2: 000000
+Stage 2: 000380
+Stage 2: 0000e0
+Stage 2: 000140
+Stage 2: 0000a0
+Stage 2: 0000a0
+Stage 2: 000018
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07d4d2
+Stage 3: 000001
+Stage 3: 000018
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0005f8
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008029
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 000014
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000017
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000300
+Stage 2: 000050
+Stage 2: 000380
+Stage 2: 0000e0
+Stage 2: 000140
+Stage 2: 0000a0
+Stage 2: 0000a0
+Stage 2: 000070
+Stage 2: 000018
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07d7a0
+Stage 3: 000001
+Stage 3: 000018
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000018
+Stage 4: 000001
+Stage 4: 000566
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00802f
+
+Stage 1
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000600
+Stage 2: 0000a0
+Stage 2: 000280
+Stage 2: 0001c0
+Stage 2: 000280
+Stage 2: 001000
+Stage 2: 000140
+Stage 2: 0000e0
+Stage 2: 002000
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07da40
+Stage 3: 000001
+Stage 3: 000018
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000018
+Stage 4: 000001
+Stage 4: 00050c
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 0080ac
+
+Stage 1
+Stage 1: 00000d
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 00000f
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 0000a0
+Stage 2: 000280
+Stage 2: 001c00
+Stage 2: 000280
+Stage 2: 001000
+Stage 2: 001400
+Stage 2: 0000e0
+Stage 2: 002000
+Stage 2: 0000a0
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e9c0
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000018
+Stage 4: 000001
+Stage 4: 0004b8
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 0080a1
+
+Stage 1
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 00000f
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000280
+Stage 2: 001c00
+Stage 2: 000a00
+Stage 2: 001000
+Stage 2: 001400
+Stage 2: 000300
+Stage 2: 002000
+Stage 2: 0000a0
+Stage 2: 000700
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 001fa0
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000590
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008097
+
+Stage 1
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 000007
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 000015
+Stage 1: 00000f
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 003800
+Stage 2: 001400
+Stage 2: 000060
+Stage 2: 002800
+Stage 2: 000600
+Stage 2: 001c00
+Stage 2: 000140
+Stage 2: 000e00
+Stage 2: 001400
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 001ce0
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0007e8
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00802c
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 000007
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 000006
+Stage 1: 00000f
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 001400
+Stage 2: 000060
+Stage 2: 003800
+Stage 2: 000600
+Stage 2: 001c00
+Stage 2: 0001c0
+Stage 2: 000e00
+Stage 2: 001400
+Stage 2: 000a00
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 005660
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000738
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00003f
+
+Stage 1
+Stage 1: 000007
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000006
+Stage 1: 00000d
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000010
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000060
+Stage 2: 003800
+Stage 2: 000180
+Stage 2: 001c00
+Stage 2: 0001c0
+Stage 2: 000000
+Stage 2: 001400
+Stage 2: 000a00
+Stage 2: 003000
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 002760
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000566
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000039
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000010
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 003800
+Stage 2: 000180
+Stage 2: 001c00
+Stage 2: 0001c0
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000a00
+Stage 2: 003000
+Stage 2: 0000a0
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0055e0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0004ec
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000056
+
+Stage 1
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000010
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000180
+Stage 2: 001c00
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 003000
+Stage 2: 0000a0
+Stage 2: 002800
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0041a0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 00055e
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000027
+
+Stage 1
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000c
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 001c00
+Stage 2: 000000
+Stage 2: 001000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 001000
+Stage 2: 0000a0
+Stage 2: 002800
+Stage 2: 000500
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0039e0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 00041a
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000055
+
+Stage 1
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 001000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 001000
+Stage 2: 000500
+Stage 2: 002800
+Stage 2: 000500
+Stage 2: 000140
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 001060
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 00073c
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000041
+
+Stage 1
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 002000
+Stage 2: 000000
+Stage 2: 000300
+Stage 2: 002000
+Stage 2: 000a00
+Stage 2: 000a00
+Stage 2: 000a00
+Stage 2: 000280
+Stage 2: 001800
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 003340
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000418
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000039
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000300
+Stage 2: 000000
+Stage 2: 000a00
+Stage 2: 000a00
+Stage 2: 003000
+Stage 2: 000280
+Stage 2: 001800
+Stage 2: 000500
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07f180
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000668
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000010
+
+Stage 1
+Stage 1: 000000
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000010
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 00000f
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 0000c0
+Stage 2: 000000
+Stage 2: 000200
+Stage 2: 000280
+Stage 2: 000c00
+Stage 2: 002800
+Stage 2: 000600
+Stage 2: 000140
+Stage 2: 000a00
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07b280
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 000740
+Stage 4: 00001e
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000033
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 000006
+Stage 1: 00000f
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 000017
+Stage 1: 000010
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 00000f
+Stage 1: 000011
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000200
+Stage 2: 000080
+Stage 2: 000c00
+Stage 2: 002800
+Stage 2: 000060
+Stage 2: 000140
+Stage 2: 000a00
+Stage 2: 000030
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07b580
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 0004d8
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008007
+
+Stage 1
+Stage 1: 000004
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 00000e
+Stage 1: 000006
+Stage 1: 00000f
+Stage 1: 000007
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 000014
+Stage 1: 000010
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 00000f
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000200
+Stage 2: 000080
+Stage 2: 000028
+Stage 2: 002800
+Stage 2: 000060
+Stage 2: 001c00
+Stage 2: 000a00
+Stage 2: 000030
+Stage 2: 0000e0
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07bf10
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0004a8
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008026
+
+Stage 1
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 00000f
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 00000f
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000010
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000100
+Stage 2: 000050
+Stage 2: 000a00
+Stage 2: 0000c0
+Stage 2: 003800
+Stage 2: 000600
+Stage 2: 000060
+Stage 2: 0001c0
+Stage 2: 000380
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07af48
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 00040f
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008095
+
+Stage 1
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 000004
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 00000e
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 000004
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000010
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000028
+Stage 2: 000500
+Stage 2: 003800
+Stage 2: 001c00
+Stage 2: 000300
+Stage 2: 000070
+Stage 2: 0000e0
+Stage 2: 0001c0
+Stage 2: 000380
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07ce10
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 00050c
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008081
+
+Stage 1
+Stage 1: 000007
+Stage 1: 000004
+Stage 1: 000006
+Stage 1: 00000f
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000f
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 000011
+Stage 1: 000010
+Stage 1: 000011
+Stage 1: 00000d
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000500
+Stage 2: 003800
+Stage 2: 000080
+Stage 2: 000300
+Stage 2: 000070
+Stage 2: 0000c0
+Stage 2: 0001c0
+Stage 2: 000380
+Stage 2: 000800
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 001ac8
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 00063e
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 0080a1
+
+Stage 1
+Stage 1: 000004
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 000011
+Stage 1: 000011
+Stage 1: 000011
+Stage 1: 000011
+Stage 1: 00000d
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 003800
+Stage 2: 000080
+Stage 2: 0000c0
+Stage 2: 000070
+Stage 2: 0000c0
+Stage 2: 00000a
+Stage 2: 000380
+Stage 2: 000800
+Stage 2: 000500
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 003f90
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0006b2
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008031
+
+Stage 1
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000e
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000011
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 00000d
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000100
+Stage 2: 000180
+Stage 2: 000180
+Stage 2: 000180
+Stage 2: 000014
+Stage 2: 000c00
+Stage 2: 001000
+Stage 2: 000a00
+Stage 2: 003000
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 004186
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0007f2
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000035
+
+Stage 1
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000018
+Stage 1: 000016
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000018
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000180
+Stage 2: 000180
+Stage 2: 000400
+Stage 2: 000014
+Stage 2: 000c00
+Stage 2: 000300
+Stage 2: 000a00
+Stage 2: 003000
+Stage 2: 000800
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e06c
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000418
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00007f
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 00000f
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 000006
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000018
+Stage 1: 000013
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 00000f
+Stage 1: 000018
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000060
+Stage 2: 000100
+Stage 2: 000000
+Stage 2: 000300
+Stage 2: 0000c0
+Stage 2: 002000
+Stage 2: 000c00
+Stage 2: 000200
+Stage 2: 000600
+Stage 2: 000018
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c1ec
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0007e5
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000083
+
+Stage 1
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 000006
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000018
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 00000f
+Stage 1: 000012
+Stage 1: 000018
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000100
+Stage 2: 000000
+Stage 2: 000050
+Stage 2: 0000c0
+Stage 2: 002000
+Stage 2: 0001c0
+Stage 2: 000200
+Stage 2: 000600
+Stage 2: 000018
+Stage 2: 000018
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c7a0
+Stage 3: 000001
+Stage 3: 000018
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0007c2
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00801f
+
+Stage 1
+Stage 1: 000005
+Stage 1: 000006
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000010
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 00000f
+Stage 1: 000012
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000050
+Stage 2: 000180
+Stage 2: 002000
+Stage 2: 0001c0
+Stage 2: 0000a0
+Stage 2: 000600
+Stage 2: 000018
+Stage 2: 0000c0
+Stage 2: 000018
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07d4e8
+Stage 3: 000001
+Stage 3: 000018
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000018
+Stage 4: 000001
+Stage 4: 00070c
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00803e
+
+Stage 1
+Stage 1: 000006
+Stage 1: 000004
+Stage 1: 00000c
+Stage 1: 000005
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 000013
+Stage 1: 000010
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000140
+Stage 2: 000600
+Stage 2: 000080
+Stage 2: 000700
+Stage 2: 000280
+Stage 2: 001800
+Stage 2: 000060
+Stage 2: 000300
+Stage 2: 002000
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07da08
+Stage 3: 000001
+Stage 3: 000018
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000018
+Stage 4: 000001
+Stage 4: 000563
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 0080e1
+
+Stage 1
+Stage 1: 000004
+Stage 1: 00000c
+Stage 1: 000005
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000010
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000600
+Stage 2: 000080
+Stage 2: 001000
+Stage 2: 000280
+Stage 2: 001800
+Stage 2: 001000
+Stage 2: 000300
+Stage 2: 002000
+Stage 2: 000100
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0038a0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000018
+Stage 4: 000001
+Stage 4: 0004bf
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 0080ac
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 00000f
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000040
+Stage 2: 000800
+Stage 2: 002800
+Stage 2: 000c00
+Stage 2: 000800
+Stage 2: 000000
+Stage 2: 001000
+Stage 2: 000080
+Stage 2: 000140
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 001f00
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000714
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008097
+
+Stage 1
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 000007
+Stage 1: 000017
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000012
+Stage 1: 00000f
+Stage 1: 00000e
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000800
+Stage 2: 002800
+Stage 2: 000380
+Stage 2: 000800
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000080
+Stage 2: 000140
+Stage 2: 000038
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 003600
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0007c0
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000038
+
+Stage 1
+Stage 1: 000007
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 00000f
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 00000e
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000380
+Stage 2: 000200
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000140
+Stage 2: 000038
+Stage 2: 00001c
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 001d08
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0006c0
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00001f
+
+Stage 1
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 00000c
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 00000f
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 00000e
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 000017
+Stage 1: 00000e
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000380
+Stage 2: 000200
+Stage 2: 000010
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000080
+Stage 2: 000038
+Stage 2: 00001c
+Stage 2: 000380
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0056a4
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000742
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00006c
+
+Stage 1
+Stage 1: 000004
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 00000e
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000017
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000200
+Stage 2: 000010
+Stage 2: 000800
+Stage 2: 002800
+Stage 2: 000080
+Stage 2: 003800
+Stage 2: 00001c
+Stage 2: 000380
+Stage 2: 000000
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 002974
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 00056a
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00003a
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000010
+Stage 2: 000800
+Stage 2: 000180
+Stage 2: 000080
+Stage 2: 003800
+Stage 2: 000000
+Stage 2: 000380
+Stage 2: 000000
+Stage 2: 000080
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e62c
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 00052e
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 0000ad
+
+Stage 1
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 000006
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000014
+Stage 1: 000014
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000800
+Stage 2: 000180
+Stage 2: 000600
+Stage 2: 003800
+Stage 2: 000000
+Stage 2: 000380
+Stage 2: 000000
+Stage 2: 000080
+Stage 2: 000000
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07be10
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000675
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000052
+
+Stage 1
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 000006
+Stage 1: 00000f
+Stage 1: 000006
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000004
+Stage 1: 000014
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000010
+Stage 1: 000000
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000c00
+Stage 2: 003000
+Stage 2: 001c00
+Stage 2: 000000
+Stage 2: 001c00
+Stage 2: 001800
+Stage 2: 000400
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000014
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c480
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 00041f
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008033
+
+Stage 1
+Stage 1: 000007
+Stage 1: 000006
+Stage 1: 000005
+Stage 1: 000006
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 000010
+Stage 1: 000017
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 001800
+Stage 2: 000e00
+Stage 2: 003000
+Stage 2: 000e00
+Stage 2: 000c00
+Stage 2: 000180
+Stage 2: 000000
+Stage 2: 001400
+Stage 2: 000400
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 003000
+Stage 3: 000001
+Stage 3: 000014
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000770
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008083
+
+Stage 1
+Stage 1: 000006
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000010
+Stage 1: 000017
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000380
+Stage 2: 000c00
+Stage 2: 000a00
+Stage 2: 000300
+Stage 2: 000060
+Stage 2: 002000
+Stage 2: 000500
+Stage 2: 000100
+Stage 2: 000380
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 004280
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000014
+Stage 4: 000001
+Stage 4: 000600
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008077
+
+Stage 1
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000c00
+Stage 2: 000a00
+Stage 2: 000500
+Stage 2: 000060
+Stage 2: 002000
+Stage 2: 000000
+Stage 2: 000100
+Stage 2: 000380
+Stage 2: 000a00
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07f4a0
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 000428
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00000c
+
+Stage 1
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 00000c
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000a00
+Stage 2: 000500
+Stage 2: 000000
+Stage 2: 002000
+Stage 2: 000000
+Stage 2: 000a00
+Stage 2: 000380
+Stage 2: 000a00
+Stage 2: 000000
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07f820
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0005b0
+Stage 4: 00001e
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000021
+
+Stage 1
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 00000c
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000a00
+Stage 2: 000000
+Stage 2: 000280
+Stage 2: 000000
+Stage 2: 001400
+Stage 2: 002000
+Stage 2: 001400
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e180
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0007e0
+Stage 4: 00001d
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008016
+
+Stage 1
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 00000c
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000280
+Stage 2: 000000
+Stage 2: 001400
+Stage 2: 002000
+Stage 2: 000100
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000180
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07d380
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0007a0
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00800f
+
+Stage 1
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000280
+Stage 2: 000000
+Stage 2: 000140
+Stage 2: 002000
+Stage 2: 000100
+Stage 2: 000a00
+Stage 2: 000000
+Stage 2: 000180
+Stage 2: 000050
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c700
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000590
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00803d
+
+Stage 1
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 00000f
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 00000f
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000500
+Stage 2: 000180
+Stage 2: 000400
+Stage 2: 002800
+Stage 2: 000000
+Stage 2: 000600
+Stage 2: 000140
+Stage 2: 000500
+Stage 2: 000014
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07cf70
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000720
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00802c
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 00000f
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000140
+Stage 2: 000060
+Stage 2: 000060
+Stage 2: 000a00
+Stage 2: 000000
+Stage 2: 003800
+Stage 2: 000050
+Stage 2: 000140
+Stage 2: 000300
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c140
+Stage 3: 000001
+Stage 3: 000014
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000612
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008039
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000060
+Stage 2: 000060
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 003800
+Stage 2: 000500
+Stage 2: 000140
+Stage 2: 000300
+Stage 2: 000700
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07b770
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000014
+Stage 4: 000001
+Stage 4: 0007d8
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008030
+
+Stage 1
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000060
+Stage 2: 000000
+Stage 2: 001400
+Stage 2: 003800
+Stage 2: 000500
+Stage 2: 001000
+Stage 2: 000300
+Stage 2: 000700
+Stage 2: 000000
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c100
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000489
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00800f
+
+Stage 1
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000010
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 001400
+Stage 2: 000200
+Stage 2: 000500
+Stage 2: 001000
+Stage 2: 000a00
+Stage 2: 000700
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e6a0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0007e0
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008048
+
+Stage 1
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000010
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 001400
+Stage 2: 000200
+Stage 2: 000a00
+Stage 2: 001000
+Stage 2: 000a00
+Stage 2: 0000e0
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 001400
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 005600
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000658
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00803f
+
+Stage 1
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000014
+Stage 1: 000011
+Stage 1: 000011
+Stage 1: 000010
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000200
+Stage 2: 000a00
+Stage 2: 000140
+Stage 2: 000a00
+Stage 2: 0000e0
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 001400
+Stage 2: 000180
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0076e0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000560
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008019
+
+Stage 1
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 00000c
+Stage 1: 000011
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 001400
+Stage 2: 000280
+Stage 2: 000280
+Stage 2: 0001c0
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000300
+Stage 2: 001000
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 005020
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 00076e
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000056
+
+Stage 1
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000140
+Stage 2: 000140
+Stage 2: 001800
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000400
+Stage 2: 000180
+Stage 2: 000800
+Stage 2: 002000
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0025c0
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000502
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000076
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000004
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 00000f
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 0000a0
+Stage 2: 000c00
+Stage 2: 000800
+Stage 2: 000000
+Stage 2: 000200
+Stage 2: 003000
+Stage 2: 000400
+Stage 2: 001000
+Stage 2: 0000c0
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07b800
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 0004b8
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000050
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 000006
+Stage 1: 000004
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000c00
+Stage 2: 000800
+Stage 2: 000080
+Stage 2: 000200
+Stage 2: 003000
+Stage 2: 000080
+Stage 2: 001000
+Stage 2: 0000c0
+Stage 2: 000038
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 000620
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000480
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000012
+
+Stage 1
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000800
+Stage 2: 000080
+Stage 2: 000800
+Stage 2: 003000
+Stage 2: 000080
+Stage 2: 000200
+Stage 2: 0000c0
+Stage 2: 000038
+Stage 2: 000000
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 000b88
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000620
+Stage 4: 00001d
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008048
+
+Stage 1
+Stage 1: 000004
+Stage 1: 00000e
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000007
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000200
+Stage 2: 002000
+Stage 2: 000600
+Stage 2: 000200
+Stage 2: 000800
+Stage 2: 000c00
+Stage 2: 0000e0
+Stage 2: 000000
+Stage 2: 000600
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 002f88
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0005c4
+Stage 4: 00001e
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00000c
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 00000e
+Stage 1: 000006
+Stage 1: 00000e
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000007
+Stage 1: 00000d
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000010
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000014
+Stage 1: 000014
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 002000
+Stage 2: 000600
+Stage 2: 001800
+Stage 2: 000800
+Stage 2: 000c00
+Stage 2: 000500
+Stage 2: 000000
+Stage 2: 000600
+Stage 2: 000e00
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 000320
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0005f1
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000017
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000007
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 000014
+Stage 1: 000010
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000014
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000c00
+Stage 2: 003000
+Stage 2: 000300
+Stage 2: 001800
+Stage 2: 000a00
+Stage 2: 000000
+Stage 2: 000c00
+Stage 2: 001c00
+Stage 2: 002800
+Stage 2: 000014
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07fb00
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 000640
+Stage 4: 00001c
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00005f
+
+Stage 1
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 000010
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 003000
+Stage 2: 000300
+Stage 2: 000000
+Stage 2: 000a00
+Stage 2: 000000
+Stage 2: 001400
+Stage 2: 001c00
+Stage 2: 002800
+Stage 2: 000000
+Stage 2: 000014
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07a100
+Stage 3: 000001
+Stage 3: 000014
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 000500
+Stage 4: 00001d
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000001
+
+Stage 1
+Stage 1: 000000
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000300
+Stage 2: 000000
+Stage 2: 000e00
+Stage 2: 000000
+Stage 2: 001400
+Stage 2: 001400
+Stage 2: 002800
+Stage 2: 000000
+Stage 2: 000400
+Stage 2: 000014
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07bd00
+Stage 3: 000001
+Stage 3: 000014
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000014
+Stage 4: 000001
+Stage 4: 0005f0
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008002
+
+Stage 1
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 000012
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 00000f
+Stage 1: 000014
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 001c00
+Stage 2: 001c00
+Stage 2: 002800
+Stage 2: 002800
+Stage 2: 001000
+Stage 2: 000000
+Stage 2: 000800
+Stage 2: 003000
+Stage 2: 000013
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07ed00
+Stage 3: 000001
+Stage 3: 000014
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000014
+Stage 4: 000001
+Stage 4: 000430
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008017
+
+Stage 1
+Stage 1: 00000f
+Stage 1: 000004
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 00000d
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 00000f
+Stage 1: 000017
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000e00
+Stage 2: 000e00
+Stage 2: 000400
+Stage 2: 001400
+Stage 2: 000800
+Stage 2: 002000
+Stage 2: 000400
+Stage 2: 001800
+Stage 2: 0001c0
+Stage 2: 000014
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 004800
+Stage 3: 000001
+Stage 3: 000013
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000014
+Stage 4: 000001
+Stage 4: 0004c0
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008010
+
+Stage 1
+Stage 1: 000004
+Stage 1: 00000e
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000007
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 0001c0
+Stage 2: 000080
+Stage 2: 000c00
+Stage 2: 000100
+Stage 2: 000400
+Stage 2: 000000
+Stage 2: 000300
+Stage 2: 000038
+Stage 2: 002800
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 005dc0
+Stage 3: 000001
+Stage 3: 000014
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000013
+Stage 4: 000001
+Stage 4: 000480
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008004
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000006
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 000017
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000080
+Stage 2: 000c00
+Stage 2: 001800
+Stage 2: 000400
+Stage 2: 000000
+Stage 2: 0000a0
+Stage 2: 000038
+Stage 2: 002800
+Stage 2: 0000c0
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07d2f8
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000014
+Stage 4: 000001
+Stage 4: 0005dc
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000009
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000004
+Stage 1: 000016
+Stage 1: 000012
+Stage 1: 00000f
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 000010
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000c00
+Stage 2: 001800
+Stage 2: 0001c0
+Stage 2: 000000
+Stage 2: 0000a0
+Stage 2: 000030
+Stage 2: 002800
+Stage 2: 0000c0
+Stage 2: 001c00
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07b758
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0005a1
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000017
+
+Stage 1
+Stage 1: 00000f
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 000004
+Stage 1: 00000d
+Stage 1: 000012
+Stage 1: 00000f
+Stage 1: 000015
+Stage 1: 00000f
+Stage 1: 000010
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 00000f
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 003000
+Stage 2: 000380
+Stage 2: 000060
+Stage 2: 000140
+Stage 2: 000060
+Stage 2: 0000e0
+Stage 2: 000180
+Stage 2: 003800
+Stage 2: 000400
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 079510
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 00048a
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00805a
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 000004
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000010
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 00000f
+Stage 1: 000010
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000380
+Stage 2: 000060
+Stage 2: 001c00
+Stage 2: 000060
+Stage 2: 0000e0
+Stage 2: 000a00
+Stage 2: 003800
+Stage 2: 000400
+Stage 2: 000050
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0796a0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0006af
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008091
+
+Stage 1
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 000004
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 00000f
+Stage 1: 000010
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000060
+Stage 2: 001c00
+Stage 2: 002800
+Stage 2: 0000e0
+Stage 2: 000a00
+Stage 2: 002800
+Stage 2: 000400
+Stage 2: 000050
+Stage 2: 0000c0
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07b710
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000696
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 0080d5
+
+Stage 1
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000004
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000011
+Stage 1: 000010
+Stage 1: 000010
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 001c00
+Stage 2: 002800
+Stage 2: 000700
+Stage 2: 000a00
+Stage 2: 002800
+Stage 2: 000100
+Stage 2: 000050
+Stage 2: 0000c0
+Stage 2: 001000
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07f170
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 00048f
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008069
+
+Stage 1
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000010
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000700
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 000100
+Stage 2: 0000a0
+Stage 2: 0000c0
+Stage 2: 001000
+Stage 2: 000100
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0004f0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000748
+Stage 4: 00001e
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008048
+
+Stage 1
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000010
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 00000e
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000700
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000100
+Stage 2: 0000a0
+Stage 2: 001800
+Stage 2: 001000
+Stage 2: 000100
+Stage 2: 003800
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0017a0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0004f0
+Stage 4: 00001d
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00800e
+
+Stage 1
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000c
+Stage 1: 00000f
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000016
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000280
+Stage 2: 0000a0
+Stage 2: 001800
+Stage 2: 001400
+Stage 2: 000100
+Stage 2: 003800
+Stage 2: 000030
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c860
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0005e8
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000004
+
+Stage 1
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 00000d
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000012
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000012
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000140
+Stage 2: 001400
+Stage 2: 000c00
+Stage 2: 000a00
+Stage 2: 002000
+Stage 2: 001c00
+Stage 2: 000018
+Stage 2: 000000
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 079f10
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0006f4
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000017
+
+Stage 1
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000017
+Stage 1: 000012
+Stage 1: 000017
+Stage 1: 000000
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000140
+Stage 2: 001400
+Stage 2: 000a00
+Stage 2: 000a00
+Stage 2: 002000
+Stage 2: 000100
+Stage 2: 000018
+Stage 2: 000000
+Stage 2: 000500
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c358
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 00060f
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008037
+
+Stage 1
+Stage 1: 000005
+Stage 1: 000007
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000017
+Stage 1: 000000
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 001400
+Stage 2: 000a00
+Stage 2: 0001c0
+Stage 2: 002000
+Stage 2: 000100
+Stage 2: 002000
+Stage 2: 000000
+Stage 2: 000500
+Stage 2: 000000
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07f158
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000795
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008060
+
+Stage 1
+Stage 1: 000007
+Stage 1: 00000e
+Stage 1: 000007
+Stage 1: 000004
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 00000d
+Stage 1: 00000c
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 00000e
+Stage 1: 000017
+Stage 1: 000000
+Stage 1: 00000b
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000a00
+Stage 2: 0001c0
+Stage 2: 000300
+Stage 2: 000100
+Stage 2: 002000
+Stage 2: 000000
+Stage 2: 000500
+Stage 2: 000000
+Stage 2: 000a00
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 001bc0
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000754
+Stage 4: 00001e
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008079
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 00000c
+Stage 1: 000007
+Stage 1: 000013
+Stage 1: 00000e
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 00000b
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 0001c0
+Stage 2: 000300
+Stage 2: 00001c
+Stage 2: 002000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000a00
+Stage 2: 000400
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 001ac0
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0006f0
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00801d
+
+Stage 1
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000007
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 00000b
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000c00
+Stage 2: 000070
+Stage 2: 000a00
+Stage 2: 000000
+Stage 2: 00000c
+Stage 2: 002000
+Stage 2: 002800
+Stage 2: 001000
+Stage 2: 000e00
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0010dc
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0006b0
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000037
+
+Stage 1
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000007
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000038
+Stage 2: 000500
+Stage 2: 000400
+Stage 2: 000006
+Stage 2: 001000
+Stage 2: 000180
+Stage 2: 000800
+Stage 2: 000700
+Stage 2: 002800
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07b464
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000437
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000035
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 000013
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000500
+Stage 2: 000400
+Stage 2: 000c00
+Stage 2: 001000
+Stage 2: 000180
+Stage 2: 000000
+Stage 2: 000700
+Stage 2: 002800
+Stage 2: 002800
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c6b2
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 0004ba
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000021
+
+Stage 1
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 00000d
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 000014
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000400
+Stage 2: 000c00
+Stage 2: 000000
+Stage 2: 000180
+Stage 2: 000000
+Stage 2: 000180
+Stage 2: 002800
+Stage 2: 002800
+Stage 2: 001400
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07b280
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 00072a
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008025
+
+Stage 1
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000600
+Stage 2: 000000
+Stage 2: 000c00
+Stage 2: 000000
+Stage 2: 0000c0
+Stage 2: 001c00
+Stage 2: 001400
+Stage 2: 000a00
+Stage 2: 002000
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07cc00
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0004d8
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008039
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000007
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000c00
+Stage 2: 000200
+Stage 2: 0000c0
+Stage 2: 001c00
+Stage 2: 000000
+Stage 2: 000a00
+Stage 2: 002000
+Stage 2: 000300
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07ecc0
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000680
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00804d
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 00000f
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000c00
+Stage 2: 000200
+Stage 2: 000380
+Stage 2: 001c00
+Stage 2: 000000
+Stage 2: 000300
+Stage 2: 002000
+Stage 2: 000300
+Stage 2: 000c00
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07fbc0
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0004d0
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008034
+
+Stage 1
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 00000f
+Stage 1: 00000c
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000200
+Stage 2: 000380
+Stage 2: 002000
+Stage 2: 000000
+Stage 2: 000300
+Stage 2: 0001c0
+Stage 2: 000300
+Stage 2: 000c00
+Stage 2: 000e00
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 000380
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000440
+Stage 4: 00001d
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008026
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 00000e
+Stage 1: 000007
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 000017
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000380
+Stage 2: 002000
+Stage 2: 000200
+Stage 2: 000300
+Stage 2: 0001c0
+Stage 2: 000000
+Stage 2: 000c00
+Stage 2: 000e00
+Stage 2: 000200
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e740
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000700
+Stage 4: 00001c
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008008
+
+Stage 1
+Stage 1: 000004
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 00000c
+Stage 1: 00000e
+Stage 1: 000005
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 002000
+Stage 2: 000200
+Stage 2: 0000c0
+Stage 2: 0001c0
+Stage 2: 000000
+Stage 2: 000080
+Stage 2: 000e00
+Stage 2: 000200
+Stage 2: 000300
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e640
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000630
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000007
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000014
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000400
+Stage 2: 000180
+Stage 2: 000400
+Stage 2: 000000
+Stage 2: 000100
+Stage 2: 003800
+Stage 2: 000400
+Stage 2: 000600
+Stage 2: 000500
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07d080
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000670
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008031
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000013
+Stage 1: 000014
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000180
+Stage 2: 000400
+Stage 2: 000c00
+Stage 2: 000100
+Stage 2: 003800
+Stage 2: 000000
+Stage 2: 000600
+Stage 2: 000500
+Stage 2: 003000
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c280
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 0005f0
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008033
+
+Stage 1
+Stage 1: 000006
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 00000e
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 000014
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000015
+Stage 1: 000010
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000400
+Stage 2: 000c00
+Stage 2: 000800
+Stage 2: 003800
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000500
+Stage 2: 003000
+Stage 2: 001000
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 079e80
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0007b0
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00805f
+
+Stage 1
+Stage 1: 000004
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 00000c
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000010
+Stage 1: 000015
+Stage 1: 000010
+Stage 1: 000016
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000c00
+Stage 2: 000800
+Stage 2: 000280
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000600
+Stage 2: 003000
+Stage 2: 001000
+Stage 2: 000080
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 079d00
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000618
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00803d
+
+Stage 1
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 000006
+Stage 1: 000004
+Stage 1: 00000c
+Stage 1: 00000c
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000010
+Stage 1: 000011
+Stage 1: 000010
+Stage 1: 000016
+Stage 1: 000012
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000800
+Stage 2: 000280
+Stage 2: 000140
+Stage 2: 000000
+Stage 2: 000600
+Stage 2: 0000e0
+Stage 2: 001000
+Stage 2: 000080
+Stage 2: 002000
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07dd00
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000630
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008061
+
+Stage 1
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 000007
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 00000c
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 000011
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000010
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000016
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000280
+Stage 2: 000140
+Stage 2: 000180
+Stage 2: 000600
+Stage 2: 0000e0
+Stage 2: 000180
+Stage 2: 000080
+Stage 2: 002000
+Stage 2: 000200
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e320
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000460
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008063
+
+Stage 1
+Stage 1: 00000e
+Stage 1: 000004
+Stage 1: 000007
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000010
+Stage 1: 000011
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000140
+Stage 2: 000180
+Stage 2: 000800
+Stage 2: 0000e0
+Stage 2: 000180
+Stage 2: 000800
+Stage 2: 002000
+Stage 2: 000200
+Stage 2: 000000
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e920
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000738
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008023
+
+Stage 1
+Stage 1: 000004
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 00000c
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 000000
+Stage 1: 000004
+Stage 1: 000007
+Stage 1: 000014
+Stage 1: 000010
+Stage 1: 000010
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000010
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000300
+Stage 2: 001000
+Stage 2: 0001c0
+Stage 2: 000300
+Stage 2: 001000
+Stage 2: 003800
+Stage 2: 000400
+Stage 2: 000000
+Stage 2: 000400
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e020
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0005b8
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00801c
+
+Stage 1
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000007
+Stage 1: 00000f
+Stage 1: 00000c
+Stage 1: 000004
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 000010
+Stage 1: 000010
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 000013
+Stage 1: 00000e
+Stage 1: 000012
+Stage 1: 000010
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 001000
+Stage 2: 0001c0
+Stage 2: 000100
+Stage 2: 001000
+Stage 2: 003800
+Stage 2: 000e00
+Stage 2: 000000
+Stage 2: 000400
+Stage 2: 0001c0
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 0039c0
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0007f8
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008016
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 00000f
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 000007
+Stage 1: 000005
+Stage 1: 000006
+Stage 1: 000010
+Stage 1: 000012
+Stage 1: 00000f
+Stage 1: 000013
+Stage 1: 00000e
+Stage 1: 000016
+Stage 1: 000010
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 0001c0
+Stage 2: 000100
+Stage 2: 000600
+Stage 2: 003800
+Stage 2: 000e00
+Stage 2: 000040
+Stage 2: 000400
+Stage 2: 0001c0
+Stage 2: 000a00
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 003080
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 000738
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00801f
+
+Stage 1
+Stage 1: 000006
+Stage 1: 00000c
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 000005
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 000012
+Stage 1: 00000f
+Stage 1: 000012
+Stage 1: 00000e
+Stage 1: 000016
+Stage 1: 000014
+Stage 1: 000013
+Stage 1: 000011
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000080
+Stage 2: 000300
+Stage 2: 000040
+Stage 2: 000700
+Stage 2: 000020
+Stage 2: 002800
+Stage 2: 0000e0
+Stage 2: 000500
+Stage 2: 000180
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 004040
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 000610
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00001c
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 00000f
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000016
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000016
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000300
+Stage 2: 000040
+Stage 2: 000380
+Stage 2: 000020
+Stage 2: 002800
+Stage 2: 000c00
+Stage 2: 000500
+Stage 2: 000180
+Stage 2: 000180
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07da80
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 000404
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000018
+
+Stage 1
+Stage 1: 000007
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000006
+Stage 1: 000006
+Stage 1: 000005
+Stage 1: 000012
+Stage 1: 000011
+Stage 1: 000010
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 000011
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000040
+Stage 2: 000380
+Stage 2: 000100
+Stage 2: 002800
+Stage 2: 000c00
+Stage 2: 000380
+Stage 2: 000180
+Stage 2: 000180
+Stage 2: 000600
+Stage 2: 000016
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07da20
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0004b0
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000020
+
+Stage 1
+Stage 1: 00000c
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 000011
+Stage 1: 000010
+Stage 1: 000000
+Stage 1: 000012
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000700
+Stage 2: 000200
+Stage 2: 000180
+Stage 2: 001800
+Stage 2: 000700
+Stage 2: 002800
+Stage 2: 000300
+Stage 2: 000c00
+Stage 2: 002800
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07d3c0
+Stage 3: 000001
+Stage 3: 000016
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 0004bc
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008025
+
+Stage 1
+Stage 1: 000006
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 00000c
+Stage 1: 000010
+Stage 1: 000000
+Stage 1: 000010
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000014
+Stage 1: 000014
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000200
+Stage 2: 000180
+Stage 2: 000000
+Stage 2: 000700
+Stage 2: 002800
+Stage 2: 000000
+Stage 2: 000c00
+Stage 2: 002800
+Stage 2: 001000
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 004680
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000016
+Stage 4: 000001
+Stage 4: 000588
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008025
+
+Stage 1
+Stage 1: 000000
+Stage 1: 000006
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 00000c
+Stage 1: 00000c
+Stage 1: 000005
+Stage 1: 000000
+Stage 1: 000010
+Stage 1: 000012
+Stage 1: 000000
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000014
+Stage 1: 000014
+Stage 1: 000010
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000180
+Stage 2: 000000
+Stage 2: 000180
+Stage 2: 002800
+Stage 2: 000000
+Stage 2: 002800
+Stage 2: 002800
+Stage 2: 001000
+Stage 2: 001000
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 004480
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 000468
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00802c
+
+Stage 1
+Stage 1: 000006
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 00000f
+Stage 1: 00000c
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 000010
+Stage 1: 000012
+Stage 1: 00000e
+Stage 1: 000015
+Stage 1: 000017
+Stage 1: 000010
+Stage 1: 000014
+Stage 1: 000010
+Stage 1: 000012
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000060
+Stage 2: 000140
+Stage 2: 000000
+Stage 2: 000a00
+Stage 2: 002000
+Stage 2: 000400
+Stage 2: 000400
+Stage 2: 000050
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 005b00
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 000448
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000023
+
+Stage 1
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 00000c
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000005
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 000012
+Stage 1: 00000e
+Stage 1: 00000e
+Stage 1: 000017
+Stage 1: 000010
+Stage 1: 000013
+Stage 1: 000010
+Stage 1: 000012
+Stage 1: 00000f
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000060
+Stage 2: 000140
+Stage 2: 00001c
+Stage 2: 000a00
+Stage 2: 002000
+Stage 2: 000070
+Stage 2: 000400
+Stage 2: 000050
+Stage 2: 0001c0
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e3f0
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000015
+Stage 4: 000001
+Stage 4: 0005b0
+Stage 4: 000001
+Stage 4: 000000
+Stage 4: 000000
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 000022
+
+Stage 1
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 00000f
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000e
+Stage 1: 000013
+Stage 1: 000010
+Stage 1: 000013
+Stage 1: 000014
+Stage 1: 000012
+Stage 1: 00000f
+Stage 1: 000015
+Stage 1: 000015
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000140
+Stage 2: 00001c
+Stage 2: 000014
+Stage 2: 002000
+Stage 2: 000070
+Stage 2: 000280
+Stage 2: 000050
+Stage 2: 0001c0
+Stage 2: 000028
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e5a4
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000704
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 00002d
+
+Stage 1
+Stage 1: 000005
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 000005
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 00000e
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000013
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 00000f
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000070
+Stage 2: 000050
+Stage 2: 000800
+Stage 2: 0001c0
+Stage 2: 000a00
+Stage 2: 001800
+Stage 2: 000700
+Stage 2: 0000a0
+Stage 2: 002800
+Stage 2: 000015
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07e1b0
+Stage 3: 000001
+Stage 3: 000017
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000697
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008038
+
+Stage 1
+Stage 1: 000004
+Stage 1: 00000f
+Stage 1: 000007
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 00000e
+Stage 1: 00000d
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000013
+Stage 1: 000012
+Stage 1: 000014
+Stage 1: 000014
+Stage 1: 000017
+Stage 1: 00000a
+Stage 1: 000015
+Stage 1: 000000
+Stage 1: 000000
+Stage 1: 000017
+Stage 1: 000001
+Stage 1: 000011
+
+Stage 2
+Stage 2: 000000
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000001
+Stage 2: 000000
+Stage 2: 000014
+Stage 2: 000200
+Stage 2: 0001c0
+Stage 2: 000280
+Stage 2: 000600
+Stage 2: 002800
+Stage 2: 000028
+Stage 2: 000a00
+Stage 2: 000000
+Stage 2: 000017
+Stage 2: 000001
+Stage 2: 000011
+
+Stage 3
+Stage 3: 07c880
+Stage 3: 000001
+Stage 3: 000015
+Stage 3: 000011
+
+Stage 4
+Stage 4: 000017
+Stage 4: 000001
+Stage 4: 000794
+Stage 4: 00001f
+Stage 4: 000000
+Stage 4: 000001
+Stage 4: 000011
+
+Stage 5
+Stage 5: 000001
+Stage 5: 008034

@@ -59,7 +59,7 @@ module mac_stg3(input           i_clk,
                 output [ 6-1:0] o_max_exp,
                 input  [ 5-1:0] i_Q_frac,
                 output [ 5-1:0] o_Q_frac,
-                output [50:0] o_transistor_num);
+                output [50:0]   o_transistor_num);
 wire [50:0] numbers[0:100];
 
 // flags

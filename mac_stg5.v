@@ -31,7 +31,7 @@ module mac_stg5(input           i_clk,
 
                 output          o_valid,
                 output [16-1:0] o_conv,
-                output [50:0] o_transistor_num);
+                output [50:0]   o_transistor_num);
 
 reg          valid_r, valid_w;
 reg [11-1:0] norm_sum_r, norm_sum_w;
@@ -105,6 +105,6 @@ end
 // end
 
 //Doesn't count _w
-assign o_transistor_num = numbers + 30 * 27;
+assign o_transistor_num = numbers + 46 * 27;
 
 endmodule
